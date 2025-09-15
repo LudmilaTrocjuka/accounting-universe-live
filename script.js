@@ -31,12 +31,21 @@ try {
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 const tsField = document.getElementById('ts');
+const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+let sending = false;
 if (form && statusEl && tsField) {
   // Set timestamp when form loads (anti-bot)
   tsField.value = String(Date.now());
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+   if (sending) return;
+  sending = true;
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+  }
+
     statusEl.classList.remove('success','error','hidden');
     statusEl.textContent = 'Sending...';
 
@@ -52,7 +61,6 @@ if (form && statusEl && tsField) {
         statusEl.textContent = 'Thanks! Your message has been sent.';
         statusEl.classList.add('success');
         form.reset();
-        tsField.value = String(Date.now()); // reset timer for next submit
       } else {
         statusEl.textContent = json && json.error ? json.error : 'Failed to send. Please try again.';
         statusEl.classList.add('error');
@@ -60,6 +68,13 @@ if (form && statusEl && tsField) {
     } catch (err) {
       statusEl.textContent = 'Network error. Please try again.';
       statusEl.classList.add('error');
+    } finally {
+    sending = false;
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send';
+    }
+    tsField.value = String(Date.now()); // reset timer for next submit
     }
   });
-}
+  }
