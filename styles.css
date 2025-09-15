@@ -19,3 +19,16 @@
 .notice{margin-top:.5rem;font-size:.95rem}.notice.success{color:#8be28b}.notice.error{color:#ff9aa2}
 .hidden{display:none}
 @media (max-width:800px){.grid.three{grid-template-columns:1fr}.menu{display:none}.nav-toggle{display:block;margin-left:auto}.menu.open{display:flex;flex-direction:column;background:var(--card);position:absolute;right:1rem;top:60px;padding:1rem;border:1px solid var(--border);border-radius:.8rem}}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;             /* ширина квадрата */
+  height: 48px;            /* высота квадрата */
+  background: #0073e6;     /* синий фон */
+  color: #fff;             /* белый текст */
+  font-weight: 900;        /* жирный шрифт */
+  font-size: 1.4rem;       /* размер букв */
+  border-radius: 8px;      /* скругление углов */
+  margin-right: 0.5rem;    /* отступ справа от названия */
+}
