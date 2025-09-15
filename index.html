@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Accounting Practice – Friendly, modern accounting for UK small businesses</title>
+  <meta name="description" content="UK-based accountants helping sole traders and small businesses with Xero bookkeeping, VAT, payroll, and year-end accounts. Multilingual support available.">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">✓</div>
+        <div>
+          <h1 class="brand-name">Your Accounting Practice</h1>
+          <p class="tagline">Friendly, modern accounting for UK small businesses</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Main">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul id="menu" class="menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#xero">Xero</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h2>Less paperwork. More progress.</h2>
+        <p>We handle the numbers so you can grow. Specialists in Xero, VAT (MTD compliant), payroll, CIS, and year-end accounts.</p>
+        <div class="cta-group">
+          <a class="btn primary" href="#contact">Book a free consultation</a>
+          <a class="btn" href="#pricing">See pricing</a>
+        </div>
+        <p class="microcopy">Мы говорим по-русски · Mēs runājam latviski · Ми говоримо українською</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h3>Services</h3>
+        <div class="grid three">
+          <article class="card"><h4>Bookkeeping &amp; Xero</h4><p>Accurate bookkeeping &amp; management reports. Xero UK setup/migration.</p></article>
+          <article class="card"><h4>VAT &amp; MTD</h4><p>Registrations, returns, and MTD compliance. CIS reverse charge supported.</p></article>
+          <article class="card"><h4>Payroll &amp; CIS</h4><p>RTI payroll, pensions, subcontractor statements and CIS returns.</p></article>
+          <article class="card"><h4>Year-end &amp; Tax</h4><p>Year-end accounts, CT600, and self-assessment.</p></article>
+          <article class="card"><h4>Advisory</h4><p>Cash flow, budgeting, and KPI dashboards.</p></article>
+          <article class="card"><h4>Support</h4><p>Email &amp; WhatsApp support, check-ins, and training.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="xero" class="section alt">
+      <div class="container">
+        <h3>Xero specialists</h3>
+        <p>We use Xero UK packages (Starter, Standard, Premium, Ultimate) and integrate apps like Dext/Hubdoc/Pleo.</p>
+      </div>
+    </section>
+
+    <section id="industries" class="section">
+      <div class="container">
+        <h3>Industries we serve</h3>
+        <ul class="pill-list">
+          <li>Hospitality &amp; pubs</li>
+          <li>eCommerce &amp; Shopify</li>
+          <li>Contractors &amp; freelancers</li>
+          <li>Trades &amp; construction (CIS)</li>
+          <li>Professional services</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h3>About</h3>
+        <p>Remote-first, UK time zone. We speak English, Russian, Latvian, and Ukrainian. 3+ years supporting UK businesses.</p>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <h3>Pricing</h3>
+        <div class="grid three">
+          <article class="price-card"><h4>Starter</h4><p class="price">£99<span>/mo</span></p><ul><li>Up to 50 transactions</li><li>Quarterly VAT review</li><li>Email support</li></ul><a class="btn" href="#contact">Choose Starter</a></article>
+          <article class="price-card"><h4>Standard</h4><p class="price">£199<span>/mo</span></p><ul><li>Up to 200 transactions</li><li>Monthly VAT returns</li><li>Payroll for up to 5 staff</li></ul><a class="btn primary" href="#contact">Choose Standard</a></article>
+          <article class="price-card"><h4>Premium</h4><p class="price">£349<span>/mo</span></p><ul><li>Unlimited transactions</li><li>Weekly payroll</li><li>Quarterly management reports</li></ul><a class="btn" href="#contact">Choose Premium</a></article>
+        </div>
+        <p class="microcopy">Custom quotes for pubs, construction (CIS), and eCommerce available.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h3>Contact</h3>
+        <form class="contact-form" id="contact-form">
+          <label>Full name<input type="text" name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Company (optional)<input type="text" name="company"></label>
+          <label>How can we help?<textarea name="message" rows="5" placeholder="Bookkeeping, VAT, payroll, year-end..."></textarea></label>
+
+          <!-- Honeypot -->
+          <label class="hidden" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          <input type="hidden" name="ts" id="ts">
+
+          <button class="btn primary" type="submit">Send</button>
+          <p class="microcopy">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+          <p id="form-status" class="notice hidden"></p>
+        </form>
+        <p class="microcopy">Prefer email? <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025-09-15 Your Accounting Practice. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="terms.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <p>We use essential cookies to make this site work and analytics to improve it. <a href="cookies.html">Learn more</a>.</p>
+    <div class="cta-group">
+      <button id="accept-cookies" class="btn small">Accept all</button>
+      <button id="reject-cookies" class="btn small">Reject non-essential</button>
+    </div>
+  </div>
+</body>
+</html>
