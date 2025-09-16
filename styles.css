@@ -151,10 +151,10 @@ a:hover {
   background: #f5faff;
 }
 ./* Усиление заголовков секций */
-.section h3 {
-  text-align: center;                 /* выравнивание по центру */
-  border-bottom: 2px solid var(--accent);
-  display: inline-block;              /* рамка только под текстом */
+..section h3 {
+  text-align: center;
+  display: inline-block;
+  border-bottom: 3px solid var(--accent);
   padding-bottom: .3rem;
   margin-bottom: 1.5rem;
 }
