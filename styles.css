@@ -77,18 +77,10 @@ a:hover {
   margin-right: 0.5rem;
 }
 
-.brand-name {
-  margin: 0;
-  font-size: clamp(1.4rem, 2.6vw, 1.9rem); /* 24–32px */
-  line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: .2px;
+.brand-name { font-size: 1rem !important; font-weight: 700 !important;
 }
 
-.tagline {
-  margin: .15rem 0 0;
-  color: var(--muted);
-  font-size: .95rem;
+.tagline    { font-size: 0.85rem !important; }
 }
 
 .nav {
@@ -151,16 +143,17 @@ a:hover {
   border: none;
 }
 
-.section {
-  padding: 1.5rem 0; /* было 3rem */
+.section { padding: 1.25rem 0 !important; 
 }
 .section.alt {
   background: #f5faff;
 }
-.section h3 {
-  font-size: clamp(1.1rem, 2vw, 1.3rem); /* немного меньше */
-  font-weight: 600;
-  margin: 0.8rem 0 0.6rem;
+.section h3,
+.section .container > h3 {
+  font-size: 1.25rem !important;   /* ~20px */
+  line-height: 1.25 !important;
+  margin: 0.5rem 0 0.5rem !important;
+  font-weight: 600 !important;
 }
 
 .section p {
@@ -183,9 +176,8 @@ a:hover {
 
 .card h4,
 .price-card h4 {
-  font-size: 1rem;   /* примерно 16px */
-  font-weight: 600;
-  margin: 0.4rem 0;
+  font-size: 1rem !important;      /* ~16px */
+  margin: 0.35rem 0 !important;
 }
 
 .pill-list {
