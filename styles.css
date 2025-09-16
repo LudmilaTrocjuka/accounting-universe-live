@@ -150,7 +150,15 @@ a:hover {
 .section.alt {
   background: #f5faff;
 }
-.section h3,
+./* Усиление заголовков секций */
+.section h3 {
+  text-align: center;                 /* выравнивание по центру */
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;              /* рамка только под текстом */
+  padding-bottom: .3rem;
+  margin-bottom: 1.5rem;
+}
+
 .section .container > h3 {
   font-size: 1.25rem !important;   /* ~20px */
   line-height: 1.25 !important;
@@ -182,41 +190,34 @@ a:hover {
   margin: 0.35rem 0 !important;
 }
 
-/* Chips / Pills — компактно и нейтрально */
-.pill-list{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.5rem;
-  margin:.75rem 0 0;
-  padding:0;
-  list-style:none;              /* без буллетов */
+/* Центровка списков */
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* центрируем */
+  gap: .5rem;
+  margin: .75rem 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.pill-list li{
-  display:inline-flex;
-  align-items:center;
-  padding:.35rem .7rem;         /* компактнее */
-  border:1px solid var(--border);
-  border-radius:999px;          /* «пилюля» */
-  background:#fff;
-  color:var(--text);
-  font-size:.95rem;
-  font-weight:500;
-  line-height:1;
-  transition:background .15s ease, border-color .15s ease, box-shadow .15s ease;
+.pill-list li {
+  padding: .4rem .9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 500;
+  font-size: .95rem;
 }
 
-.pill-list li:hover{
-  border-color:var(--accent);   /* лёгкий акцент при ховере */
-  background:#f7fbff;
-  box-shadow:0 1px 0 rgba(0,0,0,.04);
+/* Список в About */
+.section.alt .pill-list {
+  justify-content: center;   /* фамилии по центру */
 }
-
 .microcopy {
   color: var(--muted);
   font-size: .9rem;
 }
-
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 1rem 0;
