@@ -331,16 +331,19 @@ h4 {
   font-weight: 600;
   margin: .6rem 0;
 }
-/* ===== Section headings (badge) — hard override ===== */
+/* ===== Section headings (badge) — blue outline ===== */
 main .section > .container > h3 {
   display: inline-block;
-  text-align: center;
-  background: #f5faff !important;     /* бледнее фон */
-  border: 1px solid var(--border) !important;
+  padding: .35rem .9rem;
+  margin: 1rem auto 1.2rem;
+  background: #eef7ff !important;        /* бледно-голубой фон */
+  border: 2px solid var(--accent) !important; /* ГОЛУБАЯ РАМКА */
+  border-radius: .6rem;
   color: var(--text);
-  font-size: 1.05rem !important;      /* меньше шрифт */
-  font-weight: 600;
-  padding: .25rem .65rem;              /* компактнее */
-  border-radius: .45rem;
-  margin: 1rem auto 1.2rem;            /* центр + отступы */
+  font-size: 1.05rem !important;          /* компактный размер */
+  font-weight: 700 !important;            /* поярче */
+  box-shadow: 0 0 0 3px rgba(77,166,255,.08) inset; /* мягкое свечение */
+}
+
+
 }
