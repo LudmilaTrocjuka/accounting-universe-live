@@ -347,10 +347,3 @@ h4 {
   font-weight: 600;
   margin: .6rem 0;
 }
-/* Разделы: усиливаем h3 внутри секций */
-.section h3 {
-  font-size: clamp(1.6rem, 2.6vw, 2rem);
-  font-weight: 700;
-  text-align: center;
-  margin: 0 0 1.2rem;
-}
