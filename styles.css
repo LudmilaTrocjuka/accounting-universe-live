@@ -79,8 +79,10 @@ a:hover {
 
 .brand-name {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: clamp(1.5rem, 3vw, 2rem); /* 24–32px */
+  font-weight: 700;
 }
+
 .tagline {
   margin: .1rem 0 0;
   color: var(--muted);
@@ -154,9 +156,11 @@ a:hover {
   background: #f5faff;
 }
 .section h3 {
-  margin-top: 0;
-  margin-bottom: .75rem;
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem); /* немного меньше */
+  font-weight: 600;
+  margin: 1.2rem 0 .8rem;
 }
+
 .section p {
   margin-top: 0;
 }
