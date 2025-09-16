@@ -152,15 +152,15 @@ a:hover {
 }
 
 .section {
-  padding: 2rem 0; /* было 3rem */
+  padding: 1.5rem 0; /* было 3rem */
 }
 .section.alt {
   background: #f5faff;
 }
 .section h3 {
-  font-size: clamp(1.25rem, 2.1vw, 1.55rem); /* немного меньше */
+  font-size: clamp(1.1rem, 2vw, 1.3rem); /* немного меньше */
   font-weight: 600;
-  margin: 1.1rem 0 .7rem;
+  margin: 0.8rem 0 0.6rem;
 }
 
 .section p {
@@ -181,15 +181,11 @@ a:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.card, .price-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  padding: 1rem;
-  border-radius: .8rem;
-}
-.card h4 {
-  margin-top: .6rem;
-  margin-bottom: .3rem;
+.card h4,
+.price-card h4 {
+  font-size: 1rem;   /* примерно 16px */
+  font-weight: 600;
+  margin: 0.4rem 0;
 }
 
 .pill-list {
