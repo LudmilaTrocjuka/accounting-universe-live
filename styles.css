@@ -150,17 +150,19 @@ a:hover {
 .section.alt {
   background: #f5faff;
 }
-..section h3 {
+.section h3 {
   text-align: center;
   display: inline-block;
-  background: #eaf6ff; /* бледно-голубая плашка */
+  background: #f5faff;   /* бледный голубоватый фон */
+  border: 1px solid var(--border); /* лёгкая рамка */
   color: var(--text);
-  font-size: 1.2rem;   /* уменьшаем размер */
+  font-size: 1.2rem;     /* меньше размер */
   font-weight: 600;
-  padding: .25rem .6rem;
-  border-radius: .4rem;
-  margin-bottom: 1.2rem;
+  padding: .3rem .8rem;  /* внутренняя обводка */
+  border-radius: .4rem;  /* скруглённые углы */
+  margin: 1rem auto 1.2rem; /* центрируем и добавляем отступы */
 }
+
 .section .container > h3 {
   font-size: 1.25rem !important;   /* ~20px */
   line-height: 1.25 !important;
