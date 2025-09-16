@@ -79,12 +79,14 @@ a:hover {
 
 .brand-name {
   margin: 0;
-  font-size: clamp(1.5rem, 3vw, 2rem); /* 24–32px */
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem); /* 24–32px */
+  line-height: 1.1;
   font-weight: 700;
+  letter-spacing: .2px;
 }
 
 .tagline {
-  margin: .1rem 0 0;
+  margin: .15rem 0 0;
   color: var(--muted);
   font-size: .95rem;
 }
@@ -156,9 +158,9 @@ a:hover {
   background: #f5faff;
 }
 .section h3 {
-  font-size: clamp(1.3rem, 2.2vw, 1.6rem); /* немного меньше */
+  font-size: clamp(1.25rem, 2.1vw, 1.55rem); /* немного меньше */
   font-weight: 600;
-  margin: 1.2rem 0 .8rem;
+  margin: 1.1rem 0 .7rem;
 }
 
 .section p {
