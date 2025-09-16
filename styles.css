@@ -150,15 +150,17 @@ a:hover {
 .section.alt {
   background: #f5faff;
 }
-.section h3 {
+..section h3 {
   text-align: center;
-  background: var(--accent);
-  color: #000;
   display: inline-block;
-  padding: .3rem .8rem;
+  background: #eaf6ff; /* бледно-голубая плашка */
+  color: var(--text);
+  font-size: 1.2rem;   /* уменьшаем размер */
+  font-weight: 600;
+  padding: .25rem .6rem;
   border-radius: .4rem;
+  margin-bottom: 1.2rem;
 }
-
 .section .container > h3 {
   font-size: 1.25rem !important;   /* ~20px */
   line-height: 1.25 !important;
