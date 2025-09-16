@@ -150,13 +150,13 @@ a:hover {
 .section.alt {
   background: #f5faff;
 }
-./* Усиление заголовков секций */
-..section h3 {
+.section h3 {
   text-align: center;
+  background: var(--accent);
+  color: #000;
   display: inline-block;
-  border-bottom: 3px solid var(--accent);
-  padding-bottom: .3rem;
-  margin-bottom: 1.5rem;
+  padding: .3rem .8rem;
+  border-radius: .4rem;
 }
 
 .section .container > h3 {
