@@ -39,6 +39,7 @@
   display: block; 
   border-radius: 12px; 
   object-fit: cover; 
+  aspect-ratio: 3 / 2;  /* карточки Industries */
 }
 
 .hero img {
@@ -47,6 +48,7 @@
   display: block;
   margin-top: 20px;
   border-radius: 12px;
+  aspect-ratio: 16 / 9;
 }
 /* Общий стиль для изображений внутри секций (включая Xero) */
 .section img {
@@ -55,11 +57,6 @@
   display: block;
   border-radius: 12px;
 }
-
-/* Резерв места (уменьшает CLS) — подгони при желании */
-.hero img { aspect-ratio: 16 / 9; }
-.card img { aspect-ratio: 3 / 2; }  /* карточки Industries */
-
 .site-header { z-index: 100; }       /* шапка всегда сверху */
 .cookie-banner { z-index: 200; }     /* баннер поверх всего */
 
