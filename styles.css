@@ -67,20 +67,21 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   background: linear-gradient(135deg, var(--accent), var(--ok));
   color: #000;
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 8px;
   margin-right: 0.5rem;
 }
 
-.brand-name { font-size: 1.5rem !important; font-weight: 700 !important;
+.brand-name { font-size: 1.35rem !important; font-weight: 800 !important;
 }
 
-.tagline    { font-size: 0.85rem !important; }
+.tagline    { font-size: 1rem !important;
+            color: var(--muted);
 }
 
 .nav {
