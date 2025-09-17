@@ -280,16 +280,19 @@ a:hover {
     display: block;
     margin-left: auto;
   }
-}
 /* ЕДИНЫЙ СТИЛЬ ДЛЯ КРУПНЫХ КАРТИНОК СЕКЦИЙ */
 .hero > .container > img,
 #xero > .container > img,
-#about > .container > img {
+#about > .container > img,
+#pricing > .container > img {   /* ← добавили Pricing */
   width: 100%;
   max-width: 100%;
   display: block;
   border-radius: 12px;
   margin-top: 12px;
+  height: clamp(260px, 40vw, 420px);
+  object-fit: cover;
+}
 
   /* одна и та же адаптивная высота для консистентности */
   height: clamp(260px, 40vw, 420px);
