@@ -20,6 +20,12 @@ html, body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
 }
+/* Global image reset — добавить один раз вверху */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   max-width: 1100px;
@@ -268,36 +274,36 @@ a:hover {
 .hidden {
   display: none;
 }
-
-@media (max-width:800px) {
-  .grid.three {
-    grid-template-columns: 1fr;
-  }
-  .menu {
-    display: none;
-  }
-  .nav-toggle {
-    display: block;
-    margin-left: auto;
-  }
-/* ЕДИНЫЙ СТИЛЬ ДЛЯ КРУПНЫХ КАРТИНОК СЕКЦИЙ */
+/* Баннеры в секциях — десктоп (фиксируем форму и предел) */
 .hero > .container > img,
 #xero > .container > img,
 #about > .container > img,
-#pricing > .container > img {   /* ← добавили Pricing */
+#pricing > .container > img {
   width: 100%;
-  max-width: 100%;
-  display: block;
   border-radius: 12px;
-  margin-top: 12px;
-  height: clamp(260px, 40vw, 420px);
+  aspect-ratio: 16 / 9;   /* единая форма на десктопе */
+  max-height: 420px;      /* верхний предел по высоте */
   object-fit: cover;
+  object-position: center;
+  margin-top: 12px;
 }
 
-  /* одна и та же адаптивная высота для консистентности */
-  height: clamp(260px, 40vw, 420px);
-  object-fit: cover;   /* заполняем без искажений */
-}
+@media (max-width:800px) {
+  .grid.three { grid-template-columns: 1fr; }
+  .menu { display: none; }
+  .nav-toggle { display: block; margin-left: auto; }
+
+  /* ЕДИНЫЙ СТИЛЬ ДЛЯ КРУПНЫХ КАРТИНОК СЕКЦИЙ — МОБИЛА */
+  .hero > .container > img,
+  #xero > .container > img,
+  #about > .container > img,
+  #pricing > .container > img {
+    aspect-ratio: 4 / 3;   /* на мобиле чуть выше, читается лучше */
+    max-height: 320px;     /* предел по высоте на мобиле */
+    object-fit: cover;
+  }
+} /* end media */
+
 /* Картинки в карточках (Industries) — ровные */
 .card img {
   width: 100%;
