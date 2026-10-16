@@ -1,0 +1,83 @@
+name: Mobile UI visual checks
+on:
+  push:
+    branches: [improve-services-and-pricing-oct-2026]
+    paths: ['.github/workflows/mobile-visual-check.yml', 'index.html', 'styles.css', 'script.js']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mobile-ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser
+        run: |
+          npm install --no-save --no-package-lock playwright
+          npx playwright install --with-deps chromium
+      - name: Test phone and tablet in light and dark appearance
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/accounting-site.log 2>&1 &
+          cat > mobile-check.cjs <<'JS'
+          const {chromium} = require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const cases=[
+              {w:390,h:844,mode:'light'},
+              {w:390,h:844,mode:'dark'},
+              {w:768,h:1024,mode:'dark'}
+            ];
+            let fail=false;
+            for (const cfg of cases) {
+              const page=await browser.newPage({viewport:{width:cfg.w,height:cfg.h}, colorScheme:cfg.mode, deviceScaleFactor:2});
+              const errors=[];
+              page.on('pageerror', e=>errors.push(e.message));
+              await page.goto('http://127.0.0.1:8765/', {waitUntil:'load'});
+              await page.locator('#reviews').scrollIntoViewIfNeeded();
+              const data=await page.evaluate(()=>{
+                const bg = selector => getComputedStyle(document.querySelector(selector)).backgroundColor;
+                const buttons=['.hero .btn.primary','.hero .btn.hero-secondary','#pricing .price-card .btn','#finder-check','#contact-submit','.cookie-banner .btn'].map(sel=>{
+                  const el=document.querySelector(sel);
+                  return {selector:sel,found:!!el,background:el?getComputedStyle(el).backgroundColor:'',text:el?getComputedStyle(el).color:''};
+                });
+                return {
+                  bodyScrollWidth:document.documentElement.scrollWidth,
+                  viewport:window.innerWidth,
+                  reviewBg:bg('#reviews .review-card'),
+                  priceBg:bg('#pricing .price-card'),
+                  industryBg:bg('#industries .industry-card'),
+                  mobileButtonBg:bg('.site-header .nav-toggle'),
+                  buttons,
+                  imageLoad:[...document.querySelectorAll('img')].map(im=>({src:im.getAttribute('src'),ok:im.complete&&im.naturalWidth>0}))
+                };
+              });
+              await page.locator('.nav-toggle').click();
+              const openBg=await page.locator('#menu').evaluate(el=>getComputedStyle(el).backgroundColor);
+              await page.locator('.nav-toggle').click();
+              await page.locator('#enquiry-type').selectOption('consultation');
+              const dateVisible=await page.locator('#appointment-fields').isVisible();
+              await page.screenshot({path:'mobile-'+cfg.w+'-'+cfg.mode+'.png', fullPage:true, animations:'disabled'});
+              const green='rgb(38, 125, 85)';
+              const white='rgb(255, 255, 255)';
+              const buttonFailures=data.buttons.filter(b=>!b.found||b.background!==green||b.text!==white);
+              const pass=(!errors.length && data.bodyScrollWidth<=cfg.w && data.reviewBg===white && data.priceBg===white && data.industryBg===white && data.mobileButtonBg===green && openBg===white && dateVisible && !buttonFailures.length && data.imageLoad.every(x=>x.ok));
+              console.log(JSON.stringify({case:cfg,pass,data,openMenuBg:openBg,consultationDateVisible:dateVisible,errors,buttonFailures}));
+              fail ||= !pass;
+              await page.close();
+            }
+            await browser.close();
+            if(fail)process.exit(1);
+          })().catch(err=>{console.error(err);process.exit(1);});
+          JS
+          node mobile-check.cjs
+      - name: Upload screenshot evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-ui-screenshots
+          path: mobile-*.png
+          if-no-files-found: ignore
