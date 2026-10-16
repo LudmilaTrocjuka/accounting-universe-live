@@ -128,3 +128,7 @@ if (finder) {
     }
   });
 }
+
+// Keep the copyright year current.
+const copyrightYear = document.getElementById('copyright-year');
+if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
