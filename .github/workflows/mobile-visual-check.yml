@@ -37,10 +37,12 @@ jobs:
               const errors=[];
               page.on('pageerror', e=>errors.push(e.message));
               await page.goto('http://127.0.0.1:8765/', {waitUntil:'load'});
+              // Lazy images are not loaded until scrolled to. Decode explicitly before testing.
+              await page.evaluate(async () => { await Promise.all([...document.images].map(async img => { img.loading='eager'; try { await img.decode(); } catch(e) {} })); });
               await page.locator('#reviews').scrollIntoViewIfNeeded();
               const data=await page.evaluate(()=>{
                 const bg = selector => getComputedStyle(document.querySelector(selector)).backgroundColor;
-                const buttons=['.hero .btn.primary','.hero .btn.hero-secondary','#pricing .price-card .btn','#finder-check','#contact-submit','.cookie-banner .btn'].map(sel=>{
+                const buttons=['.hero .btn.primary','.hero .btn.hero-secondary','#pricing .price-card .btn','#finder-check','#contact-form button[type="submit"]','.cookie-banner .btn'].map(sel=>{
                   const el=document.querySelector(sel);
                   return {selector:sel,found:!!el,background:el?getComputedStyle(el).backgroundColor:'',text:el?getComputedStyle(el).color:''};
                 });
