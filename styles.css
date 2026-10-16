@@ -218,12 +218,28 @@ a:hover {
   font-size: .9rem;
 }
 .site-footer {
-  border-top: 1px solid var(--border);
-  padding: 1rem 0;
+  border-top: 0;
+  padding: 1.2rem 0 1.4rem;
+  background: #267D55;
+  color: #fff;
+  font-size: .85rem;
+  line-height: 1.45;
 }
+.site-footer p { margin: 0 0 .65rem; }
+.site-footer a, .site-footer a:visited {
+  color: #fff;
+  text-underline-offset: .16em;
+}
+.site-footer a:hover, .site-footer a:focus-visible {
+  color: #fff;
+  text-decoration-thickness: 2px;
+}
+.site-footer a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 .site-footer nav {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: .45rem 1rem;
+  font-size: .83rem;
 }
 
 .cookie-banner {
