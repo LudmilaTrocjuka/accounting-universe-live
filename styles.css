@@ -601,3 +601,84 @@ html { scroll-behavior: smooth; scroll-padding-top: 88px; }
   .benefits-layout { grid-template-columns: 1fr; gap: 1.6rem; padding-top: 2rem; padding-bottom: 2rem; }
   .benefit { justify-content: flex-start; }
 }
+
+/* 2026: unified professional editorial design — desktop and mobile */
+:root { --accent: #267D55; --muted: #536158; --border: #dae6de; }
+html { scroll-padding-top: 110px; }
+body { line-height: 1.55; -webkit-font-smoothing: antialiased; }
+.section { padding: clamp(2.7rem, 4.8vw, 5rem) 0 !important; }
+.section.alt { background: #f4f8f6; }
+.section + .section { padding-top: clamp(2.7rem,4.8vw,5rem) !important; }
+main .section > .container > h3 {
+  display: block; width: fit-content; max-width: 100%;
+  background: none !important; border: none !important;
+  border-radius: 0; box-shadow: none;
+  font-family: Georgia, "Times New Roman", serif; color: #1b3026;
+  font-size: clamp(1.9rem,2.9vw,2.6rem) !important; font-weight: 550 !important;
+  line-height: 1.18; letter-spacing: -.015em;
+  padding: 0; margin: 0 0 1.35rem;
+}
+.section > .container > p:not(.microcopy), .pricing-intro, .industries-intro {
+  line-height: 1.65; font-size: 1.01rem; color: #4c5b51;
+}
+.grid { gap: 1.25rem; }
+.grid.three { grid-template-columns: repeat(3,minmax(0,1fr)); }
+#services .card {
+  padding: clamp(1.15rem,1.65vw,1.65rem);
+  border-radius: 12px; border: 1px solid #d9e7dd;
+  background: #fff; box-shadow: 0 3px 14px rgba(22,70,42,.045);
+}
+#services .card h4 { margin: 0 0 .5rem !important; font-size: 1.1rem !important; color: #213e2e; }
+#services .card p { line-height: 1.58; color: #4e5b52; font-size: .96rem; margin: 0; }
+#industries .industries-grid { gap: 1.65rem; }
+#industries .industry-card { padding: 0; border-radius: 14px; box-shadow: 0 5px 22px rgba(18,57,39,.075); }
+#industries .industry-card > img { height: clamp(235px,22vw,320px); width: 100%; display: block; object-fit: cover; border-radius: 0; }
+#industries .industry-card-body { padding: 1.3rem 1.5rem 1.5rem; }
+#industries .industry-card h4 { margin: 0 0 .55rem !important; font-size: 1.24rem !important; color: #233a2b; }
+#industries .industry-card p { font-size: .96rem; line-height: 1.62; }
+#about .pill-list { justify-content: flex-start; }
+.pill-list li { background: #e9f4eb; border: 1px solid #d6e6d9; color: #2e5940; }
+.pill-list li:hover { background: #dceee0; border-color: #93b69f; }
+#reviews .reviews-grid { gap: 1.25rem; }
+#reviews .review-card { padding: 1.6rem; border-color: #d9e5dc; box-shadow: 0 4px 19px rgba(20,65,35,.045); }
+#reviews .review-text { font-size: 1rem; color: #344338; }
+#pricing > .container > img { display: block; width: 100%; max-height: 260px; aspect-ratio: 21 / 5; object-fit: cover; object-position: 50% 46%; margin: 0 0 2.1rem; border-radius: 14px; }
+#pricing .pricing-grid { gap: 1.25rem; }
+#pricing .price-card { padding: 1.6rem; }
+#pricing .price-card h4 { font-size: 1.28rem !important; }
+#pricing .price-card .price { font-size: 1.9rem; }
+#pricing .price-card ul { padding-left: 1.2rem; }
+.package-finder { margin: 1.5rem 0 2.1rem; padding: 1.75rem; background: #f1f8f3; }
+.finder-heading h4 { color: #213f2c; font-size: 1.25rem !important; }
+.finder-fields select { min-height: 46px; }
+#contact .contact-form { width: 100%; max-width: 900px; padding: clamp(1rem,2.4vw,2rem); }
+#contact .contact-form :is(input,select,textarea) { background: #fff; min-height: 44px; }
+#contact .contact-form label.hidden { display:none !important; }
+#contact .btn.primary { min-height: 46px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #7abc93; outline-offset: 3px; }
+.hero > .hero-layout { z-index: 0; }
+.hero > .hero-layout > img.hero-photo { z-index: 0; }
+.hero::after { z-index: 1; }
+.hero > .hero-layout .hero-copy { position: relative; z-index: 2; }
+.hero { isolation: isolate; }
+@media(max-width: 1100px) {
+  #services .grid.three, #pricing .grid.three { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  #pricing .price-card:last-child { grid-column: 1 / -1; }
+  #pricing .price-card .tier-audience { min-height: 0; }
+}
+@media(max-width: 780px) {
+  #services .grid.three, #pricing .grid.three { grid-template-columns: 1fr; }
+  #pricing .price-card:last-child { grid-column: auto; }
+  #industries .industries-grid { grid-template-columns: 1fr; }
+  #industries .industry-card > img { height: 250px; }
+  #pricing > .container > img { aspect-ratio: 16 / 7; max-height: 220px; }
+  .finder-fields { grid-template-columns: 1fr; }
+}
+@media(max-width: 480px) {
+  .site-header .brand { gap: .5rem; }
+  .hero > .hero-layout { min-height: 500px; }
+  .hero .hero-copy h1 { font-size: clamp(2.1rem,10vw,2.7rem); }
+  #industries .industry-card > img { height: 215px; }
+  .contact-field-grid { grid-template-columns: 1fr; }
+  .contact-form { padding: 1rem; }
+}
