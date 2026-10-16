@@ -732,3 +732,32 @@ html, body, main, .section { color-scheme: light; }
   #pricing .price-card .btn { width: 100%; }
   .site-footer { background: #267D55; color: #fff; }
 }
+
+/* Desktop full-width editorial layout — October 2026 */
+/* Sections and photo backgrounds span the viewport. Reading text stays contained. */
+@media (min-width: 1101px) {
+  .container {
+    width: 100%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(2.25rem, 3.5vw, 6rem);
+    padding-right: clamp(2.25rem, 3.5vw, 6rem);
+  }
+  .site-header .header-layout { gap: clamp(1.5rem, 2.5vw, 3.5rem); }
+  .hero > .hero-layout { min-height: clamp(590px, 46vw, 750px); }
+  .hero > .hero-layout .hero-copy { max-width: min(850px, 62vw); }
+  .benefits-layout { gap: clamp(1.5rem, 3vw, 4.5rem); }
+  #services .grid.three, #pricing .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.25rem, 1.8vw, 2rem);
+  }
+  #industries .industries-grid { gap: clamp(1.2rem, 1.65vw, 2rem); }
+  #reviews .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.25rem, 1.8vw, 2rem); }
+  #software .software-visual { max-width: none; gap: clamp(1rem, 1.8vw, 2rem); }
+  #contact .contact-form { max-width: 1120px; }
+}
+@media (min-width: 1550px) {
+  #industries .industries-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #industries .industry-card > img { height: clamp(225px, 17vw, 350px); }
+}
