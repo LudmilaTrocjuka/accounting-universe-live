@@ -165,8 +165,50 @@
     <img src="images/cashflow-forecast.jpg" alt="Accountant reviewing cash flow forecast and financial reports" loading="lazy">
     <h3>Accounting packages &amp; pricing</h3>
     <p class="pricing-intro">Straightforward monthly support, with the flexibility to tailor the service to your business. Every engagement has a written, agreed scope.</p>
+    <div class="package-finder" id="package-finder">
+      <div class="finder-heading">
+        <h4>Find your starting package</h4>
+        <p>Answer three quick questions to see which package could fit your business.</p>
+      </div>
+      <div class="finder-fields">
+        <label for="finder-industry">Type of business
+          <select id="finder-industry" required>
+            <option value="">Choose an industry</option>
+            <option value="general">Freelancer, contractor or professional services</option>
+            <option value="hospitality">Restaurant, café, pub or event venue</option>
+            <option value="travel">Travel agency or tour operator</option>
+            <option value="ecommerce">E-commerce or retail</option>
+          </select>
+        </label>
+        <label for="finder-transactions">Approximate monthly transactions
+          <select id="finder-transactions" required>
+            <option value="">Choose a volume</option>
+            <option value="small">Up to 50</option>
+            <option value="medium">51–200</option>
+            <option value="large">More than 200</option>
+          </select>
+        </label>
+        <label for="finder-needs">What level of support do you need?
+          <select id="finder-needs" required>
+            <option value="">Choose your requirements</option>
+            <option value="routine">Routine bookkeeping and reconciliations</option>
+            <option value="vat">VAT returns and monthly financial reporting</option>
+            <option value="complex">Multi-currency, complex platforms or management accounts</option>
+          </select>
+        </label>
+      </div>
+      <button type="button" class="btn primary" id="finder-check">See my recommendation</button>
+      <p class="finder-validation hidden" id="finder-validation" role="alert">Please answer all three questions first.</p>
+      <div class="finder-result hidden" id="finder-result" aria-live="polite">
+        <p class="finder-result-label">Suggested starting point</p>
+        <h5 id="finder-tier"></h5>
+        <p id="finder-reason"></p>
+        <p class="finder-disclaimer">This is an indicative package, not a binding quotation. Final fees and included services are agreed in writing after reviewing your records. All prices exclude VAT.</p>
+        <a href="#contact" class="btn primary" id="finder-enquire">Ask about this package</a>
+      </div>
+    </div>
     <div class="grid three pricing-grid">
-      <article class="price-card">
+      <article class="price-card" id="tier-starter">
         <h4>Starter</h4>
         <p class="tier-audience">Sole traders, freelancers and small businesses with straightforward records.</p>
         <p class="price">From £125<span>/mo</span></p>
@@ -181,7 +223,7 @@
         </ul>
         <a class="btn" href="#contact" aria-label="Enquire about the Starter package">Enquire now</a>
       </article>
-      <article class="price-card featured">
+      <article class="price-card featured" id="tier-standard">
         <p class="tier-highlight">For growing businesses</p>
         <h4>Standard</h4>
         <p class="tier-audience">Small limited companies and VAT-registered businesses needing regular financial reporting.</p>
@@ -196,7 +238,7 @@
         </ul>
         <a class="btn primary" href="#contact" aria-label="Enquire about the Standard package">Enquire now</a>
       </article>
-      <article class="price-card">
+      <article class="price-card" id="tier-premium">
         <h4>Premium</h4>
         <p class="tier-audience">Established businesses, hospitality operators, travel agencies and e-commerce companies with more complex requirements.</p>
         <p class="price">From £445<span>/mo</span></p>
