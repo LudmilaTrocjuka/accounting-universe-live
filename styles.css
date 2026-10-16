@@ -536,3 +536,10 @@ main .section > .container > h3 { font-size: 1.15rem !important; }
 /* Clean, crisp photos, sized independently of full-width display */
 .hero > .container > img, #pricing > .container > img { object-fit: cover; object-position: center; image-rendering: auto; }
 .industry-card > img { image-rendering: auto; object-fit: cover; }
+
+/* Resolution-independent software platforms graphic (replaces small raster screenshot) */
+.software-visual { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; max-width: 1000px; margin: 1.2rem 0; }
+.software-platform { display: flex; flex-direction: column; justify-content: center; gap: .35rem; min-height: 138px; padding: 1rem; background: #fff; border: 1px solid #d3e4da; border-radius: 14px; box-shadow: 0 6px 20px rgba(20,65,40,.04); }
+.software-platform strong { color: #216d4b; font-size: clamp(1.1rem,1.8vw,1.55rem); letter-spacing: -.02em; }
+.software-platform span { color: #516358; font-size: .9rem; }
+@media(max-width:640px){.software-visual{grid-template-columns:1fr;}.software-platform{min-height:98px;}}
