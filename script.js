@@ -132,3 +132,61 @@ if (finder) {
 // Keep the copyright year current.
 const copyrightYear = document.getElementById('copyright-year');
 if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
+
+// Free consultation: date-and-time REQUEST, not a confirmed booking.
+// Uses the same website email endpoint as the contact form.
+const consultationForm = document.getElementById('consultation-form');
+if (consultationForm) {
+  const consultationStatus = document.getElementById('consultation-status');
+  const consultationDate = consultationForm.querySelector('input[name="preferred_date"]');
+  const consultationTs = consultationForm.querySelector('input[name="ts"]');
+  const consultationSubmit = consultationForm.querySelector('button[type="submit"]');
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const dateAsLocalISO = d => {
+    const y = d.getFullYear();
+    return y + '-' + String(d.getMonth() + 1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  };
+  consultationDate.min = dateAsLocalISO(tomorrow);
+  consultationTs.value = String(Date.now());
+  let busy = false;
+  consultationForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (busy || !consultationForm.reportValidity()) return;
+    const fields = Object.fromEntries(new FormData(consultationForm).entries());
+    const selectedDate = new Date(fields.preferred_date + 'T12:00:00');
+    if (Number.isNaN(selectedDate.getTime()) || selectedDate.getDay() === 0 || selectedDate.getDay() === 6 || fields.preferred_date < consultationDate.min) {
+      consultationStatus.textContent = 'Please choose a future weekday (Monday–Friday).';
+      consultationStatus.classList.remove('hidden');
+      consultationStatus.classList.add('error');
+      return;
+    }
+    busy = true;
+    consultationSubmit.disabled = true;
+    consultationSubmit.textContent = 'Sending request…';
+    consultationStatus.textContent = 'Sending your request…';
+    consultationStatus.classList.remove('hidden','error');
+    const message = 'Free 30-minute consultation request (NOT YET CONFIRMED)\n'
+      + 'Preferred date: ' + fields.preferred_date + '\n'
+      + 'Preferred time: ' + fields.preferred_time + ' UK local time\n'
+      + 'Topic: ' + (fields.topic || 'Initial accounting consultation');
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: fields.name, email: fields.email, company: fields.company, message, website: fields.website, ts: fields.ts })
+      });
+      const payload = await response.json();
+      if (!response.ok || !payload.ok) throw new Error(payload.error || 'Could not send the request');
+      consultationStatus.textContent = 'Your request has been sent. We will reply by email to confirm the appointment. No time has been reserved yet.';
+      consultationForm.reset();
+      consultationTs.value = String(Date.now());
+    } catch (error) {
+      consultationStatus.textContent = (error && error.message) || 'Unable to send. Please try again or email us directly.';
+      consultationStatus.classList.add('error');
+    } finally {
+      busy = false;
+      consultationSubmit.disabled = false;
+      consultationSubmit.textContent = 'Request free consultation';
+    }
+  });
+}
