@@ -145,14 +145,14 @@ a:hover {
   font-size: .9rem;
 }
 .btn.primary {
-  background: #3c6954;
+  background: #267D55;
   color: #fff;
   font-weight: 700;
-  border: 1px solid #3c6954;
+  border: 1px solid #267D55;
 }
 .btn.primary:hover, .btn.primary:focus-visible {
-  background: #2d513f;
-  border-color: #2d513f;
+  background: #1D6543;
+  border-color: #1D6543;
   color: #fff;
 }
 
@@ -416,11 +416,11 @@ main .section > .container > h3 {
 .price-card .btn, .price-card .btn.primary {
   text-align: center; margin-top: auto; padding: .63rem .8rem;
   font-size: .9rem; font-weight: 650;
-  background: #3c6954; color: #fff; border: 1px solid #3c6954;
+  background: #267D55; color: #fff; border: 1px solid #267D55;
   border-radius: .55rem; text-decoration: none;
 }
 .price-card .btn:hover, .price-card .btn:focus-visible {
-  background: #2d513f; border-color: #2d513f; color: #fff;
+  background: #1D6543; border-color: #1D6543; color: #fff;
 }
 .pricing-cta { margin: 1.25rem 0 0; font-weight: 600; }
 @media (max-width: 800px) {
