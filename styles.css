@@ -30,9 +30,10 @@ img {
 }
 
 .container {
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 clamp(1rem, 3vw, 3rem);
 }
 
 a {
@@ -510,3 +511,6 @@ main .section > .container > h3 { font-size: 1.15rem !important; }
 .finder-disclaimer { color: #576560; font-size: .875rem !important; }
 .price-card.recommended { outline: 3px solid #267D55; outline-offset: 3px; }
 @media (max-width: 800px) { .finder-fields { grid-template-columns: 1fr; } .package-finder { padding: 1rem; } }
+
+/* Readable paragraphs on wide desktop displays */
+.hero > .container > p, #software > .container > p, #about > .container > p, .pricing-intro, .industries-intro { max-width: 850px; }
