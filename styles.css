@@ -6,6 +6,8 @@
   --accent: #4da6ff;
   --border: #e0e0e0;
   --ok: #2e8b57;
+  --body-size: 1rem;
+  --small-size: .875rem;
 }
 
 * {
@@ -457,3 +459,54 @@ main .section > .container > h3 {
   .industries-grid { grid-template-columns: 1fr; gap: 1rem; }
   .industry-card > img { height: 205px; }
 }
+
+/* Consistent type scale and interactive package selector — October 2026 */
+body { font-size: var(--body-size); }
+.hero > .container > p,
+.section > .container > p:not(.microcopy),
+.card > p,
+#software p,
+#about p,
+.review-text { font-size: .98rem; line-height: 1.55; }
+.menu a { font-size: .96rem; }
+.tagline { font-size: .94rem !important; }
+main .section > .container > h3 { font-size: 1.15rem !important; }
+.card h4, .industry-card h4 { font-size: 1.08rem !important; }
+.industry-card p, .price-card li, .tier-audience { font-size: .94rem; line-height: 1.55; }
+.price-card h4 { font-size: 1.12rem !important; }
+.tier-highlight { font-size: .8rem; }
+.microcopy, .review-author, .reviews-cta { font-size: var(--small-size); line-height: 1.5; }
+.site-footer { font-size: .875rem; }
+.site-footer nav { font-size: .875rem; }
+.btn, button, select, input, textarea { font: inherit; }
+.btn { font-size: .95rem; line-height: 1.4; }
+.price-card .btn, .price-card .btn.primary { font-size: .95rem; }
+.contact-form { gap: .8rem; }
+.contact-form label { gap: .3rem; font-size: .95rem; font-weight: 550; }
+.contact-form input, .contact-form textarea {
+  font-family: inherit; font-size: 1rem; font-weight: 400; line-height: 1.45;
+  padding: .68rem .8rem;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  font-family: inherit; font-size: .94rem; color: #69736f;
+}
+.contact-form label.hidden { display: none !important; } /* Keep anti-spam honeypot invisible */
+.contact-form .btn { font-size: .95rem; font-weight: 650; cursor: pointer; }
+.contact-form .notice.success { color: #176e44; }
+.contact-form .notice.error { color: #b32e31; }
+.package-finder { margin: 1.2rem 0 1.65rem; padding: 1.2rem 1.25rem; border: 1px solid #c9ddd1; border-radius: 14px; background: #f5faf7; }
+.finder-heading h4 { font-size: 1.13rem !important; margin: 0 0 .3rem !important; }
+.finder-heading p { margin: 0 0 1rem; font-size: .94rem; color: #42594d; }
+.finder-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; margin-bottom: 1rem; }
+.finder-fields label { display: flex; flex-direction: column; gap: .45rem; font-size: .9rem; font-weight: 600; line-height: 1.4; }
+.finder-fields select { margin-top: auto; width: 100%; min-width: 0; border: 1px solid #bfcfc5; border-radius: 8px; background: #fff; padding: .7rem .6rem; font-size: .9rem; color: #1a1a1a; }
+.finder-fields select:focus-visible, .contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: 2px solid #267D55; outline-offset: 2px; }
+.package-finder > .btn { cursor: pointer; font-size: .95rem; }
+.finder-validation { margin: .55rem 0 0; color: #a72d31; font-size: .9rem; }
+.finder-result { padding: 1rem 1.1rem; margin-top: 1rem; border: 1px solid #b8d6c4; border-radius: 10px; background: #fff; }
+.finder-result-label { margin: 0 0 .2rem !important; text-transform: uppercase; letter-spacing: .06em; color: #37614e; font-size: .78rem; font-weight: 700; }
+.finder-result h5 { color: #185537; font-size: 1.25rem; margin: .1rem 0 .5rem; }
+.finder-result p { font-size: .94rem; line-height: 1.5; }
+.finder-disclaimer { color: #576560; font-size: .875rem !important; }
+.price-card.recommended { outline: 3px solid #267D55; outline-offset: 3px; }
+@media (max-width: 800px) { .finder-fields { grid-template-columns: 1fr; } .package-finder { padding: 1rem; } }
