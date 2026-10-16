@@ -145,6 +145,22 @@ if (finder) {
   });
 }
 
+// Package CTAs fill the contact enquiry without changing any client's existing message.
+document.querySelectorAll('a[data-package]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (!form) return;
+    const tier = link.getAttribute('data-package');
+    const message = form.querySelector('textarea[name="message"]');
+    if (enquiryType) {
+      enquiryType.value = 'general';
+      enquiryType.dispatchEvent(new Event('change'));
+    }
+    if (message && !message.value.trim()) {
+      message.value = 'I would like to discuss the ' + tier + ' package and request a tailored quotation for my business.';
+    }
+  });
+});
+
 // Keep the copyright year current.
 const copyrightYear = document.getElementById('copyright-year');
 if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
