@@ -69,7 +69,7 @@ if (form && statusEl && tsField && enquiryType && appointmentFields && preferred
         return;
       }
     }
-    const message=(isConsult ? 'FREE INITIAL 30-MINUTE CONSULTATION REQUEST (NOT A CONFIRMED BOOKING)\\nPreferred date: '+values.preferred_date+'\\nPreferred start time: '+values.preferred_time+' UK time\\n\\n' : 'GENERAL ENQUIRY\\n\\n')+values.message;
+    const message=(isConsult ? 'FREE INITIAL 30-MINUTE CONSULTATION REQUEST (NOT A CONFIRMED BOOKING)\nPreferred date: '+values.preferred_date+'\nPreferred start time: '+values.preferred_time+' UK time\n\n' : 'GENERAL ENQUIRY\n\n')+values.message;
     sending=true;
     submitBtn.disabled=true;
     submitBtn.textContent='Sending…';
