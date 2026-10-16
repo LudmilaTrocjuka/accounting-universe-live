@@ -365,19 +365,6 @@ h4 {
   font-weight: 600;
   margin: .6rem 0;
 }
-/* ===== Section headings (badge) — blue outline ===== */
-main .section > .container > h3 {
-  display: inline-block;
-  padding: .35rem .9rem;
-  margin: 1rem auto 1.2rem;
-  background: #eef7ff !important;        /* бледно-голубой фон */
-  border: 2px solid var(--accent) !important; /* ГОЛУБАЯ РАМКА */
-  border-radius: .6rem;
-  color: var(--text);
-  font-size: 1.05rem !important;          /* компактный размер */
-  font-weight: 700 !important;            /* поярче */
-  box-shadow: 0 0 0 3px rgba(77,166,255,.08) inset; /* мягкое свечение */
-}
 /* === Reviews section === */
 .reviews-grid {
   display: grid;
@@ -410,11 +397,6 @@ main .section > .container > h3 {
   font-size: 14px;
 }
 
-/* Dark mode tweak (если у тебя используется prefers-color-scheme) */
-@media (prefers-color-scheme: dark) {
-  .review-card { background:#111418; border-color:#222831; color:#e8eaee; }
-  .review-author { color:#b8c0cc; }
-}
 
 /* Accounting packages — 2026 refresh */
 .pricing-intro { max-width: 740px; color: var(--muted); margin: 0 0 1.2rem !important; }
@@ -681,4 +663,72 @@ a:focus-visible, button:focus-visible { outline: 3px solid #7abc93; outline-offs
   #industries .industry-card > img { height: 215px; }
   .contact-field-grid { grid-template-columns: 1fr; }
   .contact-form { padding: 1rem; }
+}
+
+/* Mobile polish: stable light UI, no black dark-mode panels, unified CTAs */
+:root { color-scheme: light; --accent: #267D55; --ok: #267D55; }
+html, body, main, .section { color-scheme: light; }
+:is(input, select, textarea, option, button) { color-scheme: light; }
+#reviews .review-card, #services .card, #industries .industry-card, #pricing .price-card {
+  background: #fff; color: #26382f; border-color: #d9e6dc;
+}
+#reviews .review-text { color: #35473d; }
+#reviews .review-author { color: #596c60; }
+.btn, .btn:visited, .btn.primary, .btn.primary:visited, .price-card .btn,
+.cookie-banner .btn, .cookie-banner .btn:visited {
+  background: #267D55; border: 1px solid #267D55; color: #fff;
+  font-family: inherit; font-size: .95rem; font-weight: 650;
+  border-radius: .5rem; text-align: center; text-decoration: none;
+  cursor: pointer; transition: background-color .15s ease, border-color .15s ease;
+}
+.btn:hover, .btn:focus-visible, .btn.primary:hover, .btn.primary:focus-visible,
+.price-card .btn:hover, .cookie-banner .btn:hover {
+  background: #1D6543; border-color: #1D6543; color: #fff;
+}
+.hero .btn.hero-secondary, .hero .btn.hero-secondary:visited {
+  background: #267D55; border-color: #267D55; color: #fff;
+}
+.hero .btn.hero-secondary:hover, .hero .btn.hero-secondary:focus-visible {
+  background: #1D6543; border-color: #1D6543; color: #fff;
+}
+/* Place the dark hero overlay BELOW all text, not over the text itself. */
+.hero::after { display: none; }
+.hero > .hero-layout { z-index: 0; isolation: isolate; }
+.hero > .hero-layout::after {
+  content: ""; position: absolute; z-index: 1; top: 0; bottom: 0;
+  left: 50%; transform: translateX(-50%); width: 100vw;
+  background: linear-gradient(90deg,rgba(16,28,24,.87) 0%,rgba(21,39,31,.73) 44%,rgba(27,36,30,.35) 100%);
+  pointer-events: none;
+}
+.hero > .hero-layout > img.hero-photo { z-index: 0; }
+.hero > .hero-layout > .hero-copy { z-index: 2; }
+@media (max-width: 1100px) {
+  .site-header .menu.open {
+    background: #fff; border-color: #d5e3d9; border-radius: .7rem;
+    box-shadow: 0 12px 30px rgba(18,50,32,.16);
+    z-index: 101;
+  }
+  .site-header .menu.open a, .site-header .menu.open a:visited {
+    color: #194b31;
+  }
+  .site-header .menu.open a:hover, .site-header .menu.open a:focus-visible {
+    color: #267D55;
+  }
+  .site-header .nav-toggle {
+    background: #267D55; border-color: #267D55; color: #fff;
+    min-height: 42px;
+  }
+  .cookie-banner {
+    background: #fff; color: #22382b; border-color: #cbded1;
+  }
+}
+@media(max-width: 680px) {
+  .hero .btn { width: 100%; max-width: 360px; }
+  .hero > .hero-layout { padding-top: 3.25rem; padding-bottom: 3.5rem; }
+  .hero > .hero-layout::after {
+    background: linear-gradient(90deg,rgba(15,27,21,.86),rgba(17,35,24,.66));
+  }
+  #reviews .review-card { background: #fff; color: #26382f; }
+  #pricing .price-card .btn { width: 100%; }
+  .site-footer { background: #267D55; color: #fff; }
 }
