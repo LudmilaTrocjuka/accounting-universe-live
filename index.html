@@ -38,7 +38,7 @@
 <li><a href="#about">About</a></li>
 <li><a href="#reviews">Reviews</a></li>
 <li><a href="#pricing">Pricing</a></li>
-<li><a href="#consultation">Free consultation</a></li>
+<li><a href="#contact" data-enquiry="consultation">Free consultation</a></li>
 <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -51,7 +51,7 @@
         <h2>Complete accounting support, from day one to year-end.</h2>
         <p>From bookkeeping and VAT returns to payroll, annual accounts, CT600 Corporation Tax filings and HMRC correspondence. Xero is our preferred platform, but we also work with clients using QuickBooks or Sage.</p>
         <div class="cta-group">
-          <a class="btn primary" href="#consultation">Book a free consultation</a>
+          <a class="btn primary" href="#contact" data-enquiry="consultation">Request a free consultation</a>
           <a class="btn" href="#pricing">See pricing</a>
         </div>
     <img src="images/hero-hospitality-team.jpg" alt="Hospitality finance team reviewing P&L for multi-site restaurant group">
@@ -256,75 +256,54 @@
     <p class="microcopy"><strong>All prices exclude VAT.</strong> Monthly fees depend on the number and complexity of transactions and the agreed services. Software subscriptions, historical catch-up work, payroll, year-end accounts and tax filings are quoted separately unless explicitly included in your written engagement.</p>
     <p class="microcopy"><strong>Complete Accounting &amp; Tax Services for UK Businesses.</strong> From day-to-day bookkeeping, VAT and payroll to annual accounts, tax returns, Companies House filings and HMRC correspondence.</p>
     <p class="microcopy"><strong>Specialist experience in pubs, restaurants, travel agencies and e-commerce.</strong> Tailored accounting packages and quotations available.</p>
-    <p class="pricing-cta">Not sure which package suits your business? <a href="#consultation">Request a free initial consultation.</a></p>
+    <p class="pricing-cta">Not sure which package suits your business? <a href="#contact" data-enquiry="consultation">Request a free initial consultation.</a></p>
   </div>
 </section>
 
-    <section id="consultation" class="section consultation-section">
-      <div class="container">
-        <h3>Free 30-minute consultation</h3>
-        <p class="consultation-intro">Tell us when you would like to talk. We will email you to confirm a suitable appointment — requesting a time does not reserve it.</p>
-        <form id="consultation-form" class="consultation-form">
-          <div class="consultation-fields">
-            <label>Full name
-              <input type="text" name="name" autocomplete="name" required>
-            </label>
-            <label>Email address
-              <input type="email" name="email" autocomplete="email" required>
-            </label>
-            <label>Company (optional)
-              <input type="text" name="company" autocomplete="organization">
-            </label>
-            <label>Preferred date
-              <input type="date" name="preferred_date" required>
-            </label>
-            <label>Preferred time (UK time)
-              <select name="preferred_time" required>
-                <option value="">Choose a time</option>
-                <option value="09:00">09:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="16:00">16:00</option>
-              </select>
-            </label>
-            <label>What would you like to discuss? (optional)
-              <textarea name="topic" rows="3" placeholder="For example: bookkeeping, VAT or annual accounts"></textarea>
-            </label>
-          </div>
-          <label class="consultation-honeypot" aria-hidden="true">Website
-            <input type="text" name="website" tabindex="-1" autocomplete="off">
-          </label>
-          <input type="hidden" name="ts">
-          <button type="submit" class="btn primary">Request free consultation</button>
-          <p class="microcopy">We will check our diary and confirm by email. All appointment times are UK local time.</p>
-          <p id="consultation-status" class="consultation-status hidden" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
     <section id="contact" class="section alt">
-      <div class="container">
-        <h3>Contact</h3>
-        <form class="contact-form" id="contact-form">
-          <label>Full name<input type="text" name="name" required></label>
-          <label>Email<input type="email" name="email" required></label>
-          <label>Company (optional)<input type="text" name="company"></label>
-          <label>How can we help?<textarea name="message" rows="5" placeholder="Bookkeeping, VAT, payroll, year-end..."></textarea></label>
-
-          <!-- Honeypot -->
-          <label class="hidden" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-          <input type="hidden" name="ts" id="ts">
-
-          <button class="btn primary" type="submit">Send</button>
-          <p class="microcopy">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
-          <p id="form-status" class="notice hidden"></p>
-        </form>
-        <p class="microcopy">Prefer email? <a href="mailto:info@accounting-universe.co.uk">info@accounting-universe.co.uk</a></p>
+  <div class="container">
+    <h3>Contact &amp; free consultation</h3>
+    <p class="contact-intro">Ask us a question or request a free 30-minute introductory call. We are happy to discuss your needs and prepare a proposal before you decide to engage us.</p>
+    <form class="contact-form" id="contact-form">
+      <div class="contact-field-grid">
+        <label>Full name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Email address<input type="email" name="email" autocomplete="email" required></label>
+        <label>Company (optional)<input type="text" name="company" autocomplete="organization"></label>
+        <label>How can we help?
+          <select name="enquiry_type" id="enquiry-type">
+            <option value="general">General enquiry</option>
+            <option value="consultation">Request a free 30-minute consultation</option>
+          </select>
+        </label>
       </div>
-    </section>
+      <div id="appointment-fields" class="appointment-fields hidden">
+        <p>Suggest a convenient weekday and time for a 30-minute introductory call. We will check our diary and confirm by email. Times shown are UK local time, and requests are not confirmed bookings.</p>
+        <div class="contact-field-grid">
+          <label>Preferred date<input type="date" name="preferred_date" id="preferred-date"></label>
+          <label>Preferred start time (UK time)
+            <select name="preferred_time" id="preferred-time">
+              <option value="">Choose a start time</option>
+              <option value="09:00">09:00–09:30</option><option value="10:00">10:00–10:30</option>
+              <option value="11:00">11:00–11:30</option><option value="12:00">12:00–12:30</option>
+              <option value="13:00">13:00–13:30</option><option value="14:00">14:00–14:30</option>
+              <option value="15:00">15:00–15:30</option><option value="16:00">16:00–16:30</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <label>Tell us about your business
+        <textarea name="message" rows="4" placeholder="Bookkeeping, VAT, payroll, annual accounts..." required></textarea>
+      </label>
+      <label class="hidden" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <input type="hidden" name="ts" id="ts">
+      <button class="btn primary" type="submit">Send enquiry</button>
+      <p class="microcopy">Initial discussions and proposals are free. Paid services begin only after agreeing the scope, fees and engagement terms.</p>
+      <p class="microcopy">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+      <p id="form-status" class="notice hidden" role="status" aria-live="polite"></p>
+    </form>
+    <p class="microcopy">Prefer email? <a href="mailto:info@accounting-universe.co.uk">info@accounting-universe.co.uk</a></p>
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
