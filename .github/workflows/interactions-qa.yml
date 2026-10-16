@@ -74,10 +74,11 @@ jobs:
               await page.locator('#contact-form input[name="email"]').fill('example@example.com');
               await page.locator('#contact-form textarea[name="message"]').fill('Test enquiry — no real email sent');
               await page.locator('#contact-form button[type="submit"]').click();
-              await assert.ok(await page.locator('#form-status').isVisible());
+              await page.waitForFunction(() => document.querySelector('#form-status').textContent.includes('enquiry has been sent'));
               assert.match(payload.message,/GENERAL ENQUIRY/);
               record('general form submits valid message to mock server '+viewport.width);
               await page.locator('#enquiry-type').selectOption('consultation');
+              assert.equal(await page.locator('#appointment-fields').isVisible(),true);
               const nextMonday=await page.evaluate(()=>{
                 const now=new Date();
                 const date=new Date(now.getFullYear(),now.getMonth(),now.getDate()+8);
@@ -92,6 +93,7 @@ jobs:
               await page.locator('#contact-form textarea[name="message"]').fill('Intro call');
               await page.waitForTimeout(80);
               await page.locator('#contact-form button[type="submit"]').click();
+              await page.waitForFunction(() => document.querySelector('#form-status').textContent.includes('not yet reserved'));
               assert.match(payload.message,/Preferred start time: 13:00 UK time/);
               assert.ok(payload.message.includes('\nPreferred date:'),'Real line break in outgoing message');
               assert.match(await page.locator('#form-status').textContent(),/not yet reserved/);
