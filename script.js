@@ -27,57 +27,73 @@ try {
   });
 } catch (e) {}
 
-// Contact form → POST JSON to /api/contact
+// Unified general enquiry and free consultation request form.
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 const tsField = document.getElementById('ts');
-const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+const enquiryType = document.getElementById('enquiry-type');
+const appointmentFields = document.getElementById('appointment-fields');
+const preferredDate = document.getElementById('preferred-date');
+const preferredTime = document.getElementById('preferred-time');
+const submitBtn = form?.querySelector('button[type="submit"]');
 let sending = false;
-if (form && statusEl && tsField) {
-  // Set timestamp when form loads (anti-bot)
+if (form && statusEl && tsField && enquiryType && appointmentFields && preferredDate && preferredTime && submitBtn) {
+  const ukParts = new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const valueFor = key => ukParts.find(p=>p.type===key)?.value;
+  preferredDate.min = [valueFor('year'),valueFor('month'),valueFor('day')].join('-');
   tsField.value = String(Date.now());
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-   if (sending) return;
-  sending = true;
-  if (submitBtn) {
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
+  function updateEnquiryMode() {
+    const isConsult = enquiryType.value === 'consultation';
+    appointmentFields.classList.toggle('hidden',!isConsult);
+    preferredDate.required = isConsult;
+    preferredTime.required = isConsult;
+    submitBtn.textContent = isConsult ? 'Request free consultation' : 'Send enquiry';
   }
-
-    statusEl.classList.remove('success','error','hidden');
-    statusEl.textContent = 'Sending...';
-
-    const data = Object.fromEntries(new FormData(form).entries());
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      const json = await res.json();
-      if (json && json.ok) {
-        statusEl.textContent = 'Thanks! Your message has been sent.';
-        statusEl.classList.add('success');
-        form.reset();
-      } else {
-        statusEl.textContent = json && json.error ? json.error : 'Failed to send. Please try again.';
+  enquiryType.addEventListener('change',updateEnquiryMode);
+  document.querySelectorAll('a[data-enquiry="consultation"]').forEach(link=>link.addEventListener('click',()=>{
+    enquiryType.value='consultation';
+    updateEnquiryMode();
+  }));
+  updateEnquiryMode();
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(sending || !form.reportValidity())return;
+    const values=Object.fromEntries(new FormData(form).entries());
+    const isConsult=values.enquiry_type==='consultation';
+    if(isConsult){
+      const date=new Date(values.preferred_date+'T12:00:00');
+      if(!Number.isFinite(date.getTime()) || [0,6].includes(date.getDay()) || values.preferred_date<preferredDate.min){
+        statusEl.classList.remove('hidden','success');
         statusEl.classList.add('error');
+        statusEl.textContent='Please select a future weekday.';
+        return;
       }
-    } catch (err) {
-      statusEl.textContent = 'Network error. Please try again.';
-      statusEl.classList.add('error');
-    } finally {
-    sending = false;
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send';
     }
-    tsField.value = String(Date.now()); // reset timer for next submit
+    const message=(isConsult ? 'FREE INITIAL 30-MINUTE CONSULTATION REQUEST (NOT A CONFIRMED BOOKING)\\nPreferred date: '+values.preferred_date+'\\nPreferred start time: '+values.preferred_time+' UK time\\n\\n' : 'GENERAL ENQUIRY\\n\\n')+values.message;
+    sending=true;
+    submitBtn.disabled=true;
+    submitBtn.textContent='Sending…';
+    statusEl.classList.remove('hidden','error','success');
+    statusEl.textContent='Sending…';
+    try{
+      const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:values.name,email:values.email,company:values.company,message,website:values.website,ts:values.ts})});
+      const json=await response.json();
+      if(!response.ok || !json.ok)throw new Error(json.error||'Send failed');
+      statusEl.classList.add('success');
+      statusEl.textContent=isConsult ? 'Request received. We will confirm the appointment by email; the time is not yet reserved.' : 'Thank you. Your enquiry has been sent.';
+      form.reset();
+      updateEnquiryMode();
+    }catch(err){
+      statusEl.classList.add('error');
+      statusEl.textContent='Unable to send. Please try again or email us directly.';
+    }finally{
+      sending=false;
+      submitBtn.disabled=false;
+      submitBtn.textContent=enquiryType.value==='consultation' ? 'Request free consultation' : 'Send enquiry';
+      tsField.value=String(Date.now());
     }
   });
-  }
+}
 
 // Interactive package finder: gives a non-binding starting-point recommendation.
 const finder = document.getElementById('package-finder');
@@ -133,60 +149,3 @@ if (finder) {
 const copyrightYear = document.getElementById('copyright-year');
 if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
-// Free consultation: date-and-time REQUEST, not a confirmed booking.
-// Uses the same website email endpoint as the contact form.
-const consultationForm = document.getElementById('consultation-form');
-if (consultationForm) {
-  const consultationStatus = document.getElementById('consultation-status');
-  const consultationDate = consultationForm.querySelector('input[name="preferred_date"]');
-  const consultationTs = consultationForm.querySelector('input[name="ts"]');
-  const consultationSubmit = consultationForm.querySelector('button[type="submit"]');
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const dateAsLocalISO = d => {
-    const y = d.getFullYear();
-    return y + '-' + String(d.getMonth() + 1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
-  };
-  consultationDate.min = dateAsLocalISO(tomorrow);
-  consultationTs.value = String(Date.now());
-  let busy = false;
-  consultationForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    if (busy || !consultationForm.reportValidity()) return;
-    const fields = Object.fromEntries(new FormData(consultationForm).entries());
-    const selectedDate = new Date(fields.preferred_date + 'T12:00:00');
-    if (Number.isNaN(selectedDate.getTime()) || selectedDate.getDay() === 0 || selectedDate.getDay() === 6 || fields.preferred_date < consultationDate.min) {
-      consultationStatus.textContent = 'Please choose a future weekday (Monday–Friday).';
-      consultationStatus.classList.remove('hidden');
-      consultationStatus.classList.add('error');
-      return;
-    }
-    busy = true;
-    consultationSubmit.disabled = true;
-    consultationSubmit.textContent = 'Sending request…';
-    consultationStatus.textContent = 'Sending your request…';
-    consultationStatus.classList.remove('hidden','error');
-    const message = 'Free 30-minute consultation request (NOT YET CONFIRMED)\n'
-      + 'Preferred date: ' + fields.preferred_date + '\n'
-      + 'Preferred time: ' + fields.preferred_time + ' UK local time\n'
-      + 'Topic: ' + (fields.topic || 'Initial accounting consultation');
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: fields.name, email: fields.email, company: fields.company, message, website: fields.website, ts: fields.ts })
-      });
-      const payload = await response.json();
-      if (!response.ok || !payload.ok) throw new Error(payload.error || 'Could not send the request');
-      consultationStatus.textContent = 'Your request has been sent. We will reply by email to confirm the appointment. No time has been reserved yet.';
-      consultationForm.reset();
-      consultationTs.value = String(Date.now());
-    } catch (error) {
-      consultationStatus.textContent = (error && error.message) || 'Unable to send. Please try again or email us directly.';
-      consultationStatus.classList.add('error');
-    } finally {
-      busy = false;
-      consultationSubmit.disabled = false;
-      consultationSubmit.textContent = 'Request free consultation';
-    }
-  });
-}
