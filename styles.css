@@ -449,7 +449,7 @@ main .section > .container > h3 {
 .industries-intro { max-width: 760px; color: #576560; font-size: .96rem; margin-bottom: 1.2rem !important; }
 .industries-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.35rem; margin: 1.3rem 0 1.5rem; }
 .industry-card { overflow: hidden; padding: 0; background: #fff; border: 1px solid #d9e4de; border-radius: 14px; box-shadow: 0 6px 18px rgba(26,61,42,.045); }
-.industry-card > img { display: block; width: 100%; height: 240px; max-width: 100%; object-fit: cover; object-position: center; aspect-ratio: auto; border-radius: 0; filter: brightness(1.13) contrast(.94) saturate(1.03); }
+.industry-card > img { display: block; width: 100%; height: 240px; max-width: 100%; object-fit: cover; object-position: center; aspect-ratio: auto; border-radius: 0; filter: none; }
 .industry-card-body { padding: 1.1rem 1.2rem 1.3rem; }
 .industry-card h4 { margin: 0 0 .4rem !important; font-size: 1.07rem !important; font-weight: 720; }
 .industry-card p { margin: 0; font-size: .92rem; line-height: 1.55; color: #4d5c55; }
