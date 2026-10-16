@@ -21,42 +21,60 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">AU</div>
-        <div>
-          <h1 class="brand-name">Accounting Universe</h1>
-          <p class="tagline">Friendly, modern accounting for UK small businesses</p>
-        </div>
-      </div>
-      <nav class="nav" aria-label="Main">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <div class="container header-layout">
+      <a class="brand" href="#main" aria-label="Accounting Universe — home">
+        <span class="logo" aria-hidden="true">AU</span>
+        <span class="brand-copy">
+          <span class="brand-name">Accounting Universe</span>
+          <span class="tagline">UK accounting &amp; tax services</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
         <ul id="menu" class="menu">
-        <li><a href="#services">Services</a></li>
-<li><a href="#software">Software</a></li>
-<li><a href="#industries">Industries</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#contact" data-enquiry="consultation">Free consultation</a></li>
-<li><a href="#contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <a class="header-cta" href="#contact" data-enquiry="consultation">Free consultation</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="container">
-        <h2>Complete accounting support, from day one to year-end.</h2>
-        <p>From bookkeeping and VAT returns to payroll, annual accounts, CT600 Corporation Tax filings and HMRC correspondence. Xero is our preferred platform, but we also work with clients using QuickBooks or Sage.</p>
-        <div class="cta-group">
-          <a class="btn primary" href="#contact" data-enquiry="consultation">Request a free consultation</a>
-          <a class="btn" href="#pricing">See pricing</a>
+      <div class="container hero-layout">
+        <img src="images/hero-hospitality-team.jpg" alt="Hospitality finance team reviewing accounts" class="hero-photo" fetchpriority="high" decoding="async">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">ACCOUNTING UNIVERSE · UK ACCOUNTANTS</p>
+          <h1>Accounting that helps your business move forward.</h1>
+          <p class="hero-description">From everyday bookkeeping and VAT to payroll, annual accounts and tax returns — straightforward support for UK businesses, with specialist experience in hospitality and travel.</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#contact" data-enquiry="consultation">Free initial consultation</a>
+            <a class="btn hero-secondary" href="#pricing">Explore our services &amp; fees</a>
+          </div>
         </div>
-    <img src="images/hero-hospitality-team.jpg" alt="Hospitality finance team reviewing P&L for multi-site restaurant group">
       </div>
     </section>
+    <div class="benefits-strip" aria-label="Why choose Accounting Universe">
+      <div class="container benefits-layout">
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h6M8 17h4"/></svg>
+          <div><strong>Clear, agreed fees</strong><span>No surprises about your scope</span></div>
+        </div>
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 9h8M8 13h8M8 17h5M9 4V2M15 4V2"/></svg>
+          <div><strong>Complete accounting services</strong><span>Bookkeeping through to year-end</span></div>
+        </div>
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-3.6 7-10V5l-7-3-7 3v6c0 6.4 7 10 7 10zM9 11l2 2 4-4"/></svg>
+          <div><strong>Practical industry experience</strong><span>Hospitality, travel &amp; small business</span></div>
+        </div>
+      </div>
+    </div>
 
     <section id="services" class="section">
       <div class="container">
