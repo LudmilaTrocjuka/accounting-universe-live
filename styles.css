@@ -514,3 +514,23 @@ main .section > .container > h3 { font-size: 1.15rem !important; }
 
 /* Readable paragraphs on wide desktop displays */
 .hero > .container > p, #software > .container > p, #about > .container > p, .pricing-intro, .industries-intro { max-width: 850px; }
+
+/* Free consultation request — accessible interactive form */
+.consultation-section { background: #f4f9f6; }
+.consultation-intro { max-width: 770px; color: #4b5b52; font-size: .98rem; }
+.consultation-form { max-width: 850px; padding: 1.25rem; background: #fff; border: 1px solid #d8e7dd; border-radius: 14px; box-shadow: 0 4px 18px rgba(21,75,48,.04); }
+.consultation-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-bottom: 1.15rem; }
+.consultation-fields label { display: flex; flex-direction: column; gap: .36rem; font-size: .95rem; font-weight: 550; }
+.consultation-fields input, .consultation-fields select, .consultation-fields textarea {
+  width: 100%; min-width: 0; padding: .72rem .78rem; border: 1px solid #c8d3cd;
+  border-radius: .6rem; background: #fff; color: #19241f; font-size: 1rem;
+  font-weight: 400; font-family: inherit; line-height: 1.45;
+}
+.consultation-fields :is(input,select,textarea):focus-visible { outline: 2px solid #267D55; outline-offset: 2px; }
+.consultation-honeypot { display: none !important; }
+.consultation-form .btn { cursor: pointer; font-size: .95rem; }
+.consultation-form .btn:disabled { opacity: .65; cursor: wait; }
+.consultation-form .microcopy { margin: .75rem 0 0; }
+.consultation-status { padding: .7rem .9rem; margin: .75rem 0 0; border-radius: .5rem; background: #eff7f2; color: #175536; font-size: .95rem; }
+.consultation-status.error { background: #fff1f1; color: #9f2626; }
+@media (max-width: 640px) { .consultation-form { padding: 1rem; } .consultation-fields { grid-template-columns: 1fr; } }
