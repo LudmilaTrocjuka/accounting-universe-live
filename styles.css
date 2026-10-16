@@ -75,8 +75,8 @@ a:hover {
   justify-content: center;
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, var(--accent), var(--ok));
-  color: #000;
+  background: #267D55;
+  color: #fff;
   font-weight: 900;
   font-size: 1.6rem;
   border-radius: 8px;
