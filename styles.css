@@ -810,19 +810,21 @@ main .section + .section {
 #software .software-visual { margin-top: 1rem; margin-bottom: 0; }
 #pricing .pricing-intro { margin-bottom: 1rem !important; }
 
-/* Show the banknotes photograph in its full native proportions.
-   Remove the extreme 21:5 crop and 260px desktop height cap. */
+/* Full-bleed pricing photograph: extend to the viewport edges without cropping. */
 #pricing > .container > img {
   display: block;
-  width: 100%;
-  max-width: 1200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: none;
   height: auto;
   max-height: none;
   aspect-ratio: auto;
   object-fit: contain;
   object-position: center;
-  margin: 0 auto 1.6rem;
-  border-radius: 14px;
+  margin: 0 0 1.6rem;
+  border-radius: 0;
 }
 @media (max-width: 780px) {
   main .section,
@@ -832,7 +834,7 @@ main .section + .section {
   }
   main .section > .container > h3 { font-size: clamp(1.75rem, 6vw, 2.1rem) !important; }
   #pricing > .container > img {
-    max-width: 100%;
+    max-width: none;
     max-height: none;
     aspect-ratio: auto;
     margin-bottom: 1.2rem;
