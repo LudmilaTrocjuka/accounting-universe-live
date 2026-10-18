@@ -1,0 +1,73 @@
+name: Desktop full-width visual checks
+on:
+  push:
+    branches: [improve-services-and-pricing-oct-2026]
+    paths: ['.github/workflows/desktop-visual-check.yml', 'index.html', 'styles.css', 'script.js']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  desktop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright
+          npx playwright install --with-deps chromium
+      - name: Test full-width desktop layout
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/accounting-site.log 2>&1 &
+          cat > desktop-check.cjs <<'JS'
+          const { chromium } = require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            let failed=false;
+            for(const width of [1101,1280,1440,1920,2560]){
+              const page=await browser.newPage({viewport:{width,height:960},deviceScaleFactor:1,colorScheme:'light'});
+              const errors=[]; page.on('pageerror', e=>errors.push(e.message));
+              await page.goto('http://127.0.0.1:8765/',{waitUntil:'load'});
+              const d=await page.evaluate(()=>{
+                const rect=s=>{const e=document.querySelector(s);const r=e.getBoundingClientRect();return {left:r.left,right:r.right,width:r.width,height:r.height}};
+                return {
+                  viewport:window.innerWidth, scrollWidth:document.documentElement.scrollWidth,
+                  container:rect('#services > .container'),
+                  hero:rect('.hero'), heroImage:rect('.hero-photo'),
+                  industryGrid:rect('#industries .industries-grid'), industryCard:rect('#industries .industry-card'),
+                  serviceCard:rect('#services .card'), pricingGrid:rect('#pricing .pricing-grid'),
+                  nav:rect('.site-header .nav'), brand:rect('.site-header .brand'),
+                  menuDisplay:getComputedStyle(document.querySelector('#menu')).display,
+                  reviewBg:getComputedStyle(document.querySelector('.review-card')).backgroundColor
+                };
+              });
+              const passes=[
+                d.scrollWidth<=width,
+                d.container.width>=width*.94,
+                d.hero.width>=width-.1,
+                d.industryGrid.width>=width*.87,
+                d.pricingGrid.width>=width*.87,
+                d.nav.left>=d.brand.right-2,
+                d.nav.right<=width+1,
+                d.reviewBg==='rgb(255, 255, 255)',
+                d.menuDisplay==='flex',
+                errors.length===0
+              ];
+              const pass=passes.every(Boolean);failed||=!pass;
+              console.log(JSON.stringify({width,pass,passes,details:d,errors}));
+              if(width===1440||width===1920) await page.screenshot({path:'desktop-'+width+'.png',fullPage:true,animations:'disabled'});
+              await page.close();
+            }
+            await browser.close();if(failed)process.exit(1);
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+          node desktop-check.cjs
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: desktop-layout-screenshots
+          path: desktop-*.png
+          if-no-files-found: ignore

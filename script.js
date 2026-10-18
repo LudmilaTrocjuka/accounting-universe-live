@@ -27,54 +27,141 @@ try {
   });
 } catch (e) {}
 
-// Contact form → POST JSON to /api/contact
+// Unified general enquiry and free consultation request form.
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 const tsField = document.getElementById('ts');
-const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+const enquiryType = document.getElementById('enquiry-type');
+const appointmentFields = document.getElementById('appointment-fields');
+const preferredDate = document.getElementById('preferred-date');
+const preferredTime = document.getElementById('preferred-time');
+const submitBtn = form?.querySelector('button[type="submit"]');
 let sending = false;
-if (form && statusEl && tsField) {
-  // Set timestamp when form loads (anti-bot)
+if (form && statusEl && tsField && enquiryType && appointmentFields && preferredDate && preferredTime && submitBtn) {
+  const ukParts = new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const valueFor = key => ukParts.find(p=>p.type===key)?.value;
+  preferredDate.min = [valueFor('year'),valueFor('month'),valueFor('day')].join('-');
   tsField.value = String(Date.now());
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-   if (sending) return;
-  sending = true;
-  if (submitBtn) {
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
+  function updateEnquiryMode() {
+    const isConsult = enquiryType.value === 'consultation';
+    appointmentFields.classList.toggle('hidden',!isConsult);
+    preferredDate.required = isConsult;
+    preferredTime.required = isConsult;
+    submitBtn.textContent = isConsult ? 'Request free consultation' : 'Send enquiry';
   }
-
-    statusEl.classList.remove('success','error','hidden');
-    statusEl.textContent = 'Sending...';
-
-    const data = Object.fromEntries(new FormData(form).entries());
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      const json = await res.json();
-      if (json && json.ok) {
-        statusEl.textContent = 'Thanks! Your message has been sent.';
-        statusEl.classList.add('success');
-        form.reset();
-      } else {
-        statusEl.textContent = json && json.error ? json.error : 'Failed to send. Please try again.';
+  enquiryType.addEventListener('change',updateEnquiryMode);
+  document.querySelectorAll('a[data-enquiry="consultation"]').forEach(link=>link.addEventListener('click',()=>{
+    enquiryType.value='consultation';
+    updateEnquiryMode();
+  }));
+  updateEnquiryMode();
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(sending || !form.reportValidity())return;
+    const values=Object.fromEntries(new FormData(form).entries());
+    const isConsult=values.enquiry_type==='consultation';
+    if(isConsult){
+      const date=new Date(values.preferred_date+'T12:00:00');
+      if(!Number.isFinite(date.getTime()) || [0,6].includes(date.getDay()) || values.preferred_date<preferredDate.min){
+        statusEl.classList.remove('hidden','success');
         statusEl.classList.add('error');
+        statusEl.textContent='Please select a future weekday.';
+        return;
       }
-    } catch (err) {
-      statusEl.textContent = 'Network error. Please try again.';
-      statusEl.classList.add('error');
-    } finally {
-    sending = false;
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Send';
     }
-    tsField.value = String(Date.now()); // reset timer for next submit
+    const message=(isConsult ? 'FREE INITIAL 30-MINUTE CONSULTATION REQUEST (NOT A CONFIRMED BOOKING)\nPreferred date: '+values.preferred_date+'\nPreferred start time: '+values.preferred_time+' UK time\n\n' : 'GENERAL ENQUIRY\n\n')+values.message;
+    sending=true;
+    submitBtn.disabled=true;
+    submitBtn.textContent='Sending…';
+    statusEl.classList.remove('hidden','error','success');
+    statusEl.textContent='Sending…';
+    try{
+      const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:values.name,email:values.email,company:values.company,message,website:values.website,ts:values.ts})});
+      const json=await response.json();
+      if(!response.ok || !json.ok)throw new Error(json.error||'Send failed');
+      statusEl.classList.add('success');
+      statusEl.textContent=isConsult ? 'Request received. We will confirm the appointment by email; the time is not yet reserved.' : 'Thank you. Your enquiry has been sent.';
+      form.reset();
+      updateEnquiryMode();
+    }catch(err){
+      statusEl.classList.add('error');
+      statusEl.textContent='Unable to send. Please try again or email us directly.';
+    }finally{
+      sending=false;
+      submitBtn.disabled=false;
+      submitBtn.textContent=enquiryType.value==='consultation' ? 'Request free consultation' : 'Send enquiry';
+      tsField.value=String(Date.now());
     }
   });
-  }
+}
+
+// Interactive package finder: gives a non-binding starting-point recommendation.
+const finder = document.getElementById('package-finder');
+if (finder) {
+  const industry = document.getElementById('finder-industry');
+  const transactions = document.getElementById('finder-transactions');
+  const needs = document.getElementById('finder-needs');
+  const check = document.getElementById('finder-check');
+  const validation = document.getElementById('finder-validation');
+  const result = document.getElementById('finder-result');
+  const tierLabel = document.getElementById('finder-tier');
+  const reasonLabel = document.getElementById('finder-reason');
+  const enquire = document.getElementById('finder-enquire');
+  let currentTier = null;
+  const options = {
+    starter: { title: 'Starter — from £125/month + VAT', reason: 'For straightforward records and up to 50 transactions per month. We will confirm your software, account count and any extra services when we quote.' },
+    standard: { title: 'Standard — from £245/month + VAT', reason: 'For growing businesses, 51–200 monthly transactions, or businesses requiring regular VAT and management reporting subject to agreed scope.' },
+    premium: { title: 'Premium — from £445/month + VAT', reason: 'For more than 200 transactions or specialist, multi-currency or management-accounting requirements. The volume, services and final monthly fee are agreed individually.' }
+  };
+  check.addEventListener('click', () => {
+    const missing = [industry, transactions, needs].find(field => !field.value);
+    if (missing) {
+      validation.classList.remove('hidden');
+      result.classList.add('hidden');
+      missing.focus();
+      return;
+    }
+    validation.classList.add('hidden');
+    let choice = transactions.value === 'large' ? 'premium' : transactions.value === 'medium' ? 'standard' : 'starter';
+    if (needs.value === 'complex') choice = 'premium';
+    else if (needs.value === 'vat' && choice === 'starter') choice = 'standard';
+    if (industry.value === 'travel' && choice === 'starter') choice = 'standard';
+    currentTier = choice;
+    tierLabel.textContent = options[choice].title;
+    reasonLabel.textContent = options[choice].reason;
+    document.querySelectorAll('.price-card').forEach(card => card.classList.toggle('recommended', card.id === 'tier-' + choice));
+    result.classList.remove('hidden');
+    result.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+  enquire.addEventListener('click', () => {
+    if (!currentTier || !form) return;
+    const msg = form.querySelector('textarea[name="message"]');
+    if (msg && !msg.value.trim()) {
+      const businessType = industry.options[industry.selectedIndex].text;
+      const volume = transactions.options[transactions.selectedIndex].text;
+      const support = needs.options[needs.selectedIndex].text;
+      msg.value = 'I would like to discuss the ' + currentTier[0].toUpperCase() + currentTier.slice(1) + ' package. Business: ' + businessType + '. Monthly transactions: ' + volume + '. Required support: ' + support + '. Please contact me to agree an appropriate service and quotation.';
+    }
+  });
+}
+
+// Package CTAs fill the contact enquiry without changing any client's existing message.
+document.querySelectorAll('a[data-package]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (!form) return;
+    const tier = link.getAttribute('data-package');
+    const message = form.querySelector('textarea[name="message"]');
+    if (enquiryType) {
+      enquiryType.value = 'general';
+      enquiryType.dispatchEvent(new Event('change'));
+    }
+    if (message && !message.value.trim()) {
+      message.value = 'I would like to discuss the ' + tier + ' package and request a tailored quotation for my business.';
+    }
+  });
+});
+
+// Keep the copyright year current.
+const copyrightYear = document.getElementById('copyright-year');
+if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
+

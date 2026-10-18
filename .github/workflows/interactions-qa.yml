@@ -1,0 +1,111 @@
+name: Website interactions and enquiry tests
+on:
+  push:
+    branches: [improve-services-and-pricing-oct-2026]
+    paths: ['.github/workflows/interactions-qa.yml', 'index.html', 'styles.css', 'script.js']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Install headless browser
+        run: |
+          npm install --no-save --no-package-lock playwright
+          npx playwright install --with-deps chromium
+      - name: Test customer journeys without sending real emails
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/website-qa.log 2>&1 &
+          cat > interaction-check.cjs <<'JS'
+          const { chromium } = require('playwright');
+          const assert = require('node:assert/strict');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            let passed=0;
+            const record=(name)=>{passed++; console.log('PASS: '+name);};
+            for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
+              const page=await browser.newPage({viewport,deviceScaleFactor:1});
+              const errors=[];page.on('pageerror', e=>errors.push(e.message));
+              await page.goto('http://127.0.0.1:8765/',{waitUntil:'load'});
+              assert.equal(await page.locator('.hero-photo').getAttribute('src'),'images/hero-hospitality-team.jpg');
+              record('original hero image preserved '+viewport.width);
+              const missingIds=await page.evaluate(()=>[...document.querySelectorAll('a[href^="#"]')].map(x=>x.getAttribute('href').slice(1)).filter(id=>id&&!document.getElementById(id)));
+              assert.deepEqual(missingIds,[]);
+              record('internal navigation anchors '+viewport.width);
+              const bookingUrl='https://accountinguniverselimited.zohobookings.eu/273624000000033049';
+              for(const selector of ['.hero .btn.primary','.site-header .header-cta','.pricing-cta a','#contact a.btn.primary']){
+                assert.equal(await page.locator(selector).getAttribute('href'),bookingUrl);
+                assert.equal(await page.locator(selector).getAttribute('target'),'_blank');
+              }
+              record('consultation buttons lead to Zoho Bookings '+viewport.width);
+              await page.locator('#enquiry-type').selectOption('general');
+              assert.equal(await page.locator('#appointment-fields').isVisible(),false);
+              record('general enquiry hides date and time '+viewport.width);
+              for(const tier of ['Starter','Standard','Premium']){
+                await page.locator('a[data-package="'+tier+'"]').click();
+                assert.equal(await page.locator('#enquiry-type').inputValue(),'general');
+                assert.match(await page.locator('#contact-form textarea[name="message"]').inputValue(),new RegExp(tier));
+                await page.locator('#contact-form textarea[name="message"]').fill('');
+              }
+              record('all three pricing buttons prefill correct tier '+viewport.width);
+              await page.locator('#finder-industry').selectOption('travel');
+              await page.locator('#finder-transactions').selectOption('small');
+              await page.locator('#finder-needs').selectOption('routine');
+              await page.locator('#finder-check').click();
+              assert.match(await page.locator('#finder-tier').textContent(),/Standard/);
+              assert.equal(await page.locator('#finder-result').isVisible(),true);
+              record('travel package finder suggests Standard '+viewport.width);
+              await page.locator('#finder-transactions').selectOption('large');
+              await page.locator('#finder-check').click();
+              assert.match(await page.locator('#finder-tier').textContent(),/Premium/);
+              record('high-volume package finder suggests Premium '+viewport.width);
+              await page.locator('#finder-enquire').click();
+              assert.match(await page.locator('#contact-form textarea[name="message"]').inputValue(),/Premium/);
+              record('finder enquiry passes package selection to contact form '+viewport.width);
+              let payload;
+              await page.route('**/api/contact',async route=>{
+                payload=route.request().postDataJSON();
+                await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({ok:true})});
+              });
+              await page.locator('#contact-form input[name="name"]').fill('QA Test');
+              await page.locator('#contact-form input[name="email"]').fill('example@example.com');
+              await page.locator('#contact-form textarea[name="message"]').fill('Test enquiry — no real email sent');
+              await page.locator('#contact-form button[type="submit"]').click();
+              await page.waitForFunction(() => document.querySelector('#form-status').textContent.includes('enquiry has been sent'));
+              assert.match(payload.message,/GENERAL ENQUIRY/);
+              record('general form submits valid message to mock server '+viewport.width);
+              await page.locator('#enquiry-type').selectOption('consultation');
+              assert.equal(await page.locator('#appointment-fields').isVisible(),true);
+              const nextMonday=await page.evaluate(()=>{
+                const now=new Date();
+                const date=new Date(now.getFullYear(),now.getMonth(),now.getDate()+8);
+                while(date.getDay()!==1)date.setDate(date.getDate()+1);
+                const f=n=>String(n).padStart(2,'0');
+                return date.getFullYear()+'-'+f(date.getMonth()+1)+'-'+f(date.getDate());
+              });
+              await page.locator('#preferred-date').fill(nextMonday);
+              await page.locator('#preferred-time').selectOption('13:00');
+              await page.locator('#contact-form input[name="name"]').fill('QA Test');
+              await page.locator('#contact-form input[name="email"]').fill('example@example.com');
+              await page.locator('#contact-form textarea[name="message"]').fill('Intro call');
+              await page.waitForTimeout(80);
+              await page.locator('#contact-form button[type="submit"]').click();
+              await page.waitForFunction(() => document.querySelector('#form-status').textContent.includes('not yet reserved'));
+              assert.match(payload.message,/Preferred start time: 13:00 UK time/);
+              assert.ok(payload.message.includes('\nPreferred date:'),'Real line break in outgoing message');
+              assert.match(await page.locator('#form-status').textContent(),/not yet reserved/);
+              record('30-minute consultation sends readable date/time to mock server '+viewport.width);
+              assert.equal(errors.length,0,'Browser errors: '+errors.join('; '));
+              record('no JavaScript errors '+viewport.width);
+              await page.close();
+            }
+            await browser.close();
+            console.log('TOTAL PASS: '+passed);
+          })().catch(e=>{console.error('FAILED:',e);process.exit(1)});
+          JS
+          node interaction-check.cjs
