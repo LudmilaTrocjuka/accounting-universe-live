@@ -595,8 +595,8 @@ main .section > .container > h3 {
   display: block; width: fit-content; max-width: 100%;
   background: none !important; border: none !important;
   border-radius: 0; box-shadow: none;
-  font-family: Georgia, "Times New Roman", serif; color: #1b3026;
-  font-size: clamp(1.9rem,2.9vw,2.6rem) !important; font-weight: 550 !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #1b3026;
+  font-size: clamp(1.9rem,2.9vw,2.6rem) !important; font-weight: 700 !important;
   line-height: 1.18; letter-spacing: -.015em;
   padding: 0; margin: 0 0 1.35rem;
 }
@@ -862,3 +862,17 @@ main .section + .section {
 .services-detail li { padding: .18rem 0; font-size: .94rem; line-height: 1.5; }
 .services-scope-note { margin-top: 1rem !important; font-size: .92rem !important; }
 @media(max-width: 750px) { .services-catalogue-grid { grid-template-columns: 1fr; } .services-catalogue { margin-top: 1.5rem; } }
+
+/* Final type hierarchy audit: one sans-serif for all internal headings. */
+main .section > .container > h3 { font-family: var(--font-body); }
+#industries .industry-card h4,
+#pricing .price-card h4,
+.package-finder .finder-heading h4,
+.services-catalogue > h4 {
+  font-family: var(--font-body);
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35;
+}
+.services-detail summary,
+.finder-result h5 { font-family: var(--font-body); font-weight: 700; }
