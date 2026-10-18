@@ -876,3 +876,16 @@ main .section > .container > h3 { font-family: var(--font-body); }
 }
 .services-detail summary,
 .finder-result h5 { font-family: var(--font-body); font-weight: 700; }
+
+/* About us: team profiles and professional presentation */
+#about .about-lead { color: #254e38; font-size: 1.12rem; margin-bottom: .75rem; }
+#about .about-subheading { font-family: var(--font-body); font-size: 1.4rem; font-weight: 700; color: #213f2c; margin: 1.8rem 0 1rem; }
+#about .about-team-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.15rem; align-items: start; }
+#about .about-profile { padding: 1.5rem; border: 1px solid #d9e6dc; border-radius: 14px; background: #fff; }
+#about .about-profile h5 { font-family: var(--font-body); font-size: 1.22rem; font-weight: 750; color: #1e4931; margin: 0 0 .2rem; }
+#about .about-role { font-weight: 650; color: #416e51; margin-bottom: 1rem; }
+#about .about-profile-label { font-weight: 700; margin-bottom: .4rem; }
+#about .about-profile ul, #about .about-values { padding-left: 1.3rem; margin: .6rem 0 1rem; }
+#about .about-profile li, #about .about-values li { margin: .35rem 0; line-height: 1.55; }
+#about .about-closing { color: #205339; margin-top: 1rem; }
+@media(max-width: 760px) { #about .about-team-grid { grid-template-columns: 1fr; } #about .about-profile { padding: 1.15rem; } }
