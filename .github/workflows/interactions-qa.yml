@@ -37,10 +37,12 @@ jobs:
               const missingIds=await page.evaluate(()=>[...document.querySelectorAll('a[href^="#"]')].map(x=>x.getAttribute('href').slice(1)).filter(id=>id&&!document.getElementById(id)));
               assert.deepEqual(missingIds,[]);
               record('internal navigation anchors '+viewport.width);
-              await page.locator('.hero .btn.primary').click();
-              assert.equal(await page.locator('#enquiry-type').inputValue(),'consultation');
-              assert.equal(await page.locator('#appointment-fields').isVisible(),true);
-              record('hero CTA opens date and time choices '+viewport.width);
+              const bookingUrl='https://accountinguniverselimited.zohobookings.eu/273624000000033049';
+              for(const selector of ['.hero .btn.primary','.site-header .header-cta','.pricing-cta a','#contact a.btn.primary']){
+                assert.equal(await page.locator(selector).getAttribute('href'),bookingUrl);
+                assert.equal(await page.locator(selector).getAttribute('target'),'_blank');
+              }
+              record('consultation buttons lead to Zoho Bookings '+viewport.width);
               await page.locator('#enquiry-type').selectOption('general');
               assert.equal(await page.locator('#appointment-fields').isVisible(),false);
               record('general enquiry hides date and time '+viewport.width);
