@@ -761,3 +761,80 @@ html, body, main, .section { color-scheme: light; }
   #industries .industries-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   #industries .industry-card > img { height: clamp(225px, 17vw, 350px); }
 }
+
+
+/* Final layout and typography polish — October 2026 */
+/* Keep the editorial serif for major headings; use one sans-serif for all supporting text. */
+:root {
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+}
+body, button, input, select, textarea { font-family: var(--font-body); }
+.hero .hero-copy h1, main .section > .container > h3 {
+  font-family: var(--font-display);
+}
+.benefit strong,
+#services .card h4,
+#industries .industry-card h4,
+#pricing .price-card h4,
+.finder-heading h4,
+.software-platform strong {
+  font-family: var(--font-body);
+}
+.benefit strong { font-size: 1.1rem; font-weight: 650; line-height: 1.35; }
+#services .card h4,
+#industries .industry-card h4,
+#pricing .price-card h4 { font-size: 1.14rem !important; line-height: 1.35; font-weight: 700; }
+#services .card p, #industries .industry-card p, .software-platform span {
+  font-size: .97rem;
+  line-height: 1.55;
+}
+main .section > .container > h3 {
+  font-size: clamp(1.85rem, 2.7vw, 2.55rem) !important;
+  line-height: 1.2;
+  margin-bottom: 1.1rem;
+}
+
+/* Previously every section had up to 80px of padding at both edges.
+   Use a balanced rhythm without huge blank gaps between neighbouring blocks. */
+main .section {
+  padding-top: clamp(2rem, 2.7vw, 3rem) !important;
+  padding-bottom: clamp(2rem, 2.7vw, 3rem) !important;
+}
+main .section + .section {
+  padding-top: clamp(2rem, 2.7vw, 3rem) !important;
+}
+#about .pill-list { margin-top: .85rem; margin-bottom: 0; }
+#reviews .reviews-grid { margin-top: .6rem; }
+#reviews .reviews-cta { margin-top: 1rem; }
+#software .software-visual { margin-top: 1rem; margin-bottom: 0; }
+#pricing .pricing-intro { margin-bottom: 1rem !important; }
+
+/* Show the banknotes photograph in its full native proportions.
+   Remove the extreme 21:5 crop and 260px desktop height cap. */
+#pricing > .container > img {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto 1.6rem;
+  border-radius: 14px;
+}
+@media (max-width: 780px) {
+  main .section,
+  main .section + .section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  main .section > .container > h3 { font-size: clamp(1.75rem, 6vw, 2.1rem) !important; }
+  #pricing > .container > img {
+    max-width: 100%;
+    max-height: none;
+    aspect-ratio: auto;
+    margin-bottom: 1.2rem;
+  }
+}
