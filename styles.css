@@ -770,8 +770,14 @@ html, body, main, .section { color-scheme: light; }
   --font-display: Georgia, "Times New Roman", serif;
 }
 body, button, input, select, textarea { font-family: var(--font-body); }
-.hero .hero-copy h1, main .section > .container > h3 {
+.hero .hero-copy h1 {
   font-family: var(--font-display);
+}
+/* Consistent sans-serif for ALL section headings, including Services and Software. */
+main .section > .container > h3 {
+  font-family: var(--font-body);
+  font-weight: 700 !important;
+  letter-spacing: -.025em;
 }
 .benefit strong,
 #services .card h4,
@@ -810,7 +816,7 @@ main .section + .section {
 #software .software-visual { margin-top: 1rem; margin-bottom: 0; }
 #pricing .pricing-intro { margin-bottom: 1rem !important; }
 
-/* Full-bleed pricing photograph: extend to the viewport edges without cropping. */
+/* Full-width editorial photo: moderate height, tasteful centre crop. */
 #pricing > .container > img {
   display: block;
   position: relative;
@@ -818,11 +824,11 @@ main .section + .section {
   transform: translateX(-50%);
   width: 100vw;
   max-width: none;
-  height: auto;
-  max-height: none;
+  height: clamp(300px, 24vw, 410px);
+  max-height: 410px;
   aspect-ratio: auto;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center 55%;
   margin: 0 0 1.6rem;
   border-radius: 0;
 }
@@ -834,9 +840,11 @@ main .section + .section {
   }
   main .section > .container > h3 { font-size: clamp(1.75rem, 6vw, 2.1rem) !important; }
   #pricing > .container > img {
+    height: clamp(190px, 44vw, 270px);
+    max-height: 270px;
     max-width: none;
-    max-height: none;
     aspect-ratio: auto;
+    object-position: center 55%;
     margin-bottom: 1.2rem;
   }
 }
