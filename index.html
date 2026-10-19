@@ -219,6 +219,23 @@
     <p class="microcopy">We also work with e-commerce businesses, contractors, trades and other UK small businesses.</p>
   </div>
 </section>
+    <section id="insights" class="section alt" aria-labelledby="insights-title">
+      <div class="container">
+        <h3 id="insights-title">Industry Insights | HMRC &amp; UK Accounting News</h3>
+        <p class="insights-intro">Tax, accounting and regulatory updates for UK hospitality, pubs, restaurants, travel businesses, e-commerce and small companies. Headlines link to their original publishers.</p>
+        <div class="insights-filters" role="group" aria-label="Filter news by industry">
+          <button type="button" class="insights-filter active" data-news-filter="all" aria-pressed="true">All updates</button>
+          <button type="button" class="insights-filter" data-news-filter="hospitality" aria-pressed="false">Hospitality &amp; Restaurants</button>
+          <button type="button" class="insights-filter" data-news-filter="pubs" aria-pressed="false">Pubs &amp; Bars</button>
+          <button type="button" class="insights-filter" data-news-filter="travel" aria-pressed="false">Travel</button>
+          <button type="button" class="insights-filter" data-news-filter="ecommerce" aria-pressed="false">E-commerce</button>
+          <button type="button" class="insights-filter" data-news-filter="uk-business" aria-pressed="false">UK Tax &amp; Business</button>
+        </div>
+        <p id="insights-status" class="insights-status" role="status">Loading publisher updates…</p>
+        <div id="insights-grid" class="insights-grid" aria-live="polite"></div>
+        <p class="insights-note">Sources: <a href="https://www.gov.uk/search/news-and-communications?organisations%5B%5D=hm-revenue-customs" target="_blank" rel="noopener noreferrer">HMRC</a> · <a href="https://www.icaew.com/insights/tax-news" target="_blank" rel="noopener noreferrer">ICAEW</a> · <a href="https://www.ukhospitality.org.uk/" target="_blank" rel="noopener noreferrer">UKHospitality</a> · <a href="https://www.beerandpub.com/" target="_blank" rel="noopener noreferrer">BBPA</a> · <a href="https://www.abta.com/news" target="_blank" rel="noopener noreferrer">ABTA</a>. News is informational, not individual tax advice.</p>
+      </div>
+    </section>
     <section id="about" class="section alt">
   <div class="container">
     <h3>About us</h3>
@@ -455,6 +472,27 @@
       </nav>
     </div>
   </footer>
+
+  <aside class="site-helper" id="site-helper" aria-label="Accounting Universe website assistant">
+    <button id="helper-toggle" class="helper-toggle" type="button" aria-expanded="false" aria-controls="helper-panel">Ask us <span aria-hidden="true">✦</span></button>
+    <div id="helper-panel" class="helper-panel hidden">
+      <div class="helper-head">
+        <div><strong>Accounting Universe Assistant</strong><small>Quick answers and booking guidance</small></div>
+        <button id="helper-close" type="button" aria-label="Close assistant">×</button>
+      </div>
+      <div id="helper-dialogue" class="helper-dialogue" role="log" aria-live="polite">
+        <p class="helper-bubble bot">Hello! I can help you find our UK accounting services, packages and consultation booking. I am an automated website assistant, not a live accountant.</p>
+      </div>
+      <div class="helper-choices" id="helper-choices">
+        <button type="button" data-helper-topic="services">Our services</button>
+        <button type="button" data-helper-topic="industries">Industries</button>
+        <button type="button" data-helper-topic="pricing">Packages &amp; fees</button>
+        <button type="button" data-helper-topic="booking">Book a consultation</button>
+        <button type="button" data-helper-topic="contact">Contact us</button>
+      </div>
+      <p class="helper-disclaimer">For personal tax advice or confidential financial information, please book a consultation. Do not enter sensitive details here.</p>
+    </div>
+  </aside>
 
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
     <p>We use essential cookies to make this site work and analytics to improve it. <a href="cookies.html">Learn more</a>.</p>
