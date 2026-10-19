@@ -42,24 +42,6 @@ if (form && statusEl && tsField && enquiryType && appointmentFields && preferred
   const valueFor = key => ukParts.find(p=>p.type===key)?.value;
   preferredDate.min = [valueFor('year'),valueFor('month'),valueFor('day')].join('-');
   tsField.value = String(Date.now());
-  // Appointment requests follow the same UK working days as Zoho Bookings.
-  // A 30-minute consultation may start every 15 minutes.
-  const formatUKTime = minutes => `${String(Math.floor(minutes / 60)).padStart(2,'0')}:${String(minutes % 60).padStart(2,'0')}`;
-  function populatePreferredTimes() {
-    const previous = preferredTime.value;
-    preferredTime.replaceChildren(new Option('Choose a start time', ''));
-    const chosen = preferredDate.value ? new Date(preferredDate.value + 'T12:00:00') : null;
-    const day = chosen && Number.isFinite(chosen.getTime()) ? chosen.getDay() : null;
-    if (day === 0) return; // Sundays are closed.
-    const lastStart = day === 6 ? 14 * 60 + 30 : 17 * 60 + 30;
-    for (let start = 9 * 60; start <= lastStart; start += 15) {
-      const startText = formatUKTime(start);
-      preferredTime.add(new Option(`${startText}–${formatUKTime(start + 30)}`, startText));
-    }
-    if ([...preferredTime.options].some(option => option.value === previous)) preferredTime.value = previous;
-  }
-  preferredDate.addEventListener('change', populatePreferredTimes);
-  populatePreferredTimes();
   function updateEnquiryMode() {
     const isConsult = enquiryType.value === 'consultation';
     appointmentFields.classList.toggle('hidden',!isConsult);
@@ -80,10 +62,10 @@ if (form && statusEl && tsField && enquiryType && appointmentFields && preferred
     const isConsult=values.enquiry_type==='consultation';
     if(isConsult){
       const date=new Date(values.preferred_date+'T12:00:00');
-      if(!Number.isFinite(date.getTime()) || date.getDay() === 0 || values.preferred_date<preferredDate.min){
+      if(!Number.isFinite(date.getTime()) || [0,6].includes(date.getDay()) || values.preferred_date<preferredDate.min){
         statusEl.classList.remove('hidden','success');
         statusEl.classList.add('error');
-        statusEl.textContent='Please select a future Monday–Saturday date.';
+        statusEl.textContent='Please select a future weekday.';
         return;
       }
     }
@@ -100,7 +82,6 @@ if (form && statusEl && tsField && enquiryType && appointmentFields && preferred
       statusEl.classList.add('success');
       statusEl.textContent=isConsult ? 'Request received. We will confirm the appointment by email; the time is not yet reserved.' : 'Thank you. Your enquiry has been sent.';
       form.reset();
-      populatePreferredTimes();
       updateEnquiryMode();
     }catch(err){
       statusEl.classList.add('error');
