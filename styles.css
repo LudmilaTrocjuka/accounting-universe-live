@@ -697,7 +697,7 @@ html, body, main, .section { color-scheme: light; }
 .hero > .hero-layout::after {
   content: ""; position: absolute; z-index: 1; top: 0; bottom: 0;
   left: 50%; transform: translateX(-50%); width: 100vw;
-  background: linear-gradient(90deg,rgba(16,28,24,.87) 0%,rgba(21,39,31,.73) 44%,rgba(27,36,30,.35) 100%);
+  background: linear-gradient(90deg,rgba(16,28,24,.74) 0%,rgba(21,39,31,.60) 44%,rgba(27,36,30,.24) 100%);
   pointer-events: none;
 }
 .hero > .hero-layout > img.hero-photo { z-index: 0; }
@@ -726,7 +726,7 @@ html, body, main, .section { color-scheme: light; }
   .hero .btn { width: 100%; max-width: 360px; }
   .hero > .hero-layout { padding-top: 3.25rem; padding-bottom: 3.5rem; }
   .hero > .hero-layout::after {
-    background: linear-gradient(90deg,rgba(15,27,21,.86),rgba(17,35,24,.66));
+    background: linear-gradient(90deg,rgba(15,27,21,.76),rgba(17,35,24,.60));
   }
   #reviews .review-card { background: #fff; color: #26382f; }
   #pricing .price-card .btn { width: 100%; }
