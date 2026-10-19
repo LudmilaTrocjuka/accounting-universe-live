@@ -575,7 +575,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 88px; }
   .site-header .tagline { font-size: .68rem !important; }
   .site-header .nav { gap: .5rem; }
   .site-header .header-cta { display: none; }
-  .hero > .hero-layout { min-height: 510px; padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .hero > .hero-layout { min-height: 540px; padding-top: 4rem; padding-bottom: 4rem; }
   .hero .hero-copy h1 { font-size: clamp(2.4rem,10vw,3.2rem); }
   .hero .hero-description { font-size: 1rem !important; }
   .hero .cta-group { flex-direction: column; align-items: flex-start; }
@@ -658,7 +658,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #7abc93; outline-offs
 }
 @media(max-width: 480px) {
   .site-header .brand { gap: .5rem; }
-  .hero > .hero-layout { min-height: 470px; }
+  .hero > .hero-layout { min-height: 500px; }
   .hero .hero-copy h1 { font-size: clamp(2.1rem,10vw,2.7rem); }
   #industries .industry-card > img { height: 215px; }
   .contact-field-grid { grid-template-columns: 1fr; }
@@ -745,7 +745,7 @@ html, body, main, .section { color-scheme: light; }
     padding-right: clamp(2.25rem, 3.5vw, 6rem);
   }
   .site-header .header-layout { gap: clamp(1.5rem, 2.5vw, 3.5rem); }
-  .hero > .hero-layout { min-height: clamp(530px, 42vw, 650px); }
+  .hero > .hero-layout { min-height: clamp(590px, 46vw, 750px); }
   .hero > .hero-layout .hero-copy { max-width: min(850px, 62vw); }
   .benefits-layout { gap: clamp(1.5rem, 3vw, 4.5rem); }
   #services .grid.three, #pricing .pricing-grid {
