@@ -824,11 +824,11 @@ main .section + .section {
   transform: translateX(-50%);
   width: 100vw;
   max-width: none;
-  height: clamp(300px, 24vw, 410px);
-  max-height: 410px;
+  height: clamp(450px, 33vw, 640px);
+  max-height: 640px;
   aspect-ratio: auto;
   object-fit: cover;
-  object-position: center 55%;
+  object-position: center 78%;
   margin: 0 0 1.6rem;
   border-radius: 0;
 }
@@ -840,11 +840,11 @@ main .section + .section {
   }
   main .section > .container > h3 { font-size: clamp(1.75rem, 6vw, 2.1rem) !important; }
   #pricing > .container > img {
-    height: clamp(190px, 44vw, 270px);
-    max-height: 270px;
+    height: clamp(290px, 62vw, 430px);
+    max-height: 430px;
     max-width: none;
     aspect-ratio: auto;
-    object-position: center 55%;
+    object-position: center 78%;
     margin-bottom: 1.2rem;
   }
 }
