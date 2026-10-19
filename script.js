@@ -165,3 +165,84 @@ document.querySelectorAll('a[data-package]').forEach(link => {
 const copyrightYear = document.getElementById('copyright-year');
 if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
+
+
+// Industry Insights: fetch news from our own cached API; display real article title, source and date.
+(() => {
+  const grid = document.getElementById('insights-grid');
+  const status = document.getElementById('insights-status');
+  const buttons = [...document.querySelectorAll('[data-news-filter]')];
+  if (!grid || !status || !buttons.length) return;
+  let articles = [];
+  let filter = 'all';
+  const labels = { hospitality:'Hospitality', pubs:'Pubs & Bars', travel:'Travel', ecommerce:'E-commerce', 'uk-business':'UK Tax & Business' };
+  function show() {
+    grid.replaceChildren();
+    const matching = articles.filter(item => filter === 'all' || item.category === filter);
+    const selected = matching.slice(0,3);
+    status.textContent = selected.length ? 'Latest selected publisher articles · Dates shown are original publication dates' : 'No matching articles currently available. Please see the linked publisher sources below.';
+    for (const item of selected) {
+      const card = document.createElement('article');
+      card.className = 'insights-card';
+      const meta = document.createElement('div');
+      meta.className = 'insights-meta';
+      const date = new Date(item.date + 'T12:00:00');
+      const dateLabel = Number.isFinite(date.getTime()) ? date.toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'}) : item.date;
+      meta.textContent = item.source + ' · ' + dateLabel + ' · ' + (labels[item.category] || 'UK business');
+      const heading = document.createElement('h4'); heading.textContent = item.title;
+      const link = document.createElement('a');
+      try { const url = new URL(item.url); if (url.protocol !== 'https:') continue; link.href = url.href; } catch (_) { continue; }
+      link.target = '_blank'; link.rel = 'noopener noreferrer';
+      link.textContent = 'Read original article ↗';
+      card.append(meta, heading, link);
+      grid.appendChild(card);
+    }
+  }
+  buttons.forEach(button => button.addEventListener('click', () => {
+    filter = button.dataset.newsFilter;
+    buttons.forEach(b => { const yes = b === button; b.classList.toggle('active', yes); b.setAttribute('aria-pressed', String(yes)); });
+    show();
+  }));
+  fetch('/api/news', {headers:{Accept:'application/json'}})
+    .then(response => { if (!response.ok) throw Error('news unavailable'); return response.json(); })
+    .then(data => { articles = Array.isArray(data.articles) ? data.articles : []; show(); })
+    .catch(() => { status.textContent = 'News updates are temporarily unavailable. View the original sources below.'; });
+})();
+
+// Rule-based navigation helper: no free-text collection, personal data or bespoke tax advice.
+(() => {
+  const toggle = document.getElementById('helper-toggle');
+  const panel = document.getElementById('helper-panel');
+  const close = document.getElementById('helper-close');
+  const log = document.getElementById('helper-dialogue');
+  if (!toggle || !panel || !close || !log) return;
+  const setOpen = isOpen => {
+    panel.classList.toggle('hidden', !isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen) close.focus(); else toggle.focus();
+  };
+  toggle.addEventListener('click', () => setOpen(panel.classList.contains('hidden')));
+  close.addEventListener('click', () => setOpen(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !panel.classList.contains('hidden')) setOpen(false); });
+  const booking = 'https://accountinguniverselimited.zohobookings.eu/273624000000033049';
+  const topics = {
+    services: {question:'Our services', answer:'We support UK businesses with bookkeeping, VAT, payroll, annual accounts, Corporation Tax, management reporting and agreed HMRC correspondence.', link:'#services', label:'Explore services'},
+    industries: {question:'Industries', answer:'We specialise in hospitality, pubs and restaurants, travel agencies, e-commerce and other UK small businesses.', link:'#industries', label:'See industries'},
+    pricing: {question:'Packages & fees', answer:'Our packages currently start from £125/month + VAT. Fees and services are agreed in writing for each client.', link:'#pricing', label:'View packages'},
+    booking: {question:'Book a consultation', answer:'You can choose a 30-minute introductory consultation via our Zoho Bookings page. Booking availability is shown in your local time zone.', link:booking, label:'Open booking calendar'},
+    contact: {question:'Contact us', answer:'Send an enquiry through the website form or email info@accounting-universe.co.uk. Please do not send confidential tax records here.', link:'#contact', label:'Contact form'}
+  };
+  document.querySelectorAll('[data-helper-topic]').forEach(button => button.addEventListener('click', () => {
+    const item = topics[button.dataset.helperTopic];
+    if (!item) return;
+    const question = document.createElement('p'); question.className='helper-bubble user'; question.textContent=item.question;
+    const answer = document.createElement('p'); answer.className='helper-bubble bot'; answer.textContent=item.answer + ' ';
+    const link = document.createElement('a'); link.href=item.link; link.textContent=item.label;
+    if (item.link.startsWith('https:')) {link.target='_blank';link.rel='noopener noreferrer';}
+    link.style.display='block'; link.style.marginTop='.5rem';
+    answer.appendChild(link);
+    log.append(question,answer);
+    while (log.children.length > 9) log.removeChild(log.firstElementChild);
+    log.scrollTop=log.scrollHeight;
+  }));
+})();
