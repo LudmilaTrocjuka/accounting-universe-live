@@ -908,3 +908,43 @@ main .section > .container > h3 { font-family: var(--font-body); }
 #insights .insights-note a { color: #216d49; }
 @media (max-width: 950px) { .insights-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
 @media (max-width: 600px) { .insights-grid { grid-template-columns: 1fr; } .insights-card { min-height: 130px; } .insights-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .5rem; } }
+
+/* Accounting Universe: wide pill-shaped chat launcher, instead of an image cropped by Chatling. */
+.au-chat-launcher {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 168px;
+  height: 64px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #267D55;
+  color: #fff;
+  font: 700 23px/1 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  letter-spacing: .01em;
+  box-shadow: 0 5px 18px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+.au-chat-launcher[hidden] { display: none; }
+.au-chat-launcher svg {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.au-chat-launcher:hover { background: #206C49; }
+.au-chat-launcher:focus-visible { outline: 3px solid #163C29; outline-offset: 4px; }
+@media (max-width: 600px) {
+  .au-chat-launcher { right: 16px; bottom: 16px; height: 58px; min-width: 156px; font-size: 21px; padding: 0 20px; }
+  .au-chat-launcher svg { width: 26px; height: 26px; flex-basis: 26px; }
+}
