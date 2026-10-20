@@ -223,8 +223,7 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
   });
   function activateLauncher() {
     const sdk = window.Chatling;
-    if (!sdk || typeof sdk.open !== 'function' || typeof sdk.hideChatIcon !== 'function') return;
-    sdk.hideChatIcon();
+    if (!sdk || typeof sdk.open !== 'function') return;
     button.hidden = false;
   }
   widgetScript.addEventListener('load', activateLauncher, { once: true });
