@@ -985,3 +985,15 @@ main .section > .container > h3 { font-family: var(--font-body); }
   letter-spacing: -.025em;
   line-height: 1.12;
 }
+
+/* Compact expandable scope lists for advisory service and fee cards. */
+.advisory-card .advisory-inclusions { margin:.15rem 0 1rem; }
+.advisory-card .advisory-inclusions summary { cursor:pointer; color:#267d55; font-weight:750; font-size:1rem; padding:.5rem .15rem; list-style:none; border-top:1px solid #d9e7de; display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
+.advisory-card .advisory-inclusions summary::-webkit-details-marker { display:none; }
+.advisory-card .advisory-inclusions summary::after { content:'+'; font-size:1.4rem; line-height:1; font-weight:500; }
+.advisory-card .advisory-inclusions[open] summary::after { content:'−'; }
+.advisory-card .advisory-inclusions summary:focus-visible { outline:2px solid #267d55; outline-offset:3px; border-radius:4px; }
+.advisory-card .advisory-inclusions ul { margin:.55rem 0 .35rem; padding-left:1.25rem; }
+.advisory-process > div { padding:1.25rem 1.3rem; }
+.advisory-process strong { font-size:1.125rem; line-height:1.4; }
+.advisory-process span { font-size:1rem; line-height:1.55; }
