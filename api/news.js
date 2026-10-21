@@ -108,6 +108,7 @@ module.exports = async (req, res) => {
   res.setHeader('X-Content-Type-Options','nosniff');
   return res.status(200).json({
     articles:unique.slice(0, 20),
+    checkedAt:new Date().toISOString(), // Time these publisher feeds were actually checked server-side; response may be CDN cached.
     sources:SOURCES.map(({name,site})=>({name,url:site})),
     liveSources:SOURCES.filter((_,i)=>fetched[i].length).map(s=>s.name),
     note:'Publisher feeds are refreshed where available; dated source selections are shown when live feeds are unavailable.'
