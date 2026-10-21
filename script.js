@@ -229,3 +229,13 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
   widgetScript.addEventListener('load', activateLauncher, { once: true });
   activateLauncher(); // Also handles an async widget that loaded before this script.
 })();
+
+// Update Ludmila's completed UK accounting experience automatically each 1 November.
+(() => {
+  const el = document.getElementById('ludmila-uk-experience');
+  if (!el) return;
+  const today = new Date();
+  // UK accounting career began 1 November 2009; on 1 November 2026 it reaches 17 years.
+  const completedYears = today.getUTCFullYear() - 2009 - (today.getUTCMonth() < 10 ? 1 : 0);
+  el.textContent = completedYears >= 17 ? `${completedYears} years` : 'nearly 17 years';
+})();
