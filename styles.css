@@ -952,3 +952,28 @@ main .section > .container > h3 { font-family: var(--font-body); }
   .au-chat-launcher { right: 16px; bottom: 16px; height: 58px; min-width: 156px; font-size: 21px; padding: 0 20px; }
   .au-chat-launcher svg { width: 36px; height: 36px; flex-basis: 36px; padding: 6px; }
 }
+
+/* AU specialist advisory service cards – 21 October 2026 */
+.hero-specialisms { color:#2c6146; font-size:clamp(.85rem,1.1vw,1rem); font-weight:650; letter-spacing:.01em; margin:.85rem 0 1.1rem; }
+.advisory-overline { text-transform:uppercase; font-size:.77rem !important; font-weight:800; letter-spacing:.13em; color:#267d55 !important; margin-bottom:.7rem !important; }
+.advisory-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.15rem; margin:2rem 0 1.4rem; }
+.advisory-card { min-width:0; padding:clamp(1.25rem,2vw,2rem); background:linear-gradient(145deg,#fff,#f7fbf8); border:1px solid #d9e7de; border-radius:16px; box-shadow:0 5px 20px rgba(29,77,52,.055); display:flex; flex-direction:column; }
+.advisory-card:nth-child(2), .advisory-card:nth-child(4) { background:linear-gradient(145deg,#fff,#f7fafc); }
+.advisory-index { font-size:.75rem; color:#267d55; font-weight:800; letter-spacing:.12em; margin-bottom:.5rem; }
+.advisory-card h4 { margin:.2rem 0 .65rem; color:#193f2c; font-size:clamp(1.22rem,1.6vw,1.5rem); line-height:1.33; }
+.advisory-card p { margin:.2rem 0 .8rem; color:#4a5c52; }
+.advisory-card ul { margin:.3rem 0 1.15rem; padding-left:1.25rem; color:#354d3e; }
+.advisory-card li { padding:.18rem 0; line-height:1.5; }
+.advisory-card a { margin-top:auto; font-weight:750; color:#267d55; text-decoration:underline; text-underline-offset:3px; }
+.advisory-process { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.85rem; margin:1.55rem 0 1rem; }
+.advisory-process > div { border-radius:12px; padding:1.1rem 1.2rem; background:#eff6f1; border:1px solid #dce8df; display:flex; flex-direction:column; gap:.2rem; }
+.advisory-process strong { color:#224a34; font-size:1.05rem; }
+.advisory-process span { font-size:.92rem; color:#506256; }
+.advisory-boundary { font-size:.84rem !important; color:#5f6c63 !important; line-height:1.6; max-width:1050px; }
+@media(max-width:780px) {
+  .advisory-grid { grid-template-columns:1fr; gap:.85rem; margin:1.3rem 0; }
+  .advisory-process { grid-template-columns:1fr; gap:.6rem; }
+  .advisory-card { padding:1.25rem; }
+  .advisory-card h4 { font-size:1.22rem; }
+  .hero-specialisms { line-height:1.8; }
+}
