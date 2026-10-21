@@ -171,6 +171,7 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 (() => {
   const grid = document.getElementById('insights-grid');
   const status = document.getElementById('insights-status');
+  const lastChecked = document.getElementById('insights-last-checked');
   const buttons = [...document.querySelectorAll('[data-news-filter]')];
   if (!grid || !status || !buttons.length) return;
   let articles = [];
@@ -205,8 +206,31 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
   }));
   fetch('/api/news', {headers:{Accept:'application/json'}})
     .then(response => { if (!response.ok) throw Error('news unavailable'); return response.json(); })
-    .then(data => { articles = Array.isArray(data.articles) ? data.articles : []; show(); })
-    .catch(() => { status.textContent = 'News updates are temporarily unavailable. View the original sources below.'; });
+    .then(data => {
+      articles = Array.isArray(data.articles) ? data.articles : [];
+      show();
+      if (lastChecked) {
+        const checked = data.checkedAt ? new Date(data.checkedAt) : null;
+        if (checked && Number.isFinite(checked.getTime())) {
+          const dateTime = new Intl.DateTimeFormat('en-GB', {
+            day:'numeric', month:'short', year:'numeric',
+            hour:'2-digit', minute:'2-digit', hourCycle:'h23',
+            timeZone:'Europe/London'
+          }).format(checked);
+          const liveCount = Array.isArray(data.liveSources) ? data.liveSources.length : 0;
+          lastChecked.textContent = 'Publisher feeds last checked: ' + dateTime + ' (UK time). ' +
+            (liveCount
+              ? 'Live feeds: ' + liveCount + '; dated reference articles may also appear.'
+              : 'No live feeds available; showing dated reference articles.');
+        } else {
+          lastChecked.textContent = 'Publisher feed check time is not available.';
+        }
+      }
+    })
+    .catch(() => {
+      status.textContent = 'News updates are temporarily unavailable. View the original sources below.';
+      if (lastChecked) lastChecked.textContent = 'Publisher feed check time unavailable.';
+    });
 })();
 
 
