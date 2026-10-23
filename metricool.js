@@ -13,7 +13,7 @@
     script.async = true;
     script.src = 'https://tracker.metricool.com/resources/be.js';
     script.onload = () => {
-      if (typeof window.beTracker === 'function') {
+      if (window.beTracker && typeof window.beTracker.t === 'function') {
         window.beTracker.t({ hash: '1d26d64fb34b8788a719a7b0068a6ae4' });
       }
     };
