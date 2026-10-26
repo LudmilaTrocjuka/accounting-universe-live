@@ -997,3 +997,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .advisory-process > div { padding:1.25rem 1.3rem; }
 .advisory-process strong { font-size:1.125rem; line-height:1.4; }
 .advisory-process span { font-size:1rem; line-height:1.55; }
+
+.insights-reference { margin: 0 0 1.2rem; padding: 1rem; border: 1px solid #d4e3d8; border-radius: 12px; background: #fff; }
+.insights-reference summary { cursor: pointer; color: #26543c; font-weight: 600; }
+#insights-more[hidden] { display: none; }

@@ -1,0 +1,45 @@
+name: Refresh official publisher news
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['lib/news.js', 'api/news.js', 'scripts/refresh-news.cjs', '.github/workflows/news-refresh.yml']
+permissions:
+  contents: write
+concurrency:
+  group: official-news-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node --test tests/news.test.cjs
+      - name: Retrieve official publisher updates
+        id: collect
+        continue-on-error: true
+        run: node scripts/refresh-news.cjs
+      - name: Preserve latest successful publisher results
+        run: |
+          git add data/news.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh official publisher news snapshot'
+            git push origin HEAD:main
+          fi
+      - name: Report unavailable publishers
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo 'One or more publishers could not be refreshed. Last successful articles were preserved.'
+          exit 1

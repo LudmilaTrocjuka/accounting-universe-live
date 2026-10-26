@@ -167,70 +167,56 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
 
 
-// Industry Insights: fetch news from our own cached API; display real article title, source and date.
+// Official publisher headlines; no generated tax advice is automatically published.
 (() => {
-  const grid = document.getElementById('insights-grid');
-  const status = document.getElementById('insights-status');
-  const lastChecked = document.getElementById('insights-last-checked');
-  const buttons = [...document.querySelectorAll('[data-news-filter]')];
-  if (!grid || !status || !buttons.length) return;
-  let articles = [];
-  let filter = 'all';
-  const labels = { hospitality:'Hospitality', pubs:'Pubs & Bars', travel:'Travel', ecommerce:'E-commerce', 'uk-business':'UK Tax & Business' };
-  function show() {
+  const grid=document.getElementById('insights-grid'),status=document.getElementById('insights-status'),lastChecked=document.getElementById('insights-last-checked');
+  const buttons=[...document.querySelectorAll('[data-news-filter]')],more=document.getElementById('insights-more');
+  if(!grid||!status||!buttons.length)return;
+  let articles=[],filter='all',limit=6,busy=false;
+  const labels={hospitality:'Hospitality',pubs:'Pubs & Bars',travel:'Travel',ecommerce:'E-commerce','uk-business':'UK Tax & Business'};
+  const day=value=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}).format(new Date(value));
+  function show(){
+    const matching=articles.filter(a=>filter==='all'||a.category===filter);
+    // Show the latest item from every publisher before additional stories.
+    const first=[],rest=[],seen=new Set();
+    matching.forEach(a=>{if(filter==='all'&&!seen.has(a.source)){first.push(a);seen.add(a.source);}else rest.push(a);});
+    const selected=(filter==='all'?[...first,...rest]:matching).slice(0,limit);
     grid.replaceChildren();
-    const matching = articles.filter(item => filter === 'all' || item.category === filter);
-    const selected = matching.slice(0,3);
-    status.textContent = selected.length ? 'Latest selected publisher articles · Dates shown are original publication dates' : 'No matching articles currently available. Please see the linked publisher sources below.';
-    for (const item of selected) {
-      const card = document.createElement('article');
-      card.className = 'insights-card';
-      const meta = document.createElement('div');
-      meta.className = 'insights-meta';
-      const date = new Date(item.date + 'T12:00:00');
-      const dateLabel = Number.isFinite(date.getTime()) ? date.toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'}) : item.date;
-      meta.textContent = item.source + ' · ' + dateLabel + ' · ' + (labels[item.category] || 'UK business');
-      const heading = document.createElement('h4'); heading.textContent = item.title;
-      const link = document.createElement('a');
-      try { const url = new URL(item.url); if (url.protocol !== 'https:') continue; link.href = url.href; } catch (_) { continue; }
-      link.target = '_blank'; link.rel = 'noopener noreferrer';
-      link.textContent = 'Read original article ↗';
-      card.append(meta, heading, link);
-      grid.appendChild(card);
-    }
-  }
-  buttons.forEach(button => button.addEventListener('click', () => {
-    filter = button.dataset.newsFilter;
-    buttons.forEach(b => { const yes = b === button; b.classList.toggle('active', yes); b.setAttribute('aria-pressed', String(yes)); });
-    show();
-  }));
-  fetch('/api/news', {headers:{Accept:'application/json'}})
-    .then(response => { if (!response.ok) throw Error('news unavailable'); return response.json(); })
-    .then(data => {
-      articles = Array.isArray(data.articles) ? data.articles : [];
-      show();
-      if (lastChecked) {
-        const checked = data.checkedAt ? new Date(data.checkedAt) : null;
-        if (checked && Number.isFinite(checked.getTime())) {
-          const dateTime = new Intl.DateTimeFormat('en-GB', {
-            day:'numeric', month:'short', year:'numeric',
-            hour:'2-digit', minute:'2-digit', hourCycle:'h23',
-            timeZone:'Europe/London'
-          }).format(checked);
-          const liveCount = Array.isArray(data.liveSources) ? data.liveSources.length : 0;
-          lastChecked.textContent = 'Publisher feeds last checked: ' + dateTime + ' (UK time). ' +
-            (liveCount
-              ? 'Live feeds: ' + liveCount + '; dated reference articles may also appear.'
-              : 'No live feeds available; showing dated reference articles.');
-        } else {
-          lastChecked.textContent = 'Publisher feed check time is not available.';
-        }
-      }
-    })
-    .catch(() => {
-      status.textContent = 'News updates are temporarily unavailable. View the original sources below.';
-      if (lastChecked) lastChecked.textContent = 'Publisher feed check time unavailable.';
+    status.textContent=selected.length?'Latest publisher updates · Publication and update dates are shown on each article.':'No matching articles available. Please see the original publishers below.';
+    selected.forEach(item=>{
+      let url;try{url=new URL(item.url);if(url.protocol!=='https:')return;}catch{return;}
+      const card=document.createElement('article');card.className='insights-card';
+      const meta=document.createElement('div');meta.className='insights-meta';
+      meta.textContent=item.source+' · '+(item.dateKind==='updated'?'Updated ':'Published ')+day(item.date+'T12:00:00Z')+' · '+(labels[item.category]||'UK business');
+      if(item.updatedAt&&item.updatedAt!==item.date)meta.textContent+=' · Updated '+day(item.updatedAt+'T12:00:00Z');
+      const heading=document.createElement('h4');heading.textContent=item.title;
+      const link=document.createElement('a');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Read original article ↗';
+      card.append(meta,heading);
+      if(item.live===false){const saved=document.createElement('p');saved.className='insights-status';saved.textContent='Saved article · Last retrieved '+(item.retrievedAt?day(item.retrievedAt):'date unavailable');card.append(saved);}
+      card.append(link);grid.append(card);
     });
+    if(more)more.hidden=matching.length<=limit;
+  }
+  buttons.forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.newsFilter;limit=6;buttons.forEach(b=>{const yes=b===button;b.classList.toggle('active',yes);b.setAttribute('aria-pressed',String(yes));});show();}));
+  if(more)more.addEventListener('click',()=>{limit+=6;show();});
+  async function refresh(){
+    if(busy)return;busy=true;
+    try{
+      const response=await fetch('/api/news',{headers:{Accept:'application/json'},signal:AbortSignal.timeout(25000)});
+      if(!response.ok)throw Error('news unavailable');
+      const data=await response.json();articles=Array.isArray(data.articles)?data.articles:[];show();
+      if(lastChecked){
+        const checked=new Date(data.checkedAt),sources=Array.isArray(data.sourceStatus)?data.sourceStatus:[];
+        const clock=Number.isFinite(checked.getTime())?new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23',timeZone:'Europe/London'}).format(checked):'unavailable';
+        const ok=sources.filter(s=>s.status==='ok').length;
+        const missing=sources.filter(s=>s.status!=='ok').map(s=>s.name+' ('+(s.status==='cached'?'saved articles':'unavailable')+')');
+        lastChecked.textContent='Publisher check: '+clock+' (UK time). Updated '+ok+'/'+sources.length+' sources. Scheduled collection every 6 hours; live results cached for up to 1 hour.'+(missing.length?' Needs attention: '+missing.join(', ')+'.':'');
+      }
+    }catch(_){status.textContent=articles.length?'Could not refresh publishers. Previously loaded articles remain below.':'News updates are temporarily unavailable. View the original sources below.';if(lastChecked)lastChecked.textContent='Latest publisher check could not be completed; no new verification time is claimed.';}
+    finally{busy=false;}
+  }
+  refresh();
+  setInterval(()=>{if(!document.hidden)refresh();},15*60*1000);
 })();
 
 
