@@ -909,50 +909,6 @@ main .section > .container > h3 { font-family: var(--font-body); }
 @media (max-width: 950px) { .insights-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
 @media (max-width: 600px) { .insights-grid { grid-template-columns: 1fr; } .insights-card { min-height: 130px; } .insights-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .5rem; } }
 
-/* Accounting Universe: wide pill-shaped chat launcher, instead of an image cropped by Chatling. */
-.au-chat-launcher {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 999;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-width: 168px;
-  height: 64px;
-  padding: 0 24px;
-  border: 0;
-  border-radius: 999px;
-  background: #267D55;
-  color: #fff;
-  font: 700 23px/1 system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  letter-spacing: .01em;
-  box-shadow: 0 5px 18px rgba(0,0,0,.2);
-  cursor: pointer;
-}
-.au-chat-launcher[hidden] { display: none; }
-.au-chat-launcher svg {
-  width: 38px;
-  height: 38px;
-  flex: 0 0 38px;
-  padding: 6px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  box-sizing: border-box;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.au-chat-launcher:hover { background: #206C49; }
-.au-chat-launcher:focus-visible { outline: 3px solid #163C29; outline-offset: 4px; }
-@media (max-width: 600px) {
-  .au-chat-launcher { right: 16px; bottom: 16px; height: 58px; min-width: 156px; font-size: 21px; padding: 0 20px; }
-  .au-chat-launcher svg { width: 36px; height: 36px; flex-basis: 36px; padding: 6px; }
-}
-
 /* AU specialist advisory service cards – 21 October 2026 */
 .hero .hero-specialisms { color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.65); font-size:clamp(.85rem,1.1vw,1rem); font-weight:650; letter-spacing:.01em; margin:.85rem 0 1.1rem; }
 .advisory-overline { text-transform:uppercase; font-size:.77rem !important; font-weight:800; letter-spacing:.13em; color:#267d55 !important; margin-bottom:.7rem !important; }
