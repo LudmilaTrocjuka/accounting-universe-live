@@ -220,26 +220,6 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 })();
 
 
-// Activate our wide Chat button only when Chatling's documented SDK is available.
-// If the widget cannot load, the existing Chatling launcher is left untouched.
-(() => {
-  const button = document.getElementById('au-chat-launcher');
-  const widgetScript = document.getElementById('chtl-script');
-  if (!button || !widgetScript) return;
-  button.addEventListener('click', () => {
-    if (window.Chatling && typeof window.Chatling.open === 'function') {
-      window.Chatling.open();
-    }
-  });
-  function activateLauncher() {
-    const sdk = window.Chatling;
-    if (!sdk || typeof sdk.open !== 'function') return;
-    button.hidden = false;
-  }
-  widgetScript.addEventListener('load', activateLauncher, { once: true });
-  activateLauncher(); // Also handles an async widget that loaded before this script.
-})();
-
 // Update Ludmila's completed UK accounting experience automatically each 1 November.
 (() => {
   const el = document.getElementById('ludmila-uk-experience');
