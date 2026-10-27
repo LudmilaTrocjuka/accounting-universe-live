@@ -1060,3 +1060,53 @@ main .section > .container > h3 { font-family: var(--font-body); }
   .au-acca-description > strong { font-size: .96rem; }
   .au-acca-description > span { font-size: .83rem; }
 }
+
+/* Unified Xero credential artwork: authentic logos in matching rounded squares.
+   The source Level 3 file has black pixels outside its rounded silhouette;
+   clip these pixels without altering the lettering or certified artwork. */
+.au-xero-credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.35rem, 1.5vw, 1rem);
+}
+.au-xero-credentials-grid > .au-xero-credential {
+  aspect-ratio: 1 / 1;
+  min-width: 0;
+  min-height: 0 !important;
+  width: 100%;
+  overflow: hidden;
+  padding: clamp(.2rem, .8vw, .65rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #cbded3;
+  border-radius: 18px;
+}
+.au-xero-credentials-grid > .au-xero-credential > img,
+.au-xero-credentials-grid > .au-xero-credential > .au-xero-tax-art {
+  display: block !important;
+  flex-shrink: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain;
+  border-radius: 24%;
+}
+.au-xero-credential--level3 > img {
+  /* 1% inset removes the black outside the original badge and 25% rounds corners. */
+  clip-path: inset(1% round 25%);
+}
+.au-xero-credential--tax > .au-xero-tax-art {
+  overflow: hidden;
+}
+@media (max-width: 760px) {
+  .au-xero-credentials { padding: .85rem .6rem; }
+  .au-xero-credentials-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
+  .au-xero-credentials-grid > .au-xero-credential {
+    min-height: 0 !important;
+    padding: .2rem;
+    border-radius: 12px;
+  }
+}
