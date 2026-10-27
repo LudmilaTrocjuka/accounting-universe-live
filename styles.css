@@ -967,3 +967,24 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .au-xero-credential strong { color:#245f45; font-size:1.05rem; }
 .au-xero-credential span { color:#4b6456; font-size:.9rem; }
 @media(max-width:650px){.au-xero-credentials-grid{grid-template-columns:1fr}}
+
+/* Xero certificates: early, clearly visible mobile-only trust strip. */
+.mobile-xero-strip { display: none; }
+@media (max-width: 760px) {
+  .mobile-xero-strip { display: block; padding: 1.15rem 0 1.3rem; background: #f4f9f6; border-bottom: 1px solid #dce9e1; }
+  .mobile-xero-title { margin: 0 0 .85rem; font-size: 1.08rem; line-height: 1.4; color: #244f39; font-weight: 700; text-align: center; }
+  .mobile-xero-badges { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: .65rem; }
+  .mobile-xero-badges > div { min-width: 0; padding: .65rem .35rem; background: #fff; border: 1px solid #dce9e1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem; }
+  .mobile-xero-badges img { display: block !important; max-width: 100%; width: 90px; height: 82px; object-fit: contain; }
+  .mobile-xero-badges span { font-size: .83rem; font-weight: 650; line-height: 1.2; text-align: center; color: #315841; }
+  .mobile-xero-note { margin: .65rem 0 0; font-size: .79rem; line-height: 1.45; text-align: center; color: #455a4f; }
+  .mobile-xero-note a { color: #267d55; text-decoration: underline; }
+  .au-xero-credentials-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
+  .au-xero-credential { padding: .45rem; min-height: 105px !important; }
+  .au-xero-credential img { display: block !important; max-width: 100% !important; max-height: 100px !important; height: auto !important; }
+}
+@media (max-width: 350px) {
+  .mobile-xero-badges { gap: .4rem; }
+  .mobile-xero-badges img { width: 76px; height: 70px; }
+  .mobile-xero-badges span { font-size: .75rem; }
+}
