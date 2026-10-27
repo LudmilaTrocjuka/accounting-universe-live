@@ -915,12 +915,12 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .advisory-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.15rem; margin:2rem 0 1.4rem; }
 .advisory-card { min-width:0; padding:clamp(1.25rem,2vw,2rem); background:linear-gradient(145deg,#fff,#f7fbf8); border:1px solid #d9e7de; border-radius:16px; box-shadow:0 5px 20px rgba(29,77,52,.055); display:flex; flex-direction:column; }
 .advisory-card:nth-child(2), .advisory-card:nth-child(4) { background:linear-gradient(145deg,#fff,#f7fafc); }
-.advisory-index { font-size:.75rem; color:#267d55; font-weight:800; letter-spacing:.12em; margin-bottom:.5rem; }
-.advisory-card h4 { margin:.2rem 0 .65rem; color:#193f2c; font-size:clamp(1.22rem,1.6vw,1.5rem); line-height:1.33; }
-.advisory-card p { margin:.2rem 0 .8rem; color:#4a5c52; }
+.advisory-index { font-size:.875rem; color:#267d55; font-weight:800; letter-spacing:.08em; margin-bottom:.65rem; }
+.advisory-card h4 { margin:.2rem 0 .75rem; color:#193f2c; font-size:clamp(1.4rem,1.8vw,1.65rem); line-height:1.35; }
+#services .advisory-card p { margin:.2rem 0 1rem; color:#354d3e; font-size:1.125rem; line-height:1.65; }
 .advisory-card ul { margin:.3rem 0 1.15rem; padding-left:1.25rem; color:#354d3e; }
-.advisory-card li { padding:.18rem 0; line-height:1.5; }
-.advisory-card a { margin-top:auto; font-weight:750; color:#267d55; text-decoration:underline; text-underline-offset:3px; }
+.advisory-card li { padding:.25rem 0; font-size:1.0625rem; line-height:1.6; }
+.advisory-card a { margin-top:auto; font-size:1.0625rem; line-height:1.5; font-weight:750; color:#267d55; text-decoration:underline; text-underline-offset:3px; }
 .advisory-process { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.85rem; margin:1.55rem 0 1rem; }
 .advisory-process > div { border-radius:12px; padding:1.1rem 1.2rem; background:#eff6f1; border:1px solid #dce8df; display:flex; flex-direction:column; gap:.2rem; }
 .advisory-process strong { color:#224a34; font-size:1.05rem; }
@@ -930,7 +930,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
   .advisory-grid { grid-template-columns:1fr; gap:.85rem; margin:1.3rem 0; }
   .advisory-process { grid-template-columns:1fr; gap:.6rem; }
   .advisory-card { padding:1.25rem; }
-  .advisory-card h4 { font-size:1.22rem; }
+  .advisory-card h4 { font-size:1.4rem; }
   .hero-specialisms { line-height:1.8; }
 }
 
@@ -944,7 +944,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
 
 /* Compact expandable scope lists for advisory service and fee cards. */
 .advisory-card .advisory-inclusions { margin:.15rem 0 1rem; }
-.advisory-card .advisory-inclusions summary { cursor:pointer; color:#267d55; font-weight:750; font-size:1rem; padding:.5rem .15rem; list-style:none; border-top:1px solid #d9e7de; display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
+.advisory-card .advisory-inclusions summary { cursor:pointer; color:#267d55; font-weight:750; font-size:1.0625rem; padding:.65rem .15rem; list-style:none; border-top:1px solid #d9e7de; display:flex; align-items:center; justify-content:space-between; gap:.75rem; }
 .advisory-card .advisory-inclusions summary::-webkit-details-marker { display:none; }
 .advisory-card .advisory-inclusions summary::after { content:'+'; font-size:1.4rem; line-height:1; font-weight:500; }
 .advisory-card .advisory-inclusions[open] summary::after { content:'−'; }
