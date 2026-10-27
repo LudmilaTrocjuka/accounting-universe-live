@@ -957,3 +957,13 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .insights-reference { margin: 0 0 1.2rem; padding: 1rem; border: 1px solid #d4e3d8; border-radius: 12px; background: #fff; }
 .insights-reference summary { cursor: pointer; color: #26543c; font-weight: 600; }
 #insights-more[hidden] { display: none; }
+
+
+/* Clearly attributed Xero qualifications. Official badge images can replace these text tiles. */
+.au-xero-credentials { margin-top:1.25rem; padding:1.1rem 1.3rem; border:1px solid #d9e7de; border-radius:14px; background:#f9fcfa; }
+.au-xero-credentials h5 { margin:0 0 .9rem; }
+.au-xero-credentials-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
+.au-xero-credential { display:flex; flex-direction:column; justify-content:center; gap:.25rem; min-height:90px; padding:1rem; background:#fff; border:1px solid #cbded3; border-radius:11px; text-align:center; }
+.au-xero-credential strong { color:#245f45; font-size:1.05rem; }
+.au-xero-credential span { color:#4b6456; font-size:.9rem; }
+@media(max-width:650px){.au-xero-credentials-grid{grid-template-columns:1fr}}
