@@ -988,3 +988,35 @@ main .section > .container > h3 { font-family: var(--font-body); }
   .mobile-xero-badges img { width: 76px; height: 70px; }
   .mobile-xero-badges span { font-size: .75rem; }
 }
+
+/* Uniform Xero badge presentation across desktop and mobile. */
+.au-xero-credential {
+  aspect-ratio: 1 / 1;
+  min-height: 0 !important;
+  min-width: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  padding: .65rem;
+}
+.au-xero-credential img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain;
+  border-radius: 14px;
+}
+@media (max-width: 760px) {
+  .au-xero-credential { min-height: 0 !important; padding: .25rem; border-radius: 14px; }
+  .au-xero-credential img { max-height: 100% !important; height: 100% !important; }
+  .mobile-xero-badges img {
+    width: 100% !important;
+    max-width: 90px !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+}
