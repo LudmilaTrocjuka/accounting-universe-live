@@ -1110,3 +1110,30 @@ main .section > .container > h3 { font-family: var(--font-body); }
     border-radius: 12px;
   }
 }
+
+/* Keep software skills distinct from professional-body qualifications. */
+.au-software-credentials {
+  max-width: 660px;
+  margin: 1.6rem auto 0;
+}
+.au-software-credentials .au-xero-credentials {
+  margin-top: 0;
+  padding: 1rem;
+}
+.au-software-credentials .au-xero-credentials h5 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  text-align: center;
+}
+.au-software-credentials .au-xero-credentials-grid {
+  max-width: 600px;
+  margin: .8rem auto;
+}
+.au-software-credentials .microcopy { text-align: center; margin-bottom: 0; }
+@media (max-width: 650px) {
+  .au-software-credentials { max-width: 100%; margin-top: 1.25rem; }
+  .au-software-credentials .au-xero-credentials { padding: .8rem .6rem; }
+  .au-acca-qualification { flex-direction: column; text-align: center; align-items: center; }
+  .au-acca-description { width: 100%; }
+  .au-acca-description p { line-height: 1.45; }
+}
