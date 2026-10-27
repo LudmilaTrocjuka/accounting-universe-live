@@ -959,66 +959,62 @@ main .section > .container > h3 { font-family: var(--font-body); }
 #insights-more[hidden] { display: none; }
 
 
-/* Clearly attributed Xero qualifications. Official badge images can replace these text tiles. */
-.au-xero-credentials { margin-top:1.25rem; padding:1.1rem 1.3rem; border:1px solid #d9e7de; border-radius:14px; background:#f9fcfa; }
-.au-xero-credentials h5 { margin:0 0 .9rem; }
-.au-xero-credentials-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
-.au-xero-credential { display:flex; flex-direction:column; justify-content:center; gap:.25rem; min-height:90px; padding:1rem; background:#fff; border:1px solid #cbded3; border-radius:11px; text-align:center; }
-.au-xero-credential strong { color:#245f45; font-size:1.05rem; }
-.au-xero-credential span { color:#4b6456; font-size:.9rem; }
-@media(max-width:650px){.au-xero-credentials-grid{grid-template-columns:1fr}}
-
-/* Xero certificates: early, clearly visible mobile-only trust strip. */
-.mobile-xero-strip { display: none; }
-@media (max-width: 760px) {
-  .mobile-xero-strip { display: block; padding: 1.15rem 0 1.3rem; background: #f4f9f6; border-bottom: 1px solid #dce9e1; }
-  .mobile-xero-title { margin: 0 0 .85rem; font-size: 1.08rem; line-height: 1.4; color: #244f39; font-weight: 700; text-align: center; }
-  .mobile-xero-badges { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: .65rem; }
-  .mobile-xero-badges > div { min-width: 0; padding: .65rem .35rem; background: #fff; border: 1px solid #dce9e1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem; }
-  .mobile-xero-badges img { display: block !important; max-width: 100%; width: 90px; height: 82px; object-fit: contain; }
-  .mobile-xero-badges span { font-size: .83rem; font-weight: 650; line-height: 1.2; text-align: center; color: #315841; }
-  .mobile-xero-note { margin: .65rem 0 0; font-size: .79rem; line-height: 1.45; text-align: center; color: #455a4f; }
-  .mobile-xero-note a { color: #267d55; text-decoration: underline; }
-  .au-xero-credentials-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
-  .au-xero-credential { padding: .45rem; min-height: 105px !important; }
-  .au-xero-credential img { display: block !important; max-width: 100% !important; max-height: 100px !important; height: auto !important; }
-}
-@media (max-width: 350px) {
-  .mobile-xero-badges { gap: .4rem; }
-  .mobile-xero-badges img { width: 76px; height: 70px; }
-  .mobile-xero-badges span { font-size: .75rem; }
-}
-
-/* Uniform Xero badge presentation across desktop and mobile. */
-.au-xero-credential {
-  aspect-ratio: 1 / 1;
-  min-height: 0 !important;
-  min-width: 0;
-  border-radius: 18px;
-  overflow: hidden;
-  align-items: center;
-  padding: .65rem;
-}
-.au-xero-credential img {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain;
+/* Xero certificate display. One consistent 1:1 rounded-square format. */
+.au-xero-credentials {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #d9e7de;
   border-radius: 14px;
+  background: #f9fcfa;
+}
+.au-xero-credentials h5 { margin: 0 0 .9rem; }
+.au-xero-credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(.35rem, 1.5vw, .9rem);
+}
+.au-xero-credential {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(.2rem, 1vw, .5rem);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #cbded3;
+  border-radius: 16px;
+}
+.au-xero-credential > img,
+.au-xero-credential > svg {
+  display: block;
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  border-radius: 24%;
+}
+.au-xero-credential--level3 .au-xero-level3-art,
+.au-xero-credential--tax .au-xero-tax-art {
+  overflow: hidden;
+}
+.au-xero-credentials .microcopy {
+  line-height: 1.4;
+  margin: .7rem 0 0;
 }
 @media (max-width: 760px) {
-  .au-xero-credential { min-height: 0 !important; padding: .25rem; border-radius: 14px; }
-  .au-xero-credential img { max-height: 100% !important; height: 100% !important; }
-  .mobile-xero-badges img {
-    width: 100% !important;
-    max-width: 90px !important;
-    height: auto !important;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    border-radius: 12px;
-  }
+  .au-xero-credentials-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .au-xero-credential { border-radius: 12px; }
+}
+@media (max-width: 365px) {
+  .au-xero-credentials { padding: .75rem .45rem; }
+  .au-xero-credentials-grid { gap: .3rem; }
+  .au-xero-credential { padding: .16rem; border-radius: 10px; }
 }
 
 /* ACCA qualification presented alongside the Xero certifications under About us. */
