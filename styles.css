@@ -1020,3 +1020,43 @@ main .section > .container > h3 { font-family: var(--font-body); }
     border-radius: 12px;
   }
 }
+
+/* ACCA qualification presented alongside the Xero certifications under About us. */
+.au-acca-qualification {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+  padding: 1rem;
+  background: #f9fcfa;
+  border: 1px solid #d9e7de;
+  border-radius: 14px;
+}
+.au-acca-monogram {
+  width: 110px;
+  min-width: 110px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .15rem;
+  color: #fff;
+  background: #263f34;
+  border-radius: 18px;
+  text-align: center;
+}
+.au-acca-monogram strong { font-size: 1.65rem; letter-spacing: .02em; color: inherit; }
+.au-acca-monogram span { font-size: .76rem; color: #e8f4ed; }
+.au-acca-description { flex: 1; min-width: 0; }
+.au-acca-description > strong { display: block; font-size: 1.08rem; color: #244f39; }
+.au-acca-description > span { display: block; margin-top: .3rem; line-height: 1.4; color: #41594d; }
+.au-acca-description p { margin: .55rem 0 0; font-size: .86rem; line-height: 1.5; color: #50635a; }
+@media (max-width: 450px) {
+  .au-acca-qualification { gap: .75rem; padding: .75rem; }
+  .au-acca-monogram { width: 82px; min-width: 82px; border-radius: 14px; }
+  .au-acca-monogram strong { font-size: 1.25rem; }
+  .au-acca-monogram span { font-size: .63rem; }
+  .au-acca-description > strong { font-size: .96rem; }
+  .au-acca-description > span { font-size: .83rem; }
+}
