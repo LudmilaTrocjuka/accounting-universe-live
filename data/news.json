@@ -2,6 +2,17 @@
   "version": 2,
   "articles": [
     {
+      "title": "Data Element 2/3: Documents and Other Reference Codes (National) of the Customs Declaration Service (CDS)",
+      "url": "https://www.gov.uk/guidance/data-element-23-documents-and-other-reference-codes-national-of-the-customs-declaration-service-cds",
+      "date": "2026-10-29",
+      "dateKind": "updated",
+      "updatedAt": "2026-10-29",
+      "source": "HMRC",
+      "category": "uk-business",
+      "live": true,
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
+    },
+    {
       "title": "Official Statistics: UK trade in goods by business characteristics 2025",
       "url": "https://www.gov.uk/government/statistics/announcements/uk-trade-in-goods-by-business-characteristics-2025",
       "date": "2026-10-28",
@@ -10,7 +21,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Stamp Duty Land Tax relief for land or property transactions",
@@ -21,7 +32,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Zero rating medicines supplied free of charge (VAT Notice 1004)",
@@ -32,7 +43,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Policy paper: Revenue and Customs Brief 13 (2026): VAT and Climate Change Levy on electric vehicle charging for non-domestic use",
@@ -43,7 +54,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Guidance: Rates and allowances for Landfill Tax",
@@ -54,7 +65,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Check if you need to pay Landfill Tax",
@@ -65,7 +76,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Notice: Excise Notice LFT1: a general guide to Landfill Tax",
@@ -76,18 +87,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
-    },
-    {
-      "title": "Fuel and power (VAT Notice 701/19)",
-      "url": "https://www.gov.uk/guidance/vat-on-fuel-and-power-notice-70119",
-      "date": "2026-10-28",
-      "dateKind": "updated",
-      "updatedAt": "2026-10-28",
-      "source": "HMRC",
-      "category": "uk-business",
-      "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Guidance: Ceased or suspended Authorised Corporate Service Providers (ACSPs)",
@@ -98,7 +98,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Policy paper: Companies House third-party code of conduct",
@@ -109,7 +109,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: changes for employers and employees",
@@ -120,7 +120,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: key changes to indirect taxes",
@@ -131,7 +131,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: tax rates on property and savings income increased",
@@ -142,7 +142,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: government confirms measures to tackle tax debt",
@@ -153,7 +153,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: personal allowance increased for low-income pensioners",
@@ -164,7 +164,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: business rates relief and fiscal devolution",
@@ -175,7 +175,7 @@
       "source": "ICAEW",
       "category": "pubs",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: CGT changes include a new relief for founders",
@@ -186,7 +186,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Budget: MTD penalty soft landing and exclusions",
@@ -197,7 +197,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "UKHospitality responds to the Budget",
@@ -208,7 +208,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "ABTA statement on the Budget",
@@ -219,7 +219,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "ABTA statement Package Travel Regulations guidance",
@@ -230,7 +230,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "UKHospitality responds to National Minimum Wage and National Living Wage increase",
@@ -241,7 +241,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Wings, matcha and the 7pm crowd: how Gen Z is changing quick service",
@@ -252,7 +252,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "The customer is always right. But at what cost to hospitality staff?",
@@ -263,7 +263,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Policy paper: Economic Crime and Corporate Transparency Act: outline transition plan for Companies House",
@@ -274,7 +274,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Guidance: List of Authorised Corporate Service Providers (ACSPs)",
@@ -285,7 +285,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Guidance: Filing your Companies House accounts",
@@ -296,7 +296,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Companies House update to accounts filing from April 2028",
@@ -307,7 +307,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Soaring costs holding back investment, new member survey reveals",
@@ -318,7 +318,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Use a software provider to prepare package accounts for Companies House",
@@ -329,7 +329,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Secretary of State for Work and Pensions writes to UKHospitality members",
@@ -340,7 +340,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "A look back: Environmental Sustainability Seminar 2026",
@@ -351,7 +351,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "ABTA LifeLine needs your support more than ever",
@@ -362,7 +362,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Transparency data: Companies House purchase ledger spend 2026",
@@ -373,7 +373,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Our Parliamentary Reception ahead of the Budget 2026",
@@ -384,7 +384,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "ABTA statement on the new Maldives tax rules",
@@ -395,7 +395,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Managing uncertainty with confidence",
@@ -406,7 +406,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Montenegro to host the ABTA Travel Convention 2027",
@@ -417,7 +417,7 @@
       "source": "ABTA",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Holidays remain popular despite a year of disruptions, but cost of living brings in caution",
@@ -428,7 +428,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "AI catches up with social media as a source for holiday inspiration, but traditional sources still have the biggest say",
@@ -439,7 +439,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-10-28T22:43:20.956Z"
+      "retrievedAt": "2026-10-29T06:02:11.036Z"
     },
     {
       "title": "Britain set to lose one pub a day in 2026 at the expense of over 5,000 jobs, as Government urged to deliver on promises for sector",
@@ -475,7 +475,7 @@
       "retrievedAt": "2026-10-26T17:54:52.288Z"
     }
   ],
-  "checkedAt": "2026-10-28T22:43:20.956Z",
+  "checkedAt": "2026-10-29T06:02:11.036Z",
   "sources": [
     {
       "name": "HMRC",
@@ -506,43 +506,43 @@
     {
       "name": "HMRC",
       "status": "ok",
-      "checkedAt": "2026-10-28T22:43:20.956Z",
-      "lastSuccessAt": "2026-10-28T22:43:20.956Z",
+      "checkedAt": "2026-10-29T06:02:11.036Z",
+      "lastSuccessAt": "2026-10-29T06:02:11.036Z",
       "count": 8
     },
     {
       "name": "Companies House",
       "status": "ok",
-      "checkedAt": "2026-10-28T22:43:20.956Z",
-      "lastSuccessAt": "2026-10-28T22:43:20.956Z",
+      "checkedAt": "2026-10-29T06:02:11.036Z",
+      "lastSuccessAt": "2026-10-29T06:02:11.036Z",
       "count": 8
     },
     {
       "name": "ICAEW",
       "status": "ok",
-      "checkedAt": "2026-10-28T22:43:20.956Z",
-      "lastSuccessAt": "2026-10-28T22:43:20.956Z",
+      "checkedAt": "2026-10-29T06:02:11.036Z",
+      "lastSuccessAt": "2026-10-29T06:02:11.036Z",
       "count": 8
     },
     {
       "name": "UKHospitality",
       "status": "ok",
-      "checkedAt": "2026-10-28T22:43:20.956Z",
-      "lastSuccessAt": "2026-10-28T22:43:20.956Z",
+      "checkedAt": "2026-10-29T06:02:11.036Z",
+      "lastSuccessAt": "2026-10-29T06:02:11.036Z",
       "count": 8
     },
     {
       "name": "BBPA",
       "status": "cached",
-      "checkedAt": "2026-10-28T22:43:20.956Z",
+      "checkedAt": "2026-10-29T06:02:11.036Z",
       "lastSuccessAt": "2026-10-26T17:54:52.288Z",
       "count": 3
     },
     {
       "name": "ABTA",
       "status": "ok",
-      "checkedAt": "2026-10-28T22:43:20.956Z",
-      "lastSuccessAt": "2026-10-28T22:43:20.956Z",
+      "checkedAt": "2026-10-29T06:02:11.036Z",
+      "lastSuccessAt": "2026-10-29T06:02:11.036Z",
       "count": 8
     }
   ],
