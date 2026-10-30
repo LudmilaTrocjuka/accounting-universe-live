@@ -1180,3 +1180,75 @@ main .section > .container > h3 { font-family: var(--font-body); }
 #software .au-platform-card--xero .au-xero-brand-pair img.au-platform-logo { flex:1 1 auto !important; width:240px !important; height:94px !important; max-width:calc(100% - 103px) !important; max-height:94px !important; min-width:0 !important; object-fit:contain !important; object-position:left center !important; }
 #software .au-platform-card--xero .au-xero-brand-pair img.au-xero-blue-partner { flex:0 0 88px !important; display:block !important; width:88px !important; height:88px !important; max-width:88px !important; max-height:88px !important; min-width:0 !important; object-fit:contain !important; }
 @media (max-width:420px) { #software .au-platform-card--xero .au-xero-brand-pair { gap:10px; } #software .au-platform-card--xero .au-xero-brand-pair img.au-xero-blue-partner { flex-basis:76px !important; width:76px !important; height:76px !important; max-width:76px !important; max-height:76px !important; } #software .au-platform-card--xero .au-xero-brand-pair img.au-platform-logo { max-width:calc(100% - 86px) !important; } }
+
+/* Symmetric software cards and Sage green wordmark — October 2026 */
+#software .software-visual .au-platform-card {
+  display: grid !important;
+  grid-template-rows: 136px auto;
+  align-content: center;
+  justify-items: center;
+  row-gap: .65rem;
+  box-sizing: border-box;
+  min-height: 210px;
+  padding: 1rem 1.4rem 1.15rem;
+  text-align: center;
+}
+#software .software-visual .au-platform-card .au-platform-brand {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 136px !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+}
+#software .software-visual .au-platform-card > span:last-child {
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  align-self: center;
+  line-height: 1.45;
+}
+#software .software-visual .au-platform-card--xero .au-xero-brand-pair {
+  justify-content: center !important;
+  gap: clamp(.7rem, 2vw, 1.35rem) !important;
+}
+#software .software-visual .au-platform-card--xero .au-xero-brand-pair img.au-platform-logo {
+  flex: 0 1 235px !important;
+  width: 235px !important;
+  max-width: calc(100% - 110px) !important;
+  min-width: 0 !important;
+  height: 100px !important;
+  max-height: 100px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+#software .software-visual .au-platform-card--xero .au-xero-brand-pair img.au-xero-blue-partner {
+  flex: 0 0 88px !important;
+}
+#software .software-visual .au-platform-card--sage img.au-platform-logo {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(97%) saturate(2838%) hue-rotate(84deg) brightness(107%) contrast(120%);
+}
+@media (max-width: 640px) {
+  #software .software-visual .au-platform-card {
+    grid-template-rows: 118px auto;
+    min-height: 188px;
+  }
+  #software .software-visual .au-platform-card .au-platform-brand {
+    height: 118px !important;
+  }
+}
+@media (max-width: 420px) {
+  #software .software-visual .au-platform-card--xero .au-xero-brand-pair {
+    gap: .7rem !important;
+  }
+  #software .software-visual .au-platform-card--xero .au-xero-brand-pair img.au-platform-logo {
+    max-width: calc(100% - 88px) !important;
+  }
+  #software .software-visual .au-platform-card--xero .au-xero-brand-pair img.au-xero-blue-partner {
+    flex: 0 0 76px !important;
+  }
+}
