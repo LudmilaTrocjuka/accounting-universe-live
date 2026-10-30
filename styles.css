@@ -1140,3 +1140,37 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .au-xero-credentials-grid > .au-xero-credential > svg { width: 100% !important; height: 100% !important; object-fit: contain; border-radius: 24%; }
 @media (max-width: 760px) { .au-xero-credentials-grid, .au-software-credentials .au-xero-credentials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
+
+/* AU software brand logos: preserve original rectangular platform cards. */
+#software .au-platform-card {
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+}
+#software .au-platform-card .au-platform-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: .5rem;
+  min-width: 0;
+  width: 100%;
+}
+#software .au-platform-card img.au-platform-logo {
+  display: block !important;
+  flex: 0 0 auto !important;
+  width: 210px !important;
+  height: 70px !important;
+  max-width: 100% !important;
+  max-height: 70px !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+#software .au-platform-card--xero img.au-platform-logo { width: 160px !important; }
+#software .au-platform-card--sage img.au-platform-logo { width: 155px !important; }
+@media (max-width: 640px) {
+  #software .au-platform-card img.au-platform-logo { height: 56px !important; max-height: 56px !important; }
+}
