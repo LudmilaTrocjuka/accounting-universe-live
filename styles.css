@@ -1174,3 +1174,9 @@ main .section > .container > h3 { font-family: var(--font-body); }
 @media (max-width: 640px) {
   #software .au-platform-card img.au-platform-logo { height: 56px !important; max-height: 56px !important; }
 }
+
+/* Xero Blue Partner badge supplied by AU — display alongside platform logo. */
+#software .au-platform-card--xero .au-xero-brand-pair { display:flex; flex-direction:row; align-items:center; justify-content:flex-start; gap:15px; width:100%; min-width:0; }
+#software .au-platform-card--xero .au-xero-brand-pair img.au-platform-logo { flex:1 1 auto !important; width:240px !important; height:94px !important; max-width:calc(100% - 103px) !important; max-height:94px !important; min-width:0 !important; object-fit:contain !important; object-position:left center !important; }
+#software .au-platform-card--xero .au-xero-brand-pair img.au-xero-blue-partner { flex:0 0 88px !important; display:block !important; width:88px !important; height:88px !important; max-width:88px !important; max-height:88px !important; min-width:0 !important; object-fit:contain !important; }
+@media (max-width:420px) { #software .au-platform-card--xero .au-xero-brand-pair { gap:10px; } #software .au-platform-card--xero .au-xero-brand-pair img.au-xero-blue-partner { flex-basis:76px !important; width:76px !important; height:76px !important; max-width:76px !important; max-height:76px !important; } #software .au-platform-card--xero .au-xero-brand-pair img.au-platform-logo { max-width:calc(100% - 86px) !important; } }
