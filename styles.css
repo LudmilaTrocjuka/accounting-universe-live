@@ -1153,3 +1153,12 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .software-platform--sage strong { color: #167e3c; }
 .software-platform > span:last-child { font-size: .83rem; line-height: 1.35; }
 @media (max-width:640px) { .software-platform { min-height: 130px; } }
+
+/* Hard size caps prevent brand SVGs expanding to card dimensions (even during CSS cache mismatch). */
+#software .software-platform { min-height: 148px; align-items: center; justify-content: center; text-align: center; }
+#software .software-platform .software-platform-brand { width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .55rem; }
+#software .software-platform .software-platform-icon { display: inline-flex !important; flex: 0 0 48px !important; width: 48px !important; height: 48px !important; max-width: 48px !important; max-height: 48px !important; overflow: hidden; }
+#software .software-platform .software-platform-icon svg { display:block !important; flex: 0 0 48px !important; width:48px !important; height:48px !important; max-width:48px !important; max-height:48px !important; }
+#software .software-platform--xero .software-platform-icon svg { fill:#13B5EA !important; }
+#software .software-platform--quickbooks .software-platform-icon svg { fill:#2CA01C !important; }
+#software .software-platform--sage .software-platform-icon svg { fill:#00A651 !important; }
