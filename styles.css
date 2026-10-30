@@ -1169,7 +1169,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
   border-radius: 0 !important;
   background: transparent !important;
 }
-#software .au-platform-card--xero img.au-platform-logo { width: 160px !important; }
+#software .au-platform-card--xero img.au-platform-logo { width: 440px !important; height: 125px !important; max-height: 125px !important; }
 #software .au-platform-card--sage img.au-platform-logo { width: 155px !important; }
 @media (max-width: 640px) {
   #software .au-platform-card img.au-platform-logo { height: 56px !important; max-height: 56px !important; }
