@@ -1139,3 +1139,17 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .au-xero-credentials-grid > .au-xero-credential > img,
 .au-xero-credentials-grid > .au-xero-credential > svg { width: 100% !important; height: 100% !important; object-fit: contain; border-radius: 24%; }
 @media (max-width: 760px) { .au-xero-credentials-grid, .au-software-credentials .au-xero-credentials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Platform identity icons; brand-mark silhouettes from Simple Icons. */
+.software-platform { align-items: center; text-align: center; justify-content: center; min-height: 148px; }
+.software-platform-brand { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .55rem; }
+.software-platform-icon { width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+.software-platform-icon svg { display: block; width: 100%; height: 100%; fill: currentColor; }
+.software-platform--xero .software-platform-icon { color: #13b5ea; }
+.software-platform--quickbooks .software-platform-icon { color: #2ca01c; }
+.software-platform--sage .software-platform-icon { color: #00a651; }
+.software-platform--xero strong { color: #0879a3; }
+.software-platform--quickbooks strong { color: #237d18; }
+.software-platform--sage strong { color: #167e3c; }
+.software-platform > span:last-child { font-size: .83rem; line-height: 1.35; }
+@media (max-width:640px) { .software-platform { min-height: 130px; } }
