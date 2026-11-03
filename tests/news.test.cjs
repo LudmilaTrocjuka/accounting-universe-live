@@ -34,3 +34,16 @@ test('BBPA current article cards with dates are recognised',()=>{
  assert.equal(a[0].date,'2026-11-02');
  assert(a.every(x=>x.url.startsWith('https://www.beerandpub.com/')));
 });
+
+test('Evergreen HMRC account sign-in guidance is not listed as current news',()=>{
+ const source=SOURCES.find(s=>s.name==='HMRC');
+ const body='<feed><entry><title>Sign in to your HMRC business tax account</title>'+ 
+ '<link rel="alternate" href="https://www.gov.uk/guidance/sign-in-to-your-hmrc-business-tax-account"/>'+ 
+ '<updated>2026-11-03T12:00:00Z</updated></entry>'+ 
+ '<entry><title>New VAT reporting requirements for business</title>'+ 
+ '<link rel="alternate" href="https://www.gov.uk/guidance/new-vat-reporting-requirements"/>'+ 
+ '<updated>2026-11-03T12:00:00Z</updated></entry></feed>';
+ const items=parsePublisher(body,source,Date.parse('2026-11-03T14:00:00Z'));
+ assert.equal(items.length,1);
+ assert.equal(items[0].title,'New VAT reporting requirements for business');
+});
