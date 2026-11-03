@@ -18,3 +18,19 @@ test('Source failure preserves actual retrieval date and is never called live',a
  const result=await collectNews({previous,now,fetcher:async()=>{throw Error('offline');}});
  assert.equal(result.articles[0].live,false);assert.equal(result.articles[0].retrievedAt,retrievedAt);assert.equal(result.sourceStatus[0].status,'cached');assert.equal(result.sourceStatus[0].lastSuccessAt,retrievedAt);assert.equal(result.sourceStatus[1].status,'unavailable');assert.equal(result.liveSources.length,0);
 });
+
+
+test('BBPA current article cards with dates are recognised',()=>{
+ const source=SOURCES.find(s=>s.name==='BBPA');
+ const body='<section class="latest-news"><div class="article-card">'+
+ '<span class="article-date">2 Nov, 2026</span>'+
+ '<h3><a href="https://www.beerandpub.com/news-insights-research/news/now-is-the-time-to-back-welsh-pubs/">'+
+ 'Now is the time to back Welsh pubs to kick start the Welsh economy</a></h3>'+
+ '</div><div class="article-card"><span>28 Oct, 2026</span>'+
+ '<h3><a href="https://www.beerandpub.com/news-insights-research/news/budget-2026-reaction/">'+
+ 'Budget 2026 Reaction for the pub sector</a></h3></div></section>';
+ const a=parsePublisher(body,source,Date.parse('2026-11-03T12:00:00Z'));
+ assert.equal(a.length,2);
+ assert.equal(a[0].date,'2026-11-02');
+ assert(a.every(x=>x.url.startsWith('https://www.beerandpub.com/')));
+});
