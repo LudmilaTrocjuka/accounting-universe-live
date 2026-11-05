@@ -1263,3 +1263,8 @@ main .section > .container > h3 { font-family: var(--font-body); }
 #about .about-approach .about-values { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:2.5rem; row-gap:.35rem; max-width:none; }
 #about .about-approach .about-closing { margin:1.25rem 0 0; padding:1.3rem 1.5rem; border-radius:10px; background:#397657; color:#fff; font-size:clamp(1.25rem,2.2vw,1.65rem); line-height:1.45; }
 @media(max-width:760px) { #about .about-approach .about-values { grid-template-columns:1fr; } }
+
+#contact .about-team-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; margin:1.5rem 0 2rem; align-items:start; }
+#contact .about-profile { min-width:0; padding:1.35rem; background:#fff; border:1px solid #d9e6dc; border-radius:14px; }
+#contact .about-profile h4 { margin:0 0 .5rem; }
+@media(max-width:540px) { #contact .about-team-grid { grid-template-columns:1fr; } }
