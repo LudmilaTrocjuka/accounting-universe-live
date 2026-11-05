@@ -1252,3 +1252,6 @@ main .section > .container > h3 { font-family: var(--font-body); }
     flex: 0 0 76px !important;
   }
 }
+
+/* Use the full team-grid width for the About introduction. */
+#about > .container > p { max-width: none; width: 100%; }
