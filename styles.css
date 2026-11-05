@@ -1255,3 +1255,11 @@ main .section > .container > h3 { font-family: var(--font-body); }
 
 /* Use the full team-grid width for the About introduction. */
 #about > .container > p { max-width: none; width: 100%; }
+
+/* Full-width approach panel and clear closing message. */
+#about .about-approach { width:100%; margin-top:2rem; padding:clamp(1.25rem,3vw,2rem); border:1px solid #cbded2; border-radius:14px; background:#eaf3ed; box-sizing:border-box; }
+#about .about-approach .about-subheading { margin:0 0 .75rem; font-size:1.35rem; }
+#about .about-approach > p { max-width:none; }
+#about .about-approach .about-values { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:2.5rem; row-gap:.35rem; max-width:none; }
+#about .about-approach .about-closing { margin:1.25rem 0 0; padding:1.3rem 1.5rem; border-radius:10px; background:#397657; color:#fff; font-size:clamp(1.25rem,2.2vw,1.65rem); line-height:1.45; }
+@media(max-width:760px) { #about .about-approach .about-values { grid-template-columns:1fr; } }
