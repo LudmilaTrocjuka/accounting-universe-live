@@ -5,7 +5,7 @@ for(const [name,file] of [['ICAEW','icaew.html'],['BBPA','bbpa.html'],['ABTA','a
  const source=SOURCES.find(s=>s.name===name),body=fs.readFileSync(__dirname+'/fixtures/'+file,'utf8'),a=parsePublisher(body,source,now);
  assert(a.length>=2);assert(a.every(x=>x.date&&x.url.includes(source.host.replace(/^www\./,''))));
  if(name==='ICAEW')assert(a.some(x=>x.date==='2026-10-26'));
- if(name==='ABTA')assert(a.some(x=>x.title.includes('Maldives')&&x.date==='2026-10-21'));
+ if(name==='ABTA')assert(a.every(x=>!x.title.includes('Maldives')));
 });
 test('Atom rejects external links, invalid dates, future entries and duplicate URLs',()=>{
  const source=SOURCES[0],body='<feed>'+[
@@ -46,4 +46,18 @@ test('Evergreen HMRC account sign-in guidance is not listed as current news',()=
  const items=parsePublisher(body,source,Date.parse('2026-11-03T14:00:00Z'));
  assert.equal(items.length,1);
  assert.equal(items[0].title,'New VAT reporting requirements for business');
+});
+
+test('ACCA listing recognises dated professional updates',()=>{
+ const source=SOURCES.find(s=>s.name==='ACCA');
+ assert(source,'ACCA must be monitored');
+ const body='<article><time datetime="2026-11-08">8 Nov 2026</time><h2><a href="https://www.accaglobal.com/gb/en/news/2026/november/accounting-tax-update.html">Accounting tax update for practitioners</a></h2></article>';
+ const items=parsePublisher(body,source,Date.parse('2026-11-09T12:00:00Z'));
+ assert.equal(items.length,1);
+ assert.equal(items[0].source,'ACCA');
+});
+test('Cached publisher news older than seven days is removed',async()=>{
+ const previous={articles:[{title:'Tax news',url:'https://www.gov.uk/a',date:'2026-10-01',updatedAt:'2026-10-01',retrievedAt:'2026-10-01T00:00:00Z',source:'HMRC'}]};
+ const result=await collectNews({previous,now:Date.parse('2026-11-09T12:00:00Z'),fetcher:async()=>{throw Error('offline');}});
+ assert.equal(result.articles.length,0);
 });
