@@ -25,6 +25,8 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: node --test tests/news.test.cjs
+      - name: Validate publisher configuration
+        run: node -e "const {SOURCES}=require('./lib/news'); const names=SOURCES.map(s=>s.name); for(const name of ['HMRC','Companies House','ACCA','ICAEW','UKHospitality','BBPA','ABTA']) if(!names.includes(name)) throw Error('Missing publisher: '+name);"
       - name: Retrieve official publisher updates
         id: collect
         continue-on-error: true
