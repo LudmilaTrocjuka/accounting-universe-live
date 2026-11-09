@@ -2,26 +2,59 @@
   "version": 2,
   "articles": [
     {
-      "title": "Customs Declaration Service: service availability and issues",
-      "url": "https://www.gov.uk/guidance/customs-declaration-service-service-availability-and-issues",
-      "date": "2026-11-07",
+      "title": "Capital Gains Manual",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual",
+      "date": "2026-11-09",
       "dateKind": "updated",
-      "updatedAt": "2026-11-07",
+      "updatedAt": "2026-11-09",
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
-      "title": "Report a problem using the Customs Declaration Service",
-      "url": "https://www.gov.uk/guidance/report-a-problem-using-the-customs-declaration-service",
-      "date": "2026-11-06",
+      "title": "Promotional material: Tax Facts – teach the facts about tax",
+      "url": "https://www.gov.uk/government/publications/tax-facts-for-children-and-young-people",
+      "date": "2026-11-09",
       "dateKind": "updated",
-      "updatedAt": "2026-11-06",
+      "updatedAt": "2026-11-09",
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
+    },
+    {
+      "title": "Guidance: National Minimum Wage information for employers",
+      "url": "https://www.gov.uk/government/publications/national-minimum-wage-information-for-employers-nmw-fs1",
+      "date": "2026-11-09",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-09",
+      "source": "HMRC",
+      "category": "uk-business",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
+    },
+    {
+      "title": "Guidance: List of Authorised Corporate Service Providers (ACSPs)",
+      "url": "https://www.gov.uk/government/publications/list-of-authorised-corporate-service-providers-acsps",
+      "date": "2026-11-09",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-09",
+      "source": "Companies House",
+      "category": "uk-business",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
+    },
+    {
+      "title": "Guidance: Technical interface specifications for Companies House software",
+      "url": "https://www.gov.uk/government/publications/technical-interface-specifications-for-companies-house-software",
+      "date": "2026-11-09",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-09",
+      "source": "Companies House",
+      "category": "uk-business",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Transparency data: Sixth Trade Specialised Committee on Customs Cooperation and Rules of Origin agenda",
@@ -32,18 +65,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Guidance: NCTS: software developers",
-      "url": "https://www.gov.uk/government/publications/ncts-software-developers",
-      "date": "2026-11-06",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-06",
-      "source": "HMRC",
-      "category": "uk-business",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Guidance: Rates and allowances: HMRC interest rates for late and early payments",
@@ -54,7 +76,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Exporting controlled goods from Great Britain during HMRC system issues",
@@ -65,18 +87,7 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Stamp Taxes on Shares Manual",
-      "url": "https://www.gov.uk/hmrc-internal-manuals/stamp-taxes-shares-manual",
-      "date": "2026-11-06",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-06",
-      "source": "HMRC",
-      "category": "uk-business",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "HMRC interest rates update",
@@ -87,7 +98,18 @@
       "source": "HMRC",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
+    },
+    {
+      "title": "Guidance: Rates and allowances: Inheritance Tax thresholds and interest rates",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-inheritance-tax-thresholds-and-interest-rates",
+      "date": "2026-11-06",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-06",
+      "source": "HMRC",
+      "category": "uk-business",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Christmas and new year opening times at Companies House",
@@ -98,7 +120,18 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
+    },
+    {
+      "title": "100% first year allowance for electric cars to end in April 2027",
+      "url": "https://www.icaew.com/insights/tax-news/2026/nov-2026/100-per-cent-first-year-allowance-for-electric-cars-to-end-in-april-2027",
+      "date": "2026-11-06",
+      "dateKind": "published",
+      "updatedAt": "2026-11-06",
+      "source": "ICAEW",
+      "category": "uk-business",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Five market signals hospitality operators should watch heading into 2027",
@@ -109,18 +142,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Plant-based can’t be a compromise anymore",
-      "url": "https://www.ukhospitality.org.uk/plant-based-cant-be-a-compromise-anymore/",
-      "date": "2026-11-06",
-      "dateKind": "published",
-      "updatedAt": "2026-11-06",
-      "source": "UKHospitality",
-      "category": "hospitality",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Guidance: Ceased or suspended Authorised Corporate Service Providers (ACSPs)",
@@ -131,40 +153,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "New research shows strong public support for a UK-EU youth mobility scheme",
-      "url": "https://www.abta.com/news/new-research-shows-strong-public-support-uk-eu-youth-mobility-scheme",
-      "date": "2026-11-05",
-      "dateKind": "published",
-      "updatedAt": "2026-11-05",
-      "source": "ABTA",
-      "category": "travel",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "ABTA meets with Maldives Minister of Tourism to discuss tax",
-      "url": "https://www.abta.com/news/abta-meets-maldives-minister-tourism-discuss-tax",
-      "date": "2026-11-05",
-      "dateKind": "published",
-      "updatedAt": "2026-11-05",
-      "source": "ABTA",
-      "category": "travel",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Bringing the industry together",
-      "url": "https://www.abta.com/news/bringing-industry-together",
-      "date": "2026-11-05",
-      "dateKind": "published",
-      "updatedAt": "2026-11-05",
-      "source": "ABTA",
-      "category": "travel",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Tax news in brief 4 November 2026",
@@ -175,7 +164,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "‘Holiday Tax Bill’ will cost jobs and hike prices for families",
@@ -186,18 +175,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Guidance: List of Authorised Corporate Service Providers (ACSPs)",
-      "url": "https://www.gov.uk/government/publications/list-of-authorised-corporate-service-providers-acsps",
-      "date": "2026-11-02",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-02",
-      "source": "Companies House",
-      "category": "uk-business",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Five budget measures you may have missed",
@@ -208,7 +186,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Will I meet the conditions for founders’ relief?",
@@ -219,7 +197,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Budget 2026: enough ‘breathing room’?",
@@ -230,29 +208,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Wroxham Travel – advice for customers",
-      "url": "https://www.abta.com/news/wroxham-travel-advice-customers",
-      "date": "2026-10-30",
-      "dateKind": "published",
-      "updatedAt": "2026-10-30",
-      "source": "ABTA",
-      "category": "travel",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Wroxham Travel – advice for ABTA members",
-      "url": "https://www.abta.com/news/wroxham-travel-advice-abta-members",
-      "date": "2026-10-30",
-      "dateKind": "published",
-      "updatedAt": "2026-10-30",
-      "source": "ABTA",
-      "category": "travel",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Form: Confirmation statement (CS01)",
@@ -263,7 +219,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Companies House management information: identity verification July to September 2026",
@@ -274,7 +230,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Official Statistics: Incorporated companies in the UK July to September 2026",
@@ -285,7 +241,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "UKHospitality Cymru responds to the Budget",
@@ -296,7 +252,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "UKHospitality Scotland responds to the Budget",
@@ -307,7 +263,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "A ‘breathing space’ Budget?",
@@ -318,7 +274,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Policy paper: Companies House third-party code of conduct",
@@ -329,7 +285,7 @@
       "source": "Companies House",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Budget: changes for employers and employees",
@@ -340,7 +296,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Budget: key changes to indirect taxes",
@@ -351,7 +307,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Budget: tax rates on property and savings income increased",
@@ -362,18 +318,7 @@
       "source": "ICAEW",
       "category": "uk-business",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
-    },
-    {
-      "title": "Budget: government confirms measures to tackle tax debt",
-      "url": "https://www.icaew.com/insights/tax-news/2026/oct-2026/budget-government-confirms-measures-to-tackle-tax-debt",
-      "date": "2026-10-28",
-      "dateKind": "published",
-      "updatedAt": "2026-10-28",
-      "source": "ICAEW",
-      "category": "uk-business",
-      "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "UKHospitality responds to the Budget",
@@ -384,7 +329,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "ABTA statement on the Budget",
@@ -395,7 +340,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "ABTA statement Package Travel Regulations guidance",
@@ -406,7 +351,7 @@
       "source": "ABTA",
       "category": "travel",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "UKHospitality responds to National Minimum Wage and National Living Wage increase",
@@ -417,7 +362,7 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
       "title": "Wings, matcha and the 7pm crowd: how Gen Z is changing quick service",
@@ -428,54 +373,43 @@
       "source": "UKHospitality",
       "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
-      "title": "Policy paper: Economic Crime and Corporate Transparency Act: outline transition plan for Companies House",
-      "url": "https://www.gov.uk/government/publications/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house",
-      "date": "2026-10-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-10-23",
-      "source": "Companies House",
-      "category": "uk-business",
+      "title": "The customer is always right. But at what cost to hospitality staff?",
+      "url": "https://www.ukhospitality.org.uk/the-customer-is-always-right-but-at-what-cost-to-hospitality-staff/",
+      "date": "2026-10-26",
+      "dateKind": "published",
+      "updatedAt": "2026-10-26",
+      "source": "UKHospitality",
+      "category": "hospitality",
       "live": true,
-      "retrievedAt": "2026-11-09T06:54:26.168Z"
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
-      "title": "Britain set to lose one pub a day in 2026 at the expense of over 5,000 jobs, as Government urged to deliver on promises for sector",
-      "url": "https://www.beerandpub.com/news-insights-research/news/britain-set-to-lose-one-pub-a-day-in-2026-at-the-expense-of-over-5000-jobs-as-government-urged-to-deliver-on-promises-for-sector/",
-      "date": "2026-10-12",
+      "title": "ABTA LifeLine needs your support more than ever",
+      "url": "https://www.abta.com/news/abta-lifeline-needs-your-support-more-ever",
+      "date": "2026-10-22",
       "dateKind": "published",
-      "updatedAt": "2026-10-12",
-      "source": "BBPA",
-      "category": "pubs",
-      "live": false,
-      "retrievedAt": "2026-10-26T17:54:52.288Z"
+      "updatedAt": "2026-10-22",
+      "source": "ABTA",
+      "category": "travel",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     },
     {
-      "title": "Beer and pub sector supports almost 1 million jobs and delivers £37.8bn to UK economy",
-      "url": "https://www.beerandpub.com/news-insights-research/news/beer-and-pub-sector-supports-almost-1-million-jobs-and-delivers-37-8bn-to-uk-economy/",
-      "date": "2026-10-05",
+      "title": "ABTA statement on the new Maldives tax rules",
+      "url": "https://www.abta.com/news/abta-statement-new-maldives-tax-rules",
+      "date": "2026-10-21",
       "dateKind": "published",
-      "updatedAt": "2026-10-05",
-      "source": "BBPA",
-      "category": "pubs",
-      "live": false,
-      "retrievedAt": "2026-10-26T17:54:52.288Z"
-    },
-    {
-      "title": "Government must cut beer duty to keep pints affordable and ensure thousands more jobs for young people",
-      "url": "https://www.beerandpub.com/news-insights-research/news/government-must-cut-beer-duty-to-keep-pints-affordable-and-ensure-thousands-more-jobs-for-young-people/",
-      "date": "2026-09-24",
-      "dateKind": "published",
-      "updatedAt": "2026-09-24",
-      "source": "BBPA",
-      "category": "pubs",
-      "live": false,
-      "retrievedAt": "2026-10-26T17:54:52.288Z"
+      "updatedAt": "2026-10-21",
+      "source": "ABTA",
+      "category": "travel",
+      "live": true,
+      "retrievedAt": "2026-11-09T10:36:32.889Z"
     }
   ],
-  "checkedAt": "2026-11-09T06:54:26.168Z",
+  "checkedAt": "2026-11-09T10:36:32.889Z",
   "sources": [
     {
       "name": "HMRC",
@@ -484,6 +418,10 @@
     {
       "name": "Companies House",
       "url": "https://www.gov.uk/government/organisations/companies-house"
+    },
+    {
+      "name": "ACCA",
+      "url": "https://www.accaglobal.com/gb/en/news.html"
     },
     {
       "name": "ICAEW",
@@ -506,44 +444,51 @@
     {
       "name": "HMRC",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:54:26.168Z",
-      "lastSuccessAt": "2026-11-09T06:54:26.168Z",
+      "checkedAt": "2026-11-09T10:36:32.889Z",
+      "lastSuccessAt": "2026-11-09T10:36:32.889Z",
       "count": 8
     },
     {
       "name": "Companies House",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:54:26.168Z",
-      "lastSuccessAt": "2026-11-09T06:54:26.168Z",
+      "checkedAt": "2026-11-09T10:36:32.889Z",
+      "lastSuccessAt": "2026-11-09T10:36:32.889Z",
       "count": 8
+    },
+    {
+      "name": "ACCA",
+      "status": "unavailable",
+      "checkedAt": "2026-11-09T10:36:32.889Z",
+      "lastSuccessAt": null,
+      "count": 0
     },
     {
       "name": "ICAEW",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:54:26.168Z",
-      "lastSuccessAt": "2026-11-09T06:54:26.168Z",
+      "checkedAt": "2026-11-09T10:36:32.889Z",
+      "lastSuccessAt": "2026-11-09T10:36:32.889Z",
       "count": 8
     },
     {
       "name": "UKHospitality",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:54:26.168Z",
-      "lastSuccessAt": "2026-11-09T06:54:26.168Z",
+      "checkedAt": "2026-11-09T10:36:32.889Z",
+      "lastSuccessAt": "2026-11-09T10:36:32.889Z",
       "count": 8
     },
     {
       "name": "BBPA",
-      "status": "cached",
-      "checkedAt": "2026-11-09T06:54:26.168Z",
+      "status": "unavailable",
+      "checkedAt": "2026-11-09T10:36:32.889Z",
       "lastSuccessAt": "2026-10-26T17:54:52.288Z",
-      "count": 3
+      "count": 0
     },
     {
       "name": "ABTA",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:54:26.168Z",
-      "lastSuccessAt": "2026-11-09T06:54:26.168Z",
-      "count": 8
+      "checkedAt": "2026-11-09T10:36:32.889Z",
+      "lastSuccessAt": "2026-11-09T10:36:32.889Z",
+      "count": 5
     }
   ],
   "liveSources": [
@@ -553,5 +498,5 @@
     "UKHospitality",
     "ABTA"
   ],
-  "note": "Official publisher headlines and links. Hourly request cache; scheduled collection every six hours. Saved articles retain their actual retrieval date."
+  "note": "Official publisher headlines and links. Hourly request cache; scheduled collection every six hours. Cached articles expire after seven days; saved articles retain their actual retrieval date."
 }
