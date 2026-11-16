@@ -61,3 +61,14 @@ test('Cached publisher news older than seven days is removed',async()=>{
  const result=await collectNews({previous,now:Date.parse('2026-11-09T12:00:00Z'),fetcher:async()=>{throw Error('offline');}});
  assert.equal(result.articles.length,0);
 });
+
+test('ACCA In Practice cards with ordinal dates yield original links',()=>{
+ const source=SOURCES.find(s=>s.name==='ACCA');
+ const body='<div class="content-card"><a href="/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/October/Multi-factor-authentication-now-live-on-all-agent-accounts.html">Multi-factor authentication now live on all agent accounts</a><span>28th Oct 2026</span><p>HMRC updates tax agents on accounts</p></div>';
+ const a=parsePublisher(body,source,Date.parse('2026-11-16T07:00:00Z'));
+ assert.equal(a.length,1);assert.equal(a[0].date,'2026-10-28');
+});
+test('Seven official sources use HTTPS publisher links',()=>{
+ assert.equal(SOURCES.length,7);
+ for(const s of SOURCES)assert(s.site.startsWith('https://')&&s.url.startsWith('https://'));
+});

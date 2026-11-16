@@ -172,7 +172,7 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
   const grid=document.getElementById('insights-grid'),status=document.getElementById('insights-status'),lastChecked=document.getElementById('insights-last-checked');
   const buttons=[...document.querySelectorAll('[data-news-filter]')],more=document.getElementById('insights-more');
   if(!grid||!status||!buttons.length)return;
-  let articles=[],filter='all',limit=6,busy=false;
+  let articles=[],filter='all',limit=7,busy=false;
   const labels={hospitality:'Hospitality',pubs:'Pubs & Bars',travel:'Travel',ecommerce:'E-commerce','uk-business':'UK Tax & Business'};
   const day=value=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}).format(new Date(value));
   function show(){
@@ -197,7 +197,7 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
     });
     if(more)more.hidden=matching.length<=limit;
   }
-  buttons.forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.newsFilter;limit=6;buttons.forEach(b=>{const yes=b===button;b.classList.toggle('active',yes);b.setAttribute('aria-pressed',String(yes));});show();}));
+  buttons.forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.newsFilter;limit=7;buttons.forEach(b=>{const yes=b===button;b.classList.toggle('active',yes);b.setAttribute('aria-pressed',String(yes));});show();}));
   if(more)more.addEventListener('click',()=>{limit+=6;show();});
   async function refresh(){
     if(busy)return;busy=true;
@@ -212,7 +212,20 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
         const missing=sources.filter(s=>s.status!=='ok').map(s=>s.name+' ('+(s.status==='cached'?'saved articles':'unavailable')+')');
         lastChecked.textContent='Publisher check: '+clock+' (UK time). Updated '+ok+'/'+sources.length+' sources. Scheduled collection every 6 hours; live results cached for up to 1 hour.'+(missing.length?' Needs attention: '+missing.join(', ')+'.':'');
       }
-    }catch(_){status.textContent=articles.length?'Could not refresh publishers. Previously loaded articles remain below.':'News updates are temporarily unavailable. View the original sources below.';if(lastChecked)lastChecked.textContent='Latest publisher check could not be completed; no new verification time is claimed.';}
+    }catch(_){
+      // Static verified publisher links remain available if live API is down.
+      if (!articles.length) {
+        try {
+          const backup=await fetch('/data/news.json',{headers:{Accept:'application/json'},cache:'no-store'});
+          if (!backup.ok) throw Error('backup unavailable');
+          const saved=await backup.json();
+          articles=Array.isArray(saved.articles)?saved.articles:[];
+          show();
+        } catch (_) {}
+      }
+      status.textContent=articles.length?'Showing saved original publisher links; live updates are temporarily unavailable.':'News updates are temporarily unavailable. View the official sources below.';
+      if(lastChecked)lastChecked.textContent='Latest live publisher check could not be completed; no new verification time is claimed.';
+    }
     finally{busy=false;}
   }
   refresh();
