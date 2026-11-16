@@ -176,11 +176,12 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
   const labels={hospitality:'Hospitality',pubs:'Pubs & Bars',travel:'Travel',ecommerce:'E-commerce','uk-business':'UK Tax & Business'};
   const day=value=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}).format(new Date(value));
   function show(){
-    const matching=articles.filter(a=>filter==='all'||a.category===filter);
-    // Show the latest item from every publisher before additional stories.
-    const first=[],rest=[],seen=new Set();
-    matching.forEach(a=>{if(filter==='all'&&!seen.has(a.source)){first.push(a);seen.add(a.source);}else rest.push(a);});
-    const selected=(filter==='all'?[...first,...rest]:matching).slice(0,limit);
+    // Always rank individual articles by their actual publication/update date,
+    // regardless of publisher, availability or retrieval time.
+    const matching=articles.filter(a=>filter==='all'||a.category===filter)
+      .sort((a,b)=>(b.updatedAt||b.date||'').localeCompare(a.updatedAt||a.date||'') ||
+        (b.date||'').localeCompare(a.date||'') || a.source.localeCompare(b.source));
+    const selected=matching.slice(0,limit);
     grid.replaceChildren();
     status.textContent=selected.length?'Latest publisher updates · Publication and update dates are shown on each article.':'No matching articles available. Please see the original publishers below.';
     selected.forEach(item=>{
@@ -196,6 +197,23 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
       card.append(link);grid.append(card);
     });
     if(more)more.hidden=matching.length<=limit;
+    // Sort official publisher shortcuts by the latest dated article each released.
+    // A publisher with no new content naturally moves to the bottom.
+    const sourceLinks=document.getElementById('publisher-links');
+    if(sourceLinks){
+      const latest=new Map();
+      articles.forEach(item=>{
+        const date=item.updatedAt||item.date||'';
+        if(date>(latest.get(item.source)||''))latest.set(item.source,date);
+      });
+      [...sourceLinks.querySelectorAll('a[data-publisher]')]
+        .sort((a,b)=>(latest.get(b.dataset.publisher)||'').localeCompare(latest.get(a.dataset.publisher)||'') ||
+            a.dataset.publisher.localeCompare(b.dataset.publisher))
+        .forEach((link,i)=>{if(i)sourceLinks.append(document.createTextNode(' · '));sourceLinks.appendChild(link);});
+      // Remove old separators from the previous render to keep order stable.
+      [...sourceLinks.childNodes].filter(n=>n.nodeType===3 && !n.textContent.trim().startsWith('Sources:') && !n.textContent.trim().startsWith('News is informational')).forEach(n=>n.remove());
+      [...sourceLinks.querySelectorAll('a[data-publisher]')].forEach((link,i)=>{if(i)sourceLinks.insertBefore(document.createTextNode(' · '),link);});
+    }
   }
   buttons.forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.newsFilter;limit=7;buttons.forEach(b=>{const yes=b===button;b.classList.toggle('active',yes);b.setAttribute('aria-pressed',String(yes));});show();}));
   if(more)more.addEventListener('click',()=>{limit+=6;show();});
