@@ -123,18 +123,6 @@
       "retrievedAt": "2026-11-16T06:33:50.520Z"
     },
     {
-      "title": "Beer and pub industry welcome government changes to reduce the cost impact from packaging charges",
-      "url": "https://www.beerandpub.com/news-insights-research/news/beer-and-pub-industry-welcome-government-changes-to-reduce-the-cost-impact-from-packing-charges/",
-      "date": "2026-11-12",
-      "updatedAt": "2026-11-12",
-      "dateKind": "published",
-      "source": "BBPA",
-      "category": "pubs",
-      "live": false,
-      "retrievedAt": "2026-11-16T06:27:02.058Z",
-      "verificationMethod": "official-page-checked"
-    },
-    {
       "title": "Inspiring the next generation of travel talent",
       "url": "https://www.abta.com/news/inspiring-next-generation-travel-talent",
       "date": "2026-11-12",
@@ -144,6 +132,18 @@
       "category": "travel",
       "live": true,
       "retrievedAt": "2026-11-16T06:33:50.520Z"
+    },
+    {
+      "title": "Beer and pub industry welcome government changes to reduce the cost impact from packing charges",
+      "url": "https://www.beerandpub.com/news-insights-research/news/beer-and-pub-industry-welcome-government-changes-to-reduce-the-cost-impact-from-packing-charges/",
+      "date": "2026-11-11",
+      "updatedAt": "2026-11-11",
+      "dateKind": "published",
+      "source": "BBPA",
+      "category": "pubs",
+      "live": false,
+      "retrievedAt": "2026-11-16T06:27:02.058Z",
+      "verificationMethod": "official-page-checked"
     },
     {
       "title": "Tax news in brief 11 November 2026",
