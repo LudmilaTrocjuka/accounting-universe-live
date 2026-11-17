@@ -1282,3 +1282,10 @@ main .section > .container > :is(h3:where(:not([data-heading-style])), :where([d
 .fees-options :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin:0 0 .75rem; color:#224a34; font-size:1.3rem; line-height:1.3; }
 .fees-options p { margin:0; line-height:1.65; }
 @media(max-width:780px) { .fees-options { grid-template-columns:1fr; gap:.85rem; } }
+
+/* Keep the software and certification card boundaries visible. */
+#software .software-visual .au-platform-card,
+#software .au-xero-credentials,
+#software .au-xero-credentials-grid > .au-xero-credential {
+  border-color: #6e8e7d;
+}
