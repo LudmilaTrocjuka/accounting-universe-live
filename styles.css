@@ -1283,9 +1283,22 @@ main .section > .container > :is(h3:where(:not([data-heading-style])), :where([d
 .fees-options p { margin:0; line-height:1.65; }
 @media(max-width:780px) { .fees-options { grid-template-columns:1fr; gap:.85rem; } }
 
-/* Keep the software and certification card boundaries visible. */
-#software .software-visual .au-platform-card,
-#software .au-xero-credentials,
-#software .au-xero-credentials-grid > .au-xero-credential {
-  border-color: #6e8e7d;
+/* Match the contrast of bordered content blocks on the homepage. */
+main#main {
+  --home-card-border: #6e8e7d;
+}
+
+main#main #software .software-visual .au-platform-card,
+main#main #software .au-xero-credentials,
+main#main #software .au-xero-credentials-grid > .au-xero-credential,
+main#main #services .card,
+main#main #industries .industry-card,
+main#main #reviews .review-card,
+main#main #about :is(.about-profile, .about-approach),
+main#main #contact .about-profile,
+main#main :is(.advisory-card, .services-detail, .insights-card, .insights-reference,
+              .au-acca-qualification, .package-finder, .finder-result, .price-card,
+              .contact-form, .appointment-fields),
+main#main .fees-options article {
+  border-color: var(--home-card-border);
 }
