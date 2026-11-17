@@ -1,3 +1,10 @@
+/* Keep homepage heading typography independent of the semantic heading level. */
+:where([data-heading-style="h5"]) {
+  font-size: .83em;
+  font-weight: bold;
+  margin-block: 1.67em;
+}
+
 :root {
   --bg: #fdfdfd;
   --card: #ffffff;
@@ -126,7 +133,7 @@ a:hover {
   padding: 2.5rem 0 1.5rem; /* уменьшили отступы */
   background: radial-gradient(1000px 400px at 10% -10%, #eaf6ff, transparent);
 }
-.hero h2 {
+.hero :is(h2:where(:not([data-heading-style])), :where([data-heading-style="h2"])) {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   margin: 0 0 .5rem;
 }
@@ -184,8 +191,8 @@ a:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.card h4,
-.price-card h4 {
+.card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+.price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) {
   font-size: 1rem !important;      /* ~16px */
   margin: 0.35rem 0 !important;
 }
@@ -348,19 +355,19 @@ h1 {
   margin: 0;
 }
 
-h2 {
+:is(h2:where(:not([data-heading-style])), :where([data-heading-style="h2"])) {
   font-size: clamp(1.75rem, 3vw, 2.25rem); /* 28–36px */
   font-weight: 600;
   margin: 1rem 0;
 }
 
-h3 {
+:is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) {
   font-size: clamp(1.5rem, 2.5vw, 1.75rem); /* 24–28px */
   font-weight: 600;
   margin: 1.2rem 0 .8rem;
 }
 
-h4 {
+:is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) {
   font-size: 1.2rem; /* около 19px */
   font-weight: 600;
   margin: .6rem 0;
@@ -408,7 +415,7 @@ h4 {
   box-shadow: 0 4px 16px rgba(25,55,55,.05);
 }
 .price-card.featured { border: 2px solid #779684; }
-.price-card h4 { font-size: 1.13rem !important; margin: .1rem 0 !important; }
+.price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size: 1.13rem !important; margin: .1rem 0 !important; }
 .price-card .price { font-weight: 750; font-size: 1.55rem; margin: 0 !important; color: #244e3b; }
 .price-card .price span { font-size: .9rem; font-weight: 500; color: var(--muted); }
 .tier-audience { min-height: 4.5rem; color: var(--muted); font-size: .88rem; line-height: 1.45; }
@@ -436,7 +443,7 @@ h4 {
 .industry-card { overflow: hidden; padding: 0; background: #fff; border: 1px solid #d9e4de; border-radius: 14px; box-shadow: 0 6px 18px rgba(26,61,42,.045); }
 .industry-card > img { display: block; width: 100%; height: 240px; max-width: 100%; object-fit: cover; object-position: center; aspect-ratio: auto; border-radius: 0; filter: none; }
 .industry-card-body { padding: 1.1rem 1.2rem 1.3rem; }
-.industry-card h4 { margin: 0 0 .4rem !important; font-size: 1.07rem !important; font-weight: 720; }
+.industry-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin: 0 0 .4rem !important; font-size: 1.07rem !important; font-weight: 720; }
 .industry-card p { margin: 0; font-size: .92rem; line-height: 1.55; color: #4d5c55; }
 @media (max-width: 640px) {
   .industries-grid { grid-template-columns: 1fr; gap: 1rem; }
@@ -453,10 +460,10 @@ body { font-size: var(--body-size); }
 .review-text { font-size: .98rem; line-height: 1.55; }
 .menu a { font-size: .96rem; }
 .tagline { font-size: .94rem !important; }
-main .section > .container > h3 { font-size: 1.15rem !important; }
-.card h4, .industry-card h4 { font-size: 1.08rem !important; }
+main .section > .container > :is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) { font-size: 1.15rem !important; }
+.card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])), .industry-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size: 1.08rem !important; }
 .industry-card p, .price-card li, .tier-audience { font-size: .94rem; line-height: 1.55; }
-.price-card h4 { font-size: 1.12rem !important; }
+.price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size: 1.12rem !important; }
 .tier-highlight { font-size: .8rem; }
 .microcopy, .review-author, .reviews-cta { font-size: var(--small-size); line-height: 1.5; }
 .site-footer { font-size: .875rem; }
@@ -478,7 +485,7 @@ main .section > .container > h3 { font-size: 1.15rem !important; }
 .contact-form .notice.success { color: #176e44; }
 .contact-form .notice.error { color: #b32e31; }
 .package-finder { margin: 1.2rem 0 1.65rem; padding: 1.2rem 1.25rem; border: 1px solid #c9ddd1; border-radius: 14px; background: #f5faf7; }
-.finder-heading h4 { font-size: 1.13rem !important; margin: 0 0 .3rem !important; }
+.finder-heading :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size: 1.13rem !important; margin: 0 0 .3rem !important; }
 .finder-heading p { margin: 0 0 1rem; font-size: .94rem; color: #42594d; }
 .finder-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; margin-bottom: 1rem; }
 .finder-fields label { display: flex; flex-direction: column; gap: .45rem; font-size: .9rem; font-weight: 600; line-height: 1.4; }
@@ -488,7 +495,7 @@ main .section > .container > h3 { font-size: 1.15rem !important; }
 .finder-validation { margin: .55rem 0 0; color: #a72d31; font-size: .9rem; }
 .finder-result { padding: 1rem 1.1rem; margin-top: 1rem; border: 1px solid #b8d6c4; border-radius: 10px; background: #fff; }
 .finder-result-label { margin: 0 0 .2rem !important; text-transform: uppercase; letter-spacing: .06em; color: #37614e; font-size: .78rem; font-weight: 700; }
-.finder-result h5 { color: #185537; font-size: 1.25rem; margin: .1rem 0 .5rem; }
+.finder-result :is(h5:where(:not([data-heading-style])), :where([data-heading-style="h5"])) { color: #185537; font-size: 1.25rem; margin: .1rem 0 .5rem; }
 .finder-result p { font-size: .94rem; line-height: 1.5; }
 .finder-disclaimer { color: #576560; font-size: .875rem !important; }
 .price-card.recommended { outline: 3px solid #267D55; outline-offset: 3px; }
@@ -591,7 +598,7 @@ body { line-height: 1.55; -webkit-font-smoothing: antialiased; }
 .section { padding: clamp(2.7rem, 4.8vw, 5rem) 0 !important; }
 .section.alt { background: #f4f8f6; }
 .section + .section { padding-top: clamp(2.7rem,4.8vw,5rem) !important; }
-main .section > .container > h3 {
+main .section > .container > :is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) {
   display: block; width: fit-content; max-width: 100%;
   background: none !important; border: none !important;
   border-radius: 0; box-shadow: none;
@@ -610,13 +617,13 @@ main .section > .container > h3 {
   border-radius: 12px; border: 1px solid #d9e7dd;
   background: #fff; box-shadow: 0 3px 14px rgba(22,70,42,.045);
 }
-#services .card h4 { margin: 0 0 .5rem !important; font-size: 1.1rem !important; color: #213e2e; }
+#services .card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin: 0 0 .5rem !important; font-size: 1.1rem !important; color: #213e2e; }
 #services .card p { line-height: 1.58; color: #4e5b52; font-size: .96rem; margin: 0; }
 #industries .industries-grid { gap: 1.65rem; }
 #industries .industry-card { padding: 0; border-radius: 14px; box-shadow: 0 5px 22px rgba(18,57,39,.075); }
 #industries .industry-card > img { height: clamp(235px,22vw,320px); width: 100%; display: block; object-fit: cover; border-radius: 0; }
 #industries .industry-card-body { padding: 1.3rem 1.5rem 1.5rem; }
-#industries .industry-card h4 { margin: 0 0 .55rem !important; font-size: 1.24rem !important; color: #233a2b; }
+#industries .industry-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin: 0 0 .55rem !important; font-size: 1.24rem !important; color: #233a2b; }
 #industries .industry-card p { font-size: .96rem; line-height: 1.62; }
 #about .pill-list { justify-content: flex-start; }
 .pill-list li { background: #e9f4eb; border: 1px solid #d6e6d9; color: #2e5940; }
@@ -627,11 +634,11 @@ main .section > .container > h3 {
 #pricing > .container > img { display: block; width: 100%; max-height: 260px; aspect-ratio: 21 / 5; object-fit: cover; object-position: 50% 46%; margin: 0 0 2.1rem; border-radius: 14px; }
 #pricing .pricing-grid { gap: 1.25rem; }
 #pricing .price-card { padding: 1.6rem; }
-#pricing .price-card h4 { font-size: 1.28rem !important; }
+#pricing .price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size: 1.28rem !important; }
 #pricing .price-card .price { font-size: 1.9rem; }
 #pricing .price-card ul { padding-left: 1.2rem; }
 .package-finder { margin: 1.5rem 0 2.1rem; padding: 1.75rem; background: #f1f8f3; }
-.finder-heading h4 { color: #213f2c; font-size: 1.25rem !important; }
+.finder-heading :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { color: #213f2c; font-size: 1.25rem !important; }
 .finder-fields select { min-height: 46px; }
 #contact .contact-form { width: 100%; max-width: 900px; padding: clamp(1rem,2.4vw,2rem); }
 #contact .contact-form :is(input,select,textarea) { background: #fff; min-height: 44px; }
@@ -774,28 +781,28 @@ body, button, input, select, textarea { font-family: var(--font-body); }
   font-family: var(--font-display);
 }
 /* Consistent sans-serif for ALL section headings, including Services and Software. */
-main .section > .container > h3 {
+main .section > .container > :is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) {
   font-family: var(--font-body);
   font-weight: 700 !important;
   letter-spacing: -.025em;
 }
 .benefit strong,
-#services .card h4,
-#industries .industry-card h4,
-#pricing .price-card h4,
-.finder-heading h4,
+#services .card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+#industries .industry-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+#pricing .price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+.finder-heading :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
 .software-platform strong {
   font-family: var(--font-body);
 }
 .benefit strong { font-size: 1.1rem; font-weight: 650; line-height: 1.35; }
-#services .card h4,
-#industries .industry-card h4,
-#pricing .price-card h4 { font-size: 1.14rem !important; line-height: 1.35; font-weight: 700; }
+#services .card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+#industries .industry-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+#pricing .price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size: 1.14rem !important; line-height: 1.35; font-weight: 700; }
 #services .card p, #industries .industry-card p, .software-platform span {
   font-size: .97rem;
   line-height: 1.55;
 }
-main .section > .container > h3 {
+main .section > .container > :is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) {
   font-size: clamp(1.85rem, 2.7vw, 2.55rem) !important;
   line-height: 1.2;
   margin-bottom: 1.1rem;
@@ -838,7 +845,7 @@ main .section + .section {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
-  main .section > .container > h3 { font-size: clamp(1.75rem, 6vw, 2.1rem) !important; }
+  main .section > .container > :is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) { font-size: clamp(1.75rem, 6vw, 2.1rem) !important; }
   #pricing > .container > img {
     height: clamp(290px, 62vw, 430px);
     max-height: 430px;
@@ -851,7 +858,7 @@ main .section + .section {
 
 /* Expandable full-service reporting catalogue */
 .services-catalogue { margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid #d6e5da; }
-.services-catalogue > h4 { font: 650 clamp(1.2rem,1.7vw,1.5rem)/1.3 var(--font-body,system-ui,sans-serif); color: #203d2d; margin: 0 0 .5rem; }
+.services-catalogue > :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font: 650 clamp(1.2rem,1.7vw,1.5rem)/1.3 var(--font-body,system-ui,sans-serif); color: #203d2d; margin: 0 0 .5rem; }
 .services-catalogue > p { max-width: 900px; color: #536158; }
 .services-catalogue-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .9rem; margin: 1.2rem 0; }
 .services-detail { background: #fff; border: 1px solid #d9e6dd; border-radius: 12px; padding: .15rem 1.15rem; align-self: start; }
@@ -864,25 +871,25 @@ main .section + .section {
 @media(max-width: 750px) { .services-catalogue-grid { grid-template-columns: 1fr; } .services-catalogue { margin-top: 1.5rem; } }
 
 /* Final type hierarchy audit: one sans-serif for all internal headings. */
-main .section > .container > h3 { font-family: var(--font-body); }
-#industries .industry-card h4,
-#pricing .price-card h4,
-.package-finder .finder-heading h4,
-.services-catalogue > h4 {
+main .section > .container > :is(h3:where(:not([data-heading-style])), :where([data-heading-style="h3"])) { font-family: var(--font-body); }
+#industries .industry-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+#pricing .price-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+.package-finder .finder-heading :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])),
+.services-catalogue > :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) {
   font-family: var(--font-body);
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   line-height: 1.35;
 }
 .services-detail summary,
-.finder-result h5 { font-family: var(--font-body); font-weight: 700; }
+.finder-result :is(h5:where(:not([data-heading-style])), :where([data-heading-style="h5"])) { font-family: var(--font-body); font-weight: 700; }
 
 /* About us: team profiles and professional presentation */
 #about .about-lead { color: #254e38; font-size: 1.12rem; margin-bottom: .75rem; }
 #about .about-subheading { font-family: var(--font-body); font-size: 1.4rem; font-weight: 700; color: #213f2c; margin: 1.8rem 0 1rem; }
 #about .about-team-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.15rem; align-items: start; }
 #about .about-profile { padding: 1.5rem; border: 1px solid #d9e6dc; border-radius: 14px; background: #fff; }
-#about .about-profile h5 { font-family: var(--font-body); font-size: 1.22rem; font-weight: 750; color: #1e4931; margin: 0 0 .2rem; }
+#about .about-profile :is(h5:where(:not([data-heading-style])), :where([data-heading-style="h5"])) { font-family: var(--font-body); font-size: 1.22rem; font-weight: 750; color: #1e4931; margin: 0 0 .2rem; }
 #about .about-role { font-weight: 650; color: #416e51; margin-bottom: 1rem; }
 #about .about-profile-label { font-weight: 700; margin-bottom: .4rem; }
 #about .about-profile ul, #about .about-values { padding-left: 1.3rem; margin: .6rem 0 1rem; }
@@ -902,7 +909,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .insights-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
 .insights-card { display: flex; flex-direction: column; align-items: flex-start; min-height: 170px; padding: 1.2rem; background: #fff; border: 1px solid #d4e3d8; border-radius: 12px; }
 .insights-meta { color: #547760; font-size: .78rem; font-weight: 700; letter-spacing: .01em; }
-.insights-card h4 { font-family: var(--font-body,system-ui,sans-serif); color: #213d2d; font-weight: 700; font-size: 1.05rem; line-height: 1.4; margin: .6rem 0 1.1rem !important; }
+.insights-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-family: var(--font-body,system-ui,sans-serif); color: #213d2d; font-weight: 700; font-size: 1.05rem; line-height: 1.4; margin: .6rem 0 1.1rem !important; }
 .insights-card a { margin-top: auto; color: #216d49; font-size: .9rem; font-weight: 650; text-underline-offset: 3px; }
 #insights .insights-note { margin: 1rem 0 0; color: #596b60; font-size: .84rem; line-height: 1.55; }
 #insights .insights-note a { color: #216d49; }
@@ -916,7 +923,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
 .advisory-card { min-width:0; padding:clamp(1.25rem,2vw,2rem); background:linear-gradient(145deg,#fff,#f7fbf8); border:1px solid #d9e7de; border-radius:16px; box-shadow:0 5px 20px rgba(29,77,52,.055); display:flex; flex-direction:column; }
 .advisory-card:nth-child(2), .advisory-card:nth-child(4) { background:linear-gradient(145deg,#fff,#f7fafc); }
 .advisory-index { font-size:.875rem; color:#267d55; font-weight:800; letter-spacing:.08em; margin-bottom:.65rem; }
-.advisory-card h4 { margin:.2rem 0 .75rem; color:#193f2c; font-size:clamp(1.4rem,1.8vw,1.65rem); line-height:1.35; }
+.advisory-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin:.2rem 0 .75rem; color:#193f2c; font-size:clamp(1.4rem,1.8vw,1.65rem); line-height:1.35; }
 #services .advisory-card p { margin:.2rem 0 1rem; color:#354d3e; font-size:1.125rem; line-height:1.65; }
 .advisory-card ul { margin:.3rem 0 1.15rem; padding-left:1.25rem; color:#354d3e; }
 .advisory-card li { padding:.25rem 0; font-size:1.0625rem; line-height:1.6; }
@@ -930,7 +937,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
   .advisory-grid { grid-template-columns:1fr; gap:.85rem; margin:1.3rem 0; }
   .advisory-process { grid-template-columns:1fr; gap:.6rem; }
   .advisory-card { padding:1.25rem; }
-  .advisory-card h4 { font-size:1.4rem; }
+  .advisory-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-size:1.4rem; }
   .hero-specialisms { line-height:1.8; }
 }
 
@@ -967,7 +974,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
   border-radius: 14px;
   background: #f9fcfa;
 }
-.au-xero-credentials h5 { margin: 0 0 .9rem; }
+.au-xero-credentials :is(h5:where(:not([data-heading-style])), :where([data-heading-style="h5"])) { margin: 0 0 .9rem; }
 .au-xero-credentials-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1116,7 +1123,7 @@ main .section > .container > h3 { font-family: var(--font-body); }
   margin-top: 0;
   padding: 1rem;
 }
-.au-software-credentials .au-xero-credentials h5 {
+.au-software-credentials .au-xero-credentials :is(h5:where(:not([data-heading-style])), :where([data-heading-style="h5"])) {
   font-size: 1.05rem;
   line-height: 1.35;
   text-align: center;
@@ -1266,12 +1273,12 @@ main .section > .container > h3 { font-family: var(--font-body); }
 
 #contact .about-team-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; margin:1.5rem 0 2rem; align-items:start; }
 #contact .about-profile { min-width:0; padding:1.35rem; background:#fff; border:1px solid #d9e6dc; border-radius:14px; }
-#contact .about-profile h4 { margin:0 0 .5rem; }
+#contact .about-profile :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin:0 0 .5rem; }
 @media(max-width:540px) { #contact .about-team-grid { grid-template-columns:1fr; } }
 
 /* Compact engagement models, without repeating the service catalogue. */
 .fees-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; margin:1.5rem 0 1rem; }
 .fees-options article { padding:1.4rem; background:#eff6f1; border:1px solid #d9e6dc; border-radius:12px; }
-.fees-options h4 { margin:0 0 .75rem; color:#224a34; font-size:1.3rem; line-height:1.3; }
+.fees-options :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { margin:0 0 .75rem; color:#224a34; font-size:1.3rem; line-height:1.3; }
 .fees-options p { margin:0; line-height:1.65; }
 @media(max-width:780px) { .fees-options { grid-template-columns:1fr; gap:.85rem; } }

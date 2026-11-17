@@ -190,7 +190,9 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
       const meta=document.createElement('div');meta.className='insights-meta';
       meta.textContent=item.source+' · '+(item.dateKind==='updated'?'Updated ':'Published ')+day(item.date+'T12:00:00Z')+' · '+(labels[item.category]||'UK business');
       if(item.updatedAt&&item.updatedAt!==item.date)meta.textContent+=' · Updated '+day(item.updatedAt+'T12:00:00Z');
-      const heading=document.createElement('h4');heading.textContent=item.title;
+      const heading = document.createElement('h3');
+      heading.dataset.headingStyle = 'h4';
+      heading.textContent = item.title;
       const link=document.createElement('a');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Read original article ↗';
       card.append(meta,heading);
       if(item.live===false){const saved=document.createElement('p');saved.className='insights-status';saved.textContent='Saved article · Last retrieved '+(item.retrievedAt?day(item.retrievedAt):'date unavailable');card.append(saved);}
