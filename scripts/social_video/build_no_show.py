@@ -23,7 +23,7 @@ SCENES=[
  ("7320541", "ONE TABLE STAYS EMPTY.", "And the income may disappear.", 4.0, "Pavel Danilyuk"),
  ("8145102", "WHAT HAPPENS TO THE DEPOSIT?", "Your terms, records and refunds matter.", 4.0, "olia danilevich"),
  ("7593326", "AND WHAT ABOUT VAT?", "Review the treatment of retained deposits.", 4.0, "Pavel Danilyuk"),
- ("6327644", "BETTER CONTROL. FEWER SURPRISES.", "AU Finance & Advisory  |  accounting-universe.co.uk", 5.0, "Tima Miroshnichenko"),
+ ("3981540", "BETTER CONTROL. FEWER SURPRISES.", "AU Finance & Advisory  |  accounting-universe.co.uk", 5.0, "Gustavo Fring"),
 ]
 
 def run(cmd, timeout=360):
@@ -92,7 +92,7 @@ def segment(src,overlay,i,secs):
              "format=yuv420p[film];[film][1:v]overlay=0:0:format=auto,"
              "format=yuv420p,fade=t=in:st=0:d=0.22,"
              f"fade=t=out:st={secs-0.20:.2f}:d=0.20[v]")
-    cmd=["ffmpeg","-y","-loglevel","error","-ss","1.0","-i",src,
+    cmd=["ffmpeg","-y","-loglevel","error","-ss",("8.0" if i==5 else "1.0"),"-i",src,
          "-loop","1","-i",overlay,"-filter_complex",filters,
          "-map","[v]","-t",str(secs),"-r",str(FPS),
          "-c:v","libx264","-preset","veryfast","-crf","22",
