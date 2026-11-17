@@ -1,0 +1,26 @@
+name: AU Cinematic Story Real-Footage Preflight
+on:
+  push:
+    branches: [au-hospitality-film-story-20261117]
+    paths:
+      - scripts/social_video_v3/preflight.py
+      - .github/workflows/au-cinematic-film-preflight.yml
+  workflow_dispatch:
+permissions: { contents: read }
+jobs:
+  inspect-footage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --user pillow
+      - run: python scripts/social_video_v3/preflight.py
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: au-real-actors-preflight
+          path: video-preflight/
+          retention-days: 7
