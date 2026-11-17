@@ -38,6 +38,8 @@ NEVER publish, schedule or replace an AU social post without the user's explicit
 - Video asset must be hosted on a stable direct-download HTTPS URL and attached as {video} in Buffer for each platform; visually verify published media and status SENT. No substituting a 256x256 static company logo as the primary media. Do not claim a draft was posted.
 - If MP4 upload/storage is unavailable, report the blocker and deliver an approved playable MP4 for manual upload; NEVER silently publish an image instead.
 
+- A compilation of unrelated real-life stock clips with on-screen titles does NOT satisfy a request for a plot-based video. To qualify as a STORY, require visual character/location continuity, a clear chain of cause-and-effect, genuine on-camera actions and reaction shots, not just a sequence of themed footage. Verify on video frames that the same cast/location and concrete story beats are visible; otherwise label it stock montage and DO NOT present it as completed narrative. Do not falsely promise one coherent shot/actor cast from unrelated stock. If no appropriate free licensed narrative footage or feasible production route exists, report the limitation instead of delivering a disguised stock montage.
+
 ## 5. Platform-specific final checks
 - LinkedIn: text, opening hook, formatting, company branding, 2-3 relevant hashtags, CTA, working UTM link, image asset and ALT text. Inspect Buffer preview.
 - X: separate short copy, 1-2 hashtags, CTA, UTM link, checked post length, image asset, ALT text. Inspect Buffer preview.
