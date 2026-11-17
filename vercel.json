@@ -3,12 +3,5 @@
     "api/news.js": {
       "maxDuration": 30
     }
-  },
-  "redirects": [
-    {
-      "source": "/christmas-cash-flow.html",
-      "destination": "/cash-flow-forecasting.html",
-      "permanent": false
-    }
-  ]
+  }
 }
