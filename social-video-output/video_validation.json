@@ -1,0 +1,16 @@
+{
+  "duration_seconds": 25.0,
+  "size_bytes": 2335716,
+  "all_scenes_live_video": true,
+  "sources": [
+    "3981540",
+    "4318548",
+    "7320541",
+    "8145102",
+    "7593326",
+    "6327644"
+  ],
+  "aspect": "16:9",
+  "size": "1280x720",
+  "no_slide_screen": true
+}
