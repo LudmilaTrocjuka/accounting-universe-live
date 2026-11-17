@@ -1,0 +1,29 @@
+name: AU Real Actors Story Footage Review
+on:
+  push:
+    branches: [au-real-actors-story-20261117]
+    paths:
+      - scripts/story_video/download_same_cast.py
+      - .github/workflows/au-real-actors-story.yml
+  workflow_dispatch:
+permissions: { contents: read }
+jobs:
+  footage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --user pillow
+      - name: Fetch original live-action footage from same shoot
+        run: python scripts/story_video/download_same_cast.py
+      - name: Export real unedited camera takes for quality inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: same-actors-footage-and-review
+          path: story-assets/
+          retention-days: 10
