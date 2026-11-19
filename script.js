@@ -181,7 +181,14 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
     const matching=articles.filter(a=>filter==='all'||a.category===filter)
       .sort((a,b)=>(b.updatedAt||b.date||'').localeCompare(a.updatedAt||a.date||'') ||
         (b.date||'').localeCompare(a.date||'') || a.source.localeCompare(b.source));
-    const selected=matching.slice(0,limit);
+    // Keep only the latest matching article from each publisher.
+    const seenSources=new Set();
+    const latestBySource=matching.filter(item=>{
+      if(seenSources.has(item.source))return false;
+      seenSources.add(item.source);
+      return true;
+    });
+    const selected=latestBySource.slice(0,limit);
     grid.replaceChildren();
     status.textContent=selected.length?'Latest publisher updates · Publication and update dates are shown on each article.':'No matching articles available. Please see the original publishers below.';
     selected.forEach(item=>{
@@ -198,7 +205,7 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
       if(item.live===false){const saved=document.createElement('p');saved.className='insights-status';saved.textContent='Saved article · Last retrieved '+(item.retrievedAt?day(item.retrievedAt):'date unavailable');card.append(saved);}
       card.append(link);grid.append(card);
     });
-    if(more)more.hidden=matching.length<=limit;
+    if(more)more.hidden=latestBySource.length<=limit;
     // Sort official publisher shortcuts by the latest dated article each released.
     // A publisher with no new content naturally moves to the bottom.
     const sourceLinks=document.getElementById('publisher-links');
