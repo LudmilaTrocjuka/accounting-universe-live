@@ -4,6 +4,7 @@ const now=Date.parse('2026-10-26T19:00:00Z');
 test('Publisher extracts strip markup, omit repeated headlines and stay concise',()=>{
  const {shortSummary}=require('../lib/news');
  assert.equal(shortSummary('<p>New VAT rules</p>','New VAT rules'),'');
+ assert.equal(shortSummary('ABTA update Full Page image author@example.com Thu, 11/19/2026 - 09:13 Article body starts here.','ABTA update'),'');
  assert.equal(shortSummary('<p>Businesses must keep digital VAT records. A second sentence explains the details.</p>'),'Businesses must keep digital VAT records.');
  assert(!shortSummary('<script>alert(1)</script><p>Businesses must keep digital VAT records.</p>').includes('alert'));
  assert(shortSummary('A useful account of the changes affecting businesses. '.repeat(20)).length<=300);
