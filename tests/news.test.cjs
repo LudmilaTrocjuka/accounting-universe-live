@@ -1,6 +1,23 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');
 const {SOURCES,parsePublisher,collectNews}=require('../lib/news');
 const now=Date.parse('2026-10-26T19:00:00Z');
+test('Publisher extracts strip markup, omit repeated headlines and stay concise',()=>{
+ const {shortSummary}=require('../lib/news');
+ assert.equal(shortSummary('<p>New VAT rules</p>','New VAT rules'),'');
+ assert.equal(shortSummary('<p>Businesses must keep digital VAT records. A second sentence explains the details.</p>'),'Businesses must keep digital VAT records.');
+ assert(!shortSummary('<script>alert(1)</script><p>Businesses must keep digital VAT records.</p>').includes('alert'));
+ assert(shortSummary('A useful account of the changes affecting businesses. '.repeat(20)).length<=300);
+});
+test('Missing extract uses original article metadata and survives publisher failure',async()=>{
+ const {addArticleSummaries}=require('../lib/news');
+ const article={source:'HMRC',category:'uk-business',title:'Tax update',url:'https://www.gov.uk/tax-update',updatedAt:'2026-11-20'};
+ const summary='Businesses can check how the revised reporting requirements apply to their tax records.';
+ await addArticleSummaries([article],{},async()=>({ok:true,url:article.url,text:async()=>'<meta name="description" content="'+summary+'">'}));
+ assert.equal(article.summary,summary);
+ const cached={...article,summary:''};
+ await addArticleSummaries([cached],{articles:[article]},async()=>{throw Error('offline');});
+ assert.equal(cached.summary,summary);
+});
 for(const [name,file] of [['ICAEW','icaew.html'],['BBPA','bbpa.html'],['ABTA','abta.xml']])test('Official '+name+' listing yields dated original links',()=>{
  const source=SOURCES.find(s=>s.name===name),body=fs.readFileSync(__dirname+'/fixtures/'+file,'utf8'),a=parsePublisher(body,source,now);
  assert(a.length>=2);assert(a.every(x=>x.date&&x.url.includes(source.host.replace(/^www\./,''))));
@@ -72,3 +89,4 @@ test('Seven official sources use HTTPS publisher links',()=>{
  assert.equal(SOURCES.length,7);
  for(const s of SOURCES)assert(s.site.startsWith('https://')&&s.url.startsWith('https://'));
 });
+

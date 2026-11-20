@@ -910,6 +910,7 @@ main .section > .container > :is(h3:where(:not([data-heading-style])), :where([d
 .insights-card { display: flex; flex-direction: column; align-items: flex-start; min-height: 170px; padding: 1.2rem; background: #fff; border: 1px solid #d4e3d8; border-radius: 12px; }
 .insights-meta { color: #547760; font-size: .78rem; font-weight: 700; letter-spacing: .01em; }
 .insights-card :is(h4:where(:not([data-heading-style])), :where([data-heading-style="h4"])) { font-family: var(--font-body,system-ui,sans-serif); color: #213d2d; font-weight: 700; font-size: 1.05rem; line-height: 1.4; margin: .6rem 0 1.1rem !important; }
+.insights-card .insights-summary { color: #536158; font-size: .9rem; line-height: 1.55; margin: 0 0 1rem; overflow-wrap: anywhere; }
 .insights-card a { margin-top: auto; color: #216d49; font-size: .9rem; font-weight: 650; text-underline-offset: 3px; }
 #insights .insights-note { margin: 1rem 0 0; color: #596b60; font-size: .84rem; line-height: 1.55; }
 #insights .insights-note a { color: #216d49; }
@@ -1302,3 +1303,4 @@ main#main :is(.advisory-card, .services-detail, .insights-card, .insights-refere
 main#main .fees-options article {
   border-color: var(--home-card-border);
 }
+

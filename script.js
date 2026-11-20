@@ -202,6 +202,10 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
       heading.textContent = item.title;
       const link=document.createElement('a');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Read original article ↗';
       card.append(meta,heading);
+      if(item.summary){
+        const summary=document.createElement('p');summary.className='insights-summary';
+        summary.textContent=item.summary;card.append(summary);
+      }
       if(item.live===false){const saved=document.createElement('p');saved.className='insights-status';saved.textContent='Saved article · Last retrieved '+(item.retrievedAt?day(item.retrievedAt):'date unavailable');card.append(saved);}
       card.append(link);grid.append(card);
     });
@@ -269,3 +273,4 @@ if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
   const completedYears = today.getUTCFullYear() - 2009 - (today.getUTCMonth() < 10 ? 1 : 0);
   el.textContent = completedYears >= 17 ? `${completedYears} years` : 'nearly 17 years';
 })();
+
