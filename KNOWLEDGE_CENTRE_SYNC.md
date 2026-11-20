@@ -25,7 +25,7 @@ Authorised by the user on 20 November 2026: already-published AU LinkedIn and X 
 ## Cadence and limits
 
 - After publishing any newly approved social package, sync its sent records in the same work session.
-- An hourly ChatGPT automation provides a catch-up check for posts published at other times. It uses the connected Buffer, GitHub and Vercel tools; no browser session or shared API token is required.
+- Hourly checks within the existing AU UK Accounting Content Studio automation provide catch-up for posts published at other times; the original editorial briefing remains Monday–Friday at 08:00 Europe/London. Other hourly runs perform only the sync. It uses the connected Buffer, GitHub and Vercel tools; no browser session or shared API token is required.
 - This is scheduled checking, not a real-time webhook. Actual completion depends on tool access and deployment success; do not promise an exact one-hour publication deadline.
 - Buffer history covers records available through its connected channels. If a directly published network post is absent from Buffer history, it cannot be inferred or invented. Report any confirmed coverage gap.
 - User-facing summaries are concise and in Russian. All website text remains British English. Send a notification only for newly published website material or a concrete failure; remain quiet when nothing has changed.

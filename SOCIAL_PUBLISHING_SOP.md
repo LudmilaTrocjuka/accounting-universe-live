@@ -56,7 +56,7 @@ NEVER publish, schedule or replace an AU social post without the user's explicit
 ## 7. Final gate: all PASS before sending
 
 ## Knowledge Centre follow-through (authorised 20 November 2026)
-After a post is verified SENT on either AU social channel, also add its published material to the website Knowledge Centre in the same work session. Use the persistent registry and workflow in `KNOWLEDGE_CENTRE_SYNC.md`. This is authorised republication of already approved published material, not permission to publish new social copy. Group platform versions and repeated sends into one topic, preserve full text and complete threads, and verify the website deployment. The hourly catch-up task covers posts published outside that session. Do not claim this follow-through is complete until the actual public archive includes the material.
+After a post is verified SENT on either AU social channel, also add its published material to the website Knowledge Centre in the same work session. Use the persistent registry and workflow in `KNOWLEDGE_CENTRE_SYNC.md`. This is authorised republication of already approved published material, not permission to publish new social copy. Group platform versions and repeated sends into one topic, preserve full text and complete threads, and verify the website deployment. Hourly catch-up checks in the existing Content Studio task cover posts published outside that session; its editorial briefing remains weekdays at 08:00 London. Do not claim this follow-through is complete until the actual public archive includes the material.
 
 [ ] Verified facts and no repeat topic
 [ ] Proofread LinkedIn copy
