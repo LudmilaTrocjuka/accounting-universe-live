@@ -1,8 +1,9 @@
 {
   "version": 1,
-  "lastCheckedAt": "2026-11-20T11:22:18.145Z",
+  "lastCheckedAt": "2026-11-20T12:00:06.000Z",
   "source": "Verified sent posts from the AU LinkedIn company page and X account, via Buffer.",
   "processedPostIds": [
+    "6b0032d9794952f4d02d5ca9",
     "6b0027de9dd03fda0b041cf1",
     "6b0027d13d025b9e58a5447c",
     "6aff0613abf4ba608b7a8ab8",
@@ -66,6 +67,24 @@
       "publishedAt": "2026-11-20T10:45:27.029Z",
       "guideUrl": null,
       "posts": [
+        {
+          "id": "6b0032d9794952f4d02d5ca9",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-20T11:45:19.000Z",
+          "text": "Smarter business travel needs more than AI and automated bookings.\n\nHuman expertise supports travellers when plans change. Financial control helps businesses manage travel budgets, supplier costs and cash flow.\n\nTechnology improves journeys. Expertise protects businesses.",
+          "url": "https://x.com/1968713751999168512/status/2123744495582032177",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://pbs.twimg.com/media/HXkOSeSWUAA_4ct.jpg",
+              "width": 0,
+              "height": 0,
+              "alt": ""
+            }
+          ]
+        },
         {
           "id": "6b0027d13d025b9e58a5447c",
           "status": "sent",
@@ -892,4 +911,3 @@
     }
   ]
 }
-
