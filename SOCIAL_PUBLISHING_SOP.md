@@ -54,6 +54,10 @@ NEVER publish, schedule or replace an AU social post without the user's explicit
 - When wrong media is posted, do NOT silently delete. Confirm replacement first, protect reactions if feasible; explain that deleted X/LinkedIn posts lose existing engagement. Never promise to replace a live attachment using Edit without first confirming the platform supports it.
 
 ## 7. Final gate: all PASS before sending
+
+## Knowledge Centre follow-through (authorised 20 November 2026)
+After a post is verified SENT on either AU social channel, also add its published material to the website Knowledge Centre in the same work session. Use the persistent registry and workflow in `KNOWLEDGE_CENTRE_SYNC.md`. This is authorised republication of already approved published material, not permission to publish new social copy. Group platform versions and repeated sends into one topic, preserve full text and complete threads, and verify the website deployment. The hourly catch-up task covers posts published outside that session. Do not claim this follow-through is complete until the actual public archive includes the material.
+
 [ ] Verified facts and no repeat topic
 [ ] Proofread LinkedIn copy
 [ ] Proofread X copy/character limit
@@ -67,3 +71,4 @@ NEVER publish, schedule or replace an AU social post without the user's explicit
 [ ] No duplicates
 [ ] User approved FINAL package
 Post-publication gate: [ ] LinkedIn sent + verified media [ ] X sent + verified media [ ] direct links supplied.
+

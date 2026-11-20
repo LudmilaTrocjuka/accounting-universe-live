@@ -1,0 +1,895 @@
+{
+  "version": 1,
+  "lastCheckedAt": "2026-11-20T11:22:18.145Z",
+  "source": "Verified sent posts from the AU LinkedIn company page and X account, via Buffer.",
+  "processedPostIds": [
+    "6b0027de9dd03fda0b041cf1",
+    "6b0027d13d025b9e58a5447c",
+    "6aff0613abf4ba608b7a8ab8",
+    "6af2a6db223aa16048edc2a4",
+    "6af6e96367e383243f472eba",
+    "6afade360c2af02527d52a10",
+    "6afadbd387a8bd00b0478b57",
+    "6aed797cc1e74b84e5d0a6aa",
+    "6afefd15b3b455c2f5702146",
+    "6ae608451ee172cd6dab64ee",
+    "6af55ab7df70eccdaab775d0",
+    "6af55ab6853b382e4d879e77",
+    "6aea475246499f925e7a656f",
+    "6ae6056acf3a3112f3abc519",
+    "6aee46d6004e4879a7175fc6",
+    "6ae0a4d355e456f4b3c5b6ce",
+    "6aee46dfd6bbae6fa14ac171",
+    "6aebf7c101b5398f87a808cf",
+    "6afd7e45b74fdaddf632a537",
+    "6ae5fb89cf3a3112f3a8b35d",
+    "6afc47855fd9736b3cb042dc",
+    "6af191739343f4d7ee2b52dc",
+    "6ae886453911b6a45d4d46aa",
+    "6ae49ea11c3539c1f4da3a19",
+    "6adba6951397d81f7591acf0",
+    "6aff061afd08883b6470396d",
+    "6ae494544233ff6805bedbdf",
+    "6ae5fb8c5fdbd4dd6291683f",
+    "6ae600081ee172cd6da89556",
+    "6aebf7c3ff03f6944a1f893a",
+    "6afd7e2cb74fdaddf6328bd0",
+    "6ae889a6c5c4672c3e74a55b",
+    "6ae491773dc61ec0c2ffe316",
+    "6aee46de229bf05daf0f393f",
+    "6aea47541ee1ad0996cb9a79",
+    "6ae0a4c5c8df6b6a012117dc",
+    "6afad6aa0c2af02527d24847",
+    "6afefd1a03dff68ab45c5f33",
+    "6af2d5382224e5e62371af9e",
+    "6aed8b207b7e47e8f418ace5",
+    "6af1917175f0ef87a1d9557f",
+    "6adbbb5cbd33ce99c3ea8880",
+    "6afad6b60c2af02527d24da2",
+    "6afc4788b7c36a6dabfac19f",
+    "6aee46d5d6bbae6fa14ab398",
+    "6af2d5391586e43ae33cfb42",
+    "6af6e9699f1854a6d1b0c6e5",
+    "6af2a6d326f9e6aeeae65cf4",
+    "6b0024b0c0a7142f84b14547",
+    "6ae4a18ed9c1092d2627f03b",
+    "6ae4806dab6b84214cd1308b"
+  ],
+  "excludedPostIds": [
+    "6ae604ee30d4e6cba295b4be"
+  ],
+  "entries": [
+    {
+      "id": "smarter-business-travel",
+      "title": "Smarter Business Travel: Technology Meets Human Expertise",
+      "summary": "How technology, experienced travel professionals and financial control work together in corporate travel.",
+      "publishedAt": "2026-11-20T10:45:27.029Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6b0027d13d025b9e58a5447c",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-20T10:58:48.257Z",
+          "text": "Smarter Business Travel: Technology Meets Human Expertise\n\nBusiness travel is evolving. AI-powered booking platforms, automated expense management and real-time travel data are making corporate journeys more efficient.\n\nBut technology alone cannot replace experienced travel professionals.\n\nWhen flights are disrupted, itineraries become complicated or travellers need personal support, human expertise remains essential.\n\nAnd there is another important dimension: financial control.\n\nFor businesses managing corporate travel, the real challenge is not simply booking efficiently. It is understanding the full financial impact of every journey.\n\nEffective business travel management combines:\n\n• Smart booking technology and personalised traveller support.\n• Clear travel budgets and expense visibility.\n• Better control of supplier costs and spending.\n• Reliable financial reporting and cash-flow forecasting.\n• Commercial insight to balance traveller needs, efficiency and cost.\n\nAt AU Finance & Advisory, we understand the financial challenges facing UK travel and hospitality businesses.\n\nWe help businesses turn financial data into meaningful insights through management accounts, financial control, budgeting and forecasting.\n\nSmart technology improves the journey. Human expertise improves the experience. Financial control protects the business.\n\n#BusinessTravel #CorporateTravel #TravelManagement #FinancialControl #TravelIndustry #BusinessAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7529498472908120064",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-business-travel-approved-final-2026.png?v=1795172253",
+              "width": 1536,
+              "height": 1024,
+              "alt": "AU Finance & Advisory: business travel adviser helping a traveller with a flight cancellation. Technology Meets Human Expertise."
+            }
+          ]
+        },
+        {
+          "id": "6b0027de9dd03fda0b041cf1",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-20T10:58:40.399Z",
+          "text": "1/6 | Smarter Business Travel: Technology Meets Human Expertise\n\nAI-powered booking platforms, automated expense management and real-time travel data are transforming corporate travel.",
+          "url": "https://x.com/1968713751999168512/status/2123732749177499708",
+          "thread": [
+            {
+              "text": "1/6 | Smarter Business Travel: Technology Meets Human Expertise\n\nAI-powered booking platforms, automated expense management and real-time travel data are transforming corporate travel."
+            },
+            {
+              "text": "2/6 | But technology alone cannot replace experienced travel professionals.\n\nWhen flights are disrupted, itineraries change or travellers need urgent assistance, human expertise remains essential."
+            },
+            {
+              "text": "3/6 | The Missing Piece: Financial Control\n\nSmarter business travel isn't just about efficient bookings and personalised support."
+            },
+            {
+              "text": "4/6 | It's also about managing travel budgets, controlling supplier costs, understanding expenditure and forecasting cash flow."
+            },
+            {
+              "text": "5/6 | At AU Finance & Advisory, we help UK travel and hospitality businesses turn financial data into better commercial decisions."
+            },
+            {
+              "text": "6/6 | Smart technology improves the journey. Human expertise improves the experience. Financial control protects the business.\n\n#BusinessTravel #TravelManagement #FinancialControl"
+            }
+          ],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-business-travel-approved-final-2026.png?v=1795172253",
+              "width": 1536,
+              "height": 1024,
+              "alt": "AU Finance & Advisory: business travel adviser helping a traveller with a flight cancellation. Technology Meets Human Expertise."
+            }
+          ]
+        },
+        {
+          "id": "6b0024b0c0a7142f84b14547",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-20T10:45:27.029Z",
+          "text": "**Smarter Business Travel: Technology Meets Human Expertise**\n\nBusiness travel is evolving. AI-powered booking platforms, automated expense management and real-time travel data are making corporate journeys more efficient.\n\nBut technology alone cannot replace experienced travel professionals.\n\nWhen flights are disrupted, itineraries become complicated or travellers need personal support, human expertise remains essential.\n\nAnd there is another important dimension: **financial control**.\n\nFor businesses managing corporate travel, the real challenge is not simply booking efficiently. It is understanding the full financial impact of every journey.\n\nEffective business travel management combines:\n\n• Smart booking technology and personalised traveller support.\n\n• Clear travel budgets and expense visibility.\n\n• Better control of supplier costs and spending.\n\n• Reliable financial reporting and cash-flow forecasting.\n\n• Commercial insight to balance traveller needs, efficiency and cost.\n\nAt **AU Finance & Advisory**, we understand the financial challenges facing UK travel and hospitality businesses.\n\nWe help businesses turn financial data into meaningful insights through management accounts, financial control, budgeting and forecasting.\n\n**Smart technology improves the journey. Human expertise improves the experience. Financial control protects the business.**\n\n#BusinessTravel #CorporateTravel #TravelManagement #FinancialControl #TravelIndustry #BusinessAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7529495111890530304",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-business-travel-technology-human-expertise-2026.png?v=1795170669",
+              "width": 1536,
+              "height": 1024,
+              "alt": "AU Finance & Advisory business travel illustration: adviser supports a traveller at an airport following a flight cancellation, with rebooking options on a display."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late-payment-interest",
+      "title": "Late payment: statutory interest and compensation",
+      "summary": "An illustrative calculation of interest and compensation on qualifying overdue commercial invoices.",
+      "publishedAt": "2026-11-19T13:43:51.029Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6aff061afd08883b6470396d",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-19T14:22:48.589Z",
+          "text": "LATE PAYMENT DOESN'T HAVE TO MEAN LOST MONEY\n\nDid you know that UK businesses may be entitled to claim statutory interest and fixed compensation when commercial invoices are paid late?\n\nUnder the Late Payment of Commercial Debts (Interest) Act 1998, qualifying B2B debts can attract statutory interest at 8% above the applicable Bank of England reference rate.\n\nLet's look at a practical example.\n\nA £5,000 invoice became overdue in October 2026 and remained unpaid for 45 days.\n\nAssuming statutory interest applies:\n\nStatutory interest rate: 11.75% per annum\n\n8% + 3.75% (Bank of England reference rate at 30 June 2026)\n\nInterest calculation:\n£5,000 × 11.75% × 45 ÷ 365 = £72.43\n\nFixed compensation: £70\n\nTotal additional amount potentially recoverable: £142.43\n\nThe statutory fixed compensation depends on the amount owed:\n• Under £1,000 — £40\n• £1,000 to £9,999.99 — £70\n• £10,000 or more — £100\n\nThese amounts are in addition to statutory interest where the legislation applies.\n\nWhy does this matter?\n\nLate payments can seriously affect working capital, even in otherwise profitable businesses.\n\nEffective credit control, regular debtor reviews and realistic cash flow forecasting help businesses protect liquidity and reduce unnecessary financial pressure.\n\nAt AU Finance & Advisory, we help UK businesses strengthen financial control, improve cash flow visibility and make better-informed financial decisions.\n\nAre late-paying customers affecting your business?\n\nNote: Statutory entitlements depend on the circumstances and contractual terms. The example is illustrative.\n\nSource: https://lnkd.in/g_4Hznj\n\n#LatePayments #UKBusiness #CashFlowManagement #CreditControl #FinancialControl #BusinessAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7529187424267112448",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://au-social-media-assets.vercel.app/late-payment-claim.jpg",
+              "width": 1100,
+              "height": 778,
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "id": "6aff0613abf4ba608b7a8ab8",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-19T14:22:38.064Z",
+          "text": "Late-paying customers?\n\nA UK B2B invoice of £5,000, overdue by 45 days, could attract:\n\n• £72.43 statutory interest (11.75% p.a.)\n• £70 fixed compensation\n\nTotal: £142.43 extra, where applicable.\n\nKnow your rights. Protect your cash flow.\n\n#UKBusiness #LatePayments",
+          "url": "https://x.com/1968713751999168512/status/2123421694123471130",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://au-social-media-assets.vercel.app/late-payment-claim.jpg",
+              "width": 1100,
+              "height": 778,
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "id": "6afefd1a03dff68ab45c5f33",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-19T13:43:54.742Z",
+          "text": "Late-paying customers?\n\nA UK B2B invoice of £5,000, overdue by 45 days, could attract:\n\n• £72.43 statutory interest (11.75% p.a.)\n• £70 fixed compensation\n\nTotal: £142.43 extra, where applicable.\n\nKnow your rights. Protect your cash flow.\n\n#UKBusiness #LatePayments",
+          "url": "https://x.com/1968713751999168512/status/2123411949706785257",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6afefd15b3b455c2f5702146",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-19T13:43:51.029Z",
+          "text": "LATE PAYMENT DOESN'T HAVE TO MEAN LOST MONEY\n\nDid you know that UK businesses may be entitled to claim statutory interest and fixed compensation when commercial invoices are paid late?\n\nUnder the Late Payment of Commercial Debts (Interest) Act 1998, qualifying B2B debts can attract statutory interest at 8% above the applicable Bank of England reference rate.\n\nLet's look at a practical example.\n\nA £5,000 invoice became overdue in October 2026 and remained unpaid for 45 days.\n\nAssuming statutory interest applies:\n\nStatutory interest rate: 11.75% per annum\n\n8% + 3.75% (Bank of England reference rate at 30 June 2026)\n\nInterest calculation:\n£5,000 × 11.75% × 45 ÷ 365 = £72.43\n\nFixed compensation: £70\n\nTotal additional amount potentially recoverable: £142.43\n\nThe statutory fixed compensation depends on the amount owed:\n• Under £1,000 — £40\n• £1,000 to £9,999.99 — £70\n• £10,000 or more — £100\n\nThese amounts are in addition to statutory interest where the legislation applies.\n\nWhy does this matter?\n\nLate payments can seriously affect working capital, even in otherwise profitable businesses.\n\nEffective credit control, regular debtor reviews and realistic cash flow forecasting help businesses protect liquidity and reduce unnecessary financial pressure.\n\nAt AU Finance & Advisory, we help UK businesses strengthen financial control, improve cash flow visibility and make better-informed financial decisions.\n\nAre late-paying customers affecting your business?\n\nNote: Statutory entitlements depend on the circumstances and contractual terms. The example is illustrative.\n\nSource: https://www.gov.uk/late-commercial-payments-interest-debt-recovery\n\n#LatePayments #UKBusiness #CashFlowManagement #CreditControl #FinancialControl #BusinessAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7529177620907921409",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "early-payroll-reporting",
+      "title": "Paying staff early: check your payroll reporting date",
+      "summary": "Why the usual contractual payday matters when reporting an early Christmas payroll payment.",
+      "publishedAt": "2026-11-18T10:30:29.211Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6afd7e45b74fdaddf632a537",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-18T10:30:31.528Z",
+          "text": "Paying staff early for Christmas? HMRC says show the usual contractual payday on your FPS—even if wages arrive sooner.\n\nPaid 18 Dec, usual payday 31 Dec? Enter 31 Dec on the FPS.\n\nhttps://www.accounting-universe.co.uk/?utm_source=x&utm_medium=social&utm_campaign=christmas_payroll_2026\n\n#UKPayroll #PAYE",
+          "url": "https://x.com/1968713751999168512/status/2123000893863800856",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-christmas-payroll-2026-linkedin-x.png?v=1794997665",
+              "width": 1672,
+              "height": 941,
+              "alt": "AU Finance & Advisory corporate Christmas payroll graphic, showing a payroll professional reviewing documents beside a laptop. Message: Paying staff early for Christmas? Report the usual payday on your FPS."
+            }
+          ]
+        },
+        {
+          "id": "6afd7e2cb74fdaddf6328bd0",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-18T10:30:29.211Z",
+          "text": "Paying staff early for Christmas? Check the date on your payroll submission.\n\nFor UK pubs, restaurants and other businesses, December wages may be paid earlier than the normal payday.\n\nHMRC's October 2026 Employer Bulletin confirms a crucial detail: when you pay employees early over Christmas, your Full Payment Submission (FPS) should still show their usual or contractual payday.\n\nFor example:\n• Actual payment: Friday 18 December 2026\n• Normal contractual payday: Thursday 31 December 2026\n• Date to enter on the FPS: 31 December 2026\n\nSubmit the FPS on or before the usual payday.\n\nWhy does this matter? Reporting an earlier date can affect employees receiving Universal Credit.\n\nBefore December payroll, check:\n• The usual payday in employees' contracts\n• The payment date entered in your payroll software\n• The deadline for submitting the FPS\n\nAU Finance & Advisory helps UK employers manage payroll, PAYE and financial compliance.\n\nFind out more about our accounting services:\nhttps://lnkd.in/dUh74zaU\n\nSource: HMRC Employer Bulletin, October 2026\nhttps://lnkd.in/ecxPXMQv\n\n#UKPayroll #HMRC #PAYE #HospitalityFinance",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7528766572526669825",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-christmas-payroll-2026-linkedin-x.png?v=1794997665",
+              "width": 1672,
+              "height": 941,
+              "alt": "AU Finance & Advisory corporate Christmas payroll graphic, showing a payroll professional reviewing documents beside a laptop. Message: Paying staff early for Christmas? Report the usual payday on your FPS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "growth-and-working-capital",
+      "title": "Business growth and working capital",
+      "summary": "Why higher sales targets need realistic cash flow forecasts, funding assumptions and downside scenarios.",
+      "publishedAt": "2026-11-17T12:24:38.503Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6afc4788b7c36a6dabfac19f",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-17T12:24:41.003Z",
+          "text": "A new iwoca survey of SME finance professionals suggests growing ambition among UK small businesses.\n\n37% report clients raising revenue targets; 34% report higher hiring ambitions.\n\nBut growth needs working capital. Higher sales don't automatically mean more cash.\n\n#UKBusiness",
+          "url": "https://x.com/1968713751999168512/status/2122667235470704973",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6afc47855fd9736b3cb042dc",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-17T12:24:38.503Z",
+          "text": "UK small businesses are planning for growth again. But can their cash flow keep up?\n\nA new survey of SME finance professionals by UK business lender iwoca, published today, suggests that some British small businesses are becoming more ambitious about growth.\n\nAccording to the iwoca SME Expert Index:\n\n• 37% of finance professionals surveyed report that their SME clients have increased revenue targets.\n• 34% report that their clients have raised their hiring ambitions.\n\nThese findings reflect the experiences of the professionals surveyed, rather than the UK small business sector as a whole. Nevertheless, they offer an encouraging indication of business confidence.\n\nBut growing a business isn't simply about generating more sales.\n\nNew customers may mean additional staff, more stock, higher operating costs and more money tied up in unpaid invoices.\n\nA business can be profitable and growing, yet still struggle to pay its bills.\n\nBefore committing to expansion, business owners need to consider:\n\n• How much additional working capital will growth require?\n• Will customer payments arrive in time to cover rising costs?\n• How will increased spending affect profitability?\n• What happens if sales grow more slowly than expected?\n\nGrowth should create opportunities, not financial pressure.\n\nSuccessful expansion requires more than ambitious sales targets. It requires realistic cash flow forecasts and a clear understanding of the financial risks.\n\nSource: iwoca SME Expert Index, 17 November 2026.\n\n#UKBusiness #SmallBusinessUK #BusinessGrowth #CashFlow #FinancialPlanning",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7528432911046569985",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "package-travel-controls",
+      "title": "Package Travel Regulations 2027: financial controls",
+      "summary": "Booking records, financial protection and cash flow checks for UK travel businesses.",
+      "publishedAt": "2026-11-16T10:11:04.020Z",
+      "guideUrl": "/package-travel-regulations-2027-financial-controls.html",
+      "posts": [
+        {
+          "id": "6afade360c2af02527d52a10",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-16T10:43:03.407Z",
+          "text": "UK travel agents: package travel rules change on 6 April 2027.\n\nReview booking records, financial protection and cash-flow controls.\n\nAU guide:\nhttps://www.accounting-universe.co.uk/package-travel-regulations-2027-financial-controls.html?utm_source=x&utm_medium=social&utm_campaign=package_travel_2027\n\n#TravelAgents",
+          "url": "https://x.com/1968713751999168512/status/2122279271846519192",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-package-travel-regulations-2027.png?v=1794825159",
+              "width": 1536,
+              "height": 1024,
+              "alt": "AU Finance & Advisory — Package Travel Regulations 2027. Financial controls for UK travel agents from 6 April 2027, illustrated with a suitcase, globe, checklist and calculator."
+            }
+          ]
+        },
+        {
+          "id": "6afadbd387a8bd00b0478b57",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-16T10:33:13.946Z",
+          "text": "UK travel agents: could your booking arrangements become packages from 6 April 2027?\n\nThe amended Package Travel Regulations bring certain arrangements previously classed as Linked Travel Arrangements into the definition of a package. For travel agents and tour operators, this can affect financial protection, responsibilities and financial controls.\n\nThree questions to review:\n• Can your booking records identify affected arrangements?\n• Are customer receipts, supplier payments and refunds reconciled?\n• Can your cash-flow forecast withstand delays in supplier recoveries?\n\nOur new guide explains the practical checks worth making before April 2027.\n\nRead the AU Finance & Advisory guide:\nhttps://lnkd.in/dExuegH6\n\n#UKTravelIndustry #TravelAgents #FinancialControl",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7528042487819431936",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-package-travel-regulations-2027.png?v=1794825159",
+              "width": 1536,
+              "height": 1024,
+              "alt": "AU Finance & Advisory — Package Travel Regulations 2027. Financial controls for UK travel agents, effective 6 April 2027. Travel suitcase, globe, checklist and calculator."
+            }
+          ]
+        },
+        {
+          "id": "6afad6aa0c2af02527d24847",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-16T10:11:13.060Z",
+          "text": "UK travel agents: could your booking arrangements become packages from 6 April 2027?\n\nThe amended Package Travel Regulations bring certain arrangements previously classed as Linked Travel Arrangements into the definition of a package. For travel agents and tour operators, this can affect financial protection, responsibilities and financial controls.\n\nThree questions to review:\n• Can your booking records identify affected arrangements?\n• Are customer receipts, supplier payments and refunds reconciled?\n• Can your cash-flow forecast withstand delays in supplier recoveries?\n\nOur new guide explains the practical checks worth making before April 2027.\n\nRead the AU Finance & Advisory guide:\nhttps://www.accounting-universe.co.uk/package-travel-regulations-2027-financial-controls.html?utm_source=linkedin&utm_medium=social&utm_campaign=package_travel_2027\n\n#UKTravelIndustry #TravelAgents #FinancialControl",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7528036947047620608",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://www.accounting-universe.co.uk/images/au-social-logo-rgb.png",
+              "width": 256,
+              "height": 256,
+              "alt": "AU Finance & Advisory corporate logo accompanying guidance on UK Package Travel Regulations 2027 for travel agents."
+            }
+          ]
+        },
+        {
+          "id": "6afad6b60c2af02527d24da2",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-16T10:11:04.020Z",
+          "text": "UK travel agents: package travel rules change on 6 April 2027.\n\nReview booking records, financial protection and cash-flow controls.\n\nAU guide:\nhttps://www.accounting-universe.co.uk/package-travel-regulations-2027-financial-controls.html?utm_source=x&utm_medium=social&utm_campaign=package_travel_2027\n\n#TravelAgents",
+          "url": "https://x.com/1968713751999168512/status/2122271221731512699",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://www.accounting-universe.co.uk/images/au-social-logo-rgb.png",
+              "width": 256,
+              "height": 256,
+              "alt": "AU Finance & Advisory corporate logo accompanying guidance on UK Package Travel Regulations 2027 for travel agents."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late-payments-and-cash",
+      "title": "Your customer pays late. Your bills do not wait.",
+      "summary": "How overdue customer invoices can put pressure on supplier payments, payroll and business cash flow.",
+      "publishedAt": "2026-11-13T10:41:39.574Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6af6e9699f1854a6d1b0c6e5",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-13T10:41:45.806Z",
+          "text": "Your customer pays late. Your bills don't wait.\n\nNew UK research: 28% of businesses affected by late payments struggled to pay their own bills.\n\nAn overdue invoice isn't just an accounting problem. It can put an otherwise profitable business at risk.\n\n#SmallBusinessUK #CashFlow",
+          "url": "https://x.com/1968713751999168512/status/2121191783354741201",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6af6e96367e383243f472eba",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-13T10:41:39.574Z",
+          "text": "Your customer pays late. Your bills don't wait.\n\nYou've delivered the work. Sent the invoice. Met your side of the agreement.\n\nBut the payment hasn't arrived.\n\nMeanwhile, your staff need paying, suppliers expect their money, and HMRC deadlines aren't moving.\n\nNew research highlighted by the UK Small Business Commissioner this week reveals that 28% of businesses affected by late payments struggled to pay their own bills as a result.\n\nThat's the real cost of late payment. It's not just an overdue invoice. It's the pressure it puts on an otherwise healthy business.\n\nThree things every business owner should keep an eye on:\n\n• How much money is tied up in overdue invoices?\n• How long do customers actually take to pay?\n• Would your cash flow survive another 30 days without that money?\n\nA profitable business can still run into serious trouble when cash doesn't arrive on time.\n\nLate payments aren't just an administrative nuisance. They're a business risk.\n\n#SmallBusinessUK #CashFlow #LatePayments #FinancialManagement",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7526957446217568257",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "ai-accounting-judgement",
+      "title": "AI is changing accounting. But who checks the AI?",
+      "summary": "Why professional judgement and verification still matter when accounting work uses AI.",
+      "publishedAt": "2026-11-12T10:00:37.922Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6af55ab7df70eccdaab775d0",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-12T10:00:38.521Z",
+          "text": "AI can save accountants hours of work. But I've seen it give convincing answers that turned out to be wrong.\n\nIn accounting, that can mean VAT errors or costly decisions.\n\nAI is useful. Blind trust isn't.\n\nWho checks the AI?\n\n#UKAccounting #AI",
+          "url": "https://x.com/1968713751999168512/status/2120819046606143915",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6af55ab6853b382e4d879e77",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-12T10:00:37.922Z",
+          "text": "AI is changing accounting. But who checks the AI?\n\nAI can save an enormous amount of time. It can analyse information, process documents, suggest accounting treatments and help with research.\n\nBut there's a problem I've encountered myself: AI can give an answer that sounds completely convincing and still be wrong.\n\nIn accounting, that matters.\n\nAn incorrect VAT treatment, a misclassified transaction or an inaccurate interpretation of HMRC guidance can have consequences well beyond a simple correction in the accounts.\n\nThe difficulty isn't always spotting an obvious mistake. It's recognising when something that looks perfectly reasonable needs to be challenged.\n\nI see AI as a valuable tool, but not a substitute for professional judgement, experience and verification.\n\nAnd I think there's an important question for our profession:\n\nAs more accounting work becomes automated, who should ultimately be responsible for checking the result — the software provider, the accountant or the business owner?\n\nI'd be interested to hear how other accountants are approaching this.\n\n#UKAccounting #ArtificialIntelligence #AccountingTechnology",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7526584730536996864",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "vat-cash-accounting",
+      "title": "Could your VAT accounting method be affecting cash flow?",
+      "summary": "The timing benefits and trade-offs of VAT cash accounting for eligible businesses.",
+      "publishedAt": "2026-11-11T08:01:21.188Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6af2d5382224e5e62371af9e",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-11T08:01:23.975Z",
+          "text": "Could your VAT accounting method be putting unnecessary pressure on cash flow?\n\nUnder standard VAT accounting, a business may have to pay VAT on a sales invoice before its customer has paid. HMRC's Cash Accounting Scheme can change that timing for eligible businesses.\n\nConsider an illustrative example: a small consultancy invoices £12,000 including £2,000 VAT, with payment due in 60 days. Under cash accounting, the output VAT would generally be accounted for when payment is received rather than when the invoice is issued.\n\nBut there is a trade-off: input VAT on supplier purchases is generally reclaimed only after those suppliers have been paid.\n\nThe scheme is not automatically advantageous for every business. Restaurants with mostly immediate card takings, businesses with significant unpaid purchases, and those using other VAT schemes may see little benefit or face different rules.\n\nBefore changing methods, compare actual payment patterns, supplier terms and VAT liabilities over several periods.\n\nWhen did you last review whether your VAT accounting method still suits your business?",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7526192336398376961",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6af2d5391586e43ae33cfb42",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-11T08:01:21.188Z",
+          "text": "VAT due before your customer pays? HMRC’s Cash Accounting Scheme may help eligible businesses align VAT payments with receipts. But input VAT recovery is delayed too. Check both sides of the cash flow before switching. #UKBusiness #VAT",
+          "url": "https://x.com/1968713751999168512/status/2120426638697431149",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "accounting-and-advice",
+      "title": "When the accounts reveal a worrying trend",
+      "summary": "A discussion of routine accounting, warning signs and the scope of financial advice.",
+      "publishedAt": "2026-11-10T05:08:36.316Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6af2a6db223aa16048edc2a4",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-10T05:08:44.351Z",
+          "text": "Your accountant files everything on time. But your margins are shrinking and nobody mentions it.\n\nHas your accountant done their job? Or should financial advice be a separate, paid service?\n\nBusiness owners and accountants: where do you draw the line?\n\n#UKAccounting",
+          "url": "https://x.com/1968713751999168512/status/2120020811440378282",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6af2a6d326f9e6aeeae65cf4",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-10T05:08:36.316Z",
+          "text": "Your accountant keeps your VAT returns, payroll and annual accounts up to date. But what happens when the figures start telling a worrying story?\n\nTake a restaurant that’s busy most evenings but finding it increasingly difficult to cover its bills. Staff costs have risen, supplier prices are higher, and the bank balance isn’t reflecting all those bookings.\n\nThe accounts may be perfectly accurate. The problem is that nobody has discussed what those figures mean for the business.\n\nOf course, preparing accounts and providing ongoing financial advice are different services, with different responsibilities and fees.\n\nBut here’s something worth discussing.\n\nIf an accountant notices a worrying trend while doing the routine work, should they bring it to the client’s attention, even when advisory services aren’t included in the engagement?\n\nPersonally, I think there’s a difference between providing detailed financial advice and simply pointing out something that deserves attention.\n\nI’d be interested to hear what business owners and fellow accountants think. Where would you draw the line?\n\n#UKAccounting #BusinessAdvisory #HospitalityFinance",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7525786464597602304",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "mtd-november-update",
+      "title": "Missed the November MTD quarterly deadline?",
+      "summary": "Digital records, outstanding quarterly updates and the 2026/27 transitional penalty position.",
+      "publishedAt": "2026-11-09T09:25:06.383Z",
+      "guideUrl": "/mtd-income-tax-missed-november-2026-deadline.html",
+      "posts": [
+        {
+          "id": "6af191739343f4d7ee2b52dc",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-09T09:25:08.222Z",
+          "text": "Missed the 7 November MTD Income Tax update? HMRC won't issue quarterly late-submission penalties for 2026/27, but reporting is still required. Check your digital records and submit the outstanding update.\n\nhttps://www.accounting-universe.co.uk/mtd-income-tax-missed-november-2026-deadline.html",
+          "url": "https://x.com/1968713751999168512/status/2119722948076412986",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6af1917175f0ef87a1d9557f",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-09T09:25:06.383Z",
+          "text": "Missed the 7 November MTD quarterly deadline? Here's what matters next.\n\nIf you're a sole trader within Making Tax Digital for Income Tax, your second quarterly update was due on 7 November 2026.\n\nHMRC will not issue penalty points for late quarterly updates during the 2026/27 tax year. But that does not mean the reporting obligation has disappeared.\n\nConsider a self-employed café operator recording sales through a till system, expenses in accounting software and supplier payments through a separate bank account.\n\nBefore submitting the update, check that records are complete, transactions are correctly categorised and income has not been duplicated. HMRC does not require final tax adjustments at the quarterly stage.\n\nMTD is not simply about pressing Submit. Reliable digital records can also make financial management easier.\n\nIf your reporting is behind, review your records and submit the outstanding update as soon as possible.\n\nRead our full practical guide: https://lnkd.in/dW4EWHqQ\n\n#MakingTaxDigital #SoleTraders #UKAccounting",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7525488628891017216",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "weekly-finance-questions",
+      "title": "Three financial questions before Monday",
+      "summary": "A short weekly review of forthcoming payments, unpaid sales and unexplained cost increases.",
+      "publishedAt": "2026-11-08T09:01:00.920Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6aee46dfd6bbae6fa14ac171",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-08T10:01:03.069Z",
+          "text": "Three questions before Monday:\n\n1. What must be paid in the next 14 days?\n2. Which sales haven't turned into cash?\n3. Which cost has increased without explanation?\n\nA 15-minute weekly finance review can uncover issues before month-end.\n\n#UKBusiness #CashFlow",
+          "url": "https://x.com/1968713751999168512/status/2119369598331969932",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6aee46de229bf05daf0f393f",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-08T09:01:00.920Z",
+          "text": "Before Monday begins, ask three questions about your business finances.\n\n1. Which payments are due in the next two weeks — and is the cash actually available?\n2. Which customers or bookings are generating revenue but not yet bringing in cash?\n3. Which cost has risen recently without anyone reviewing the reason?\n\nYou don't need to wait until month-end to spot a problem. A short weekly review of cash, receivables and costs can reveal issues while there's still time to act.\n\nFor hospitality and travel businesses, where timing matters as much as margins, these questions are particularly useful.\n\nWhich financial number do you check first on a Monday morning?\n\nAU Finance & Advisory\n#BusinessFinance #HospitalityBusiness #FinancialManagement",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7525120175654715392",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "profit-versus-cash",
+      "title": "Profitable on paper, short of cash?",
+      "summary": "How payment timing, supplier deposits and other commitments can separate reported profit from available cash.",
+      "publishedAt": "2026-11-07T09:00:21.534Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6aee46d6004e4879a7175fc6",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-07T10:00:23.688Z",
+          "text": "Profitable on paper. Short of cash in the bank?\n\nFor hospitality and travel businesses, VAT, supplier deposits and delayed customer payments can create a cash squeeze.\n\nA rolling 13-week cash flow forecast helps spot the gap before payments fall due.\n\n#CashFlow",
+          "url": "https://x.com/1968713751999168512/status/2119007045303111931",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6aee46d5d6bbae6fa14ab398",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-07T09:00:21.534Z",
+          "text": "Your business is profitable. So why is there no cash in the bank?\n\nProfit and cash are not the same thing.\n\nA hospitality or travel business can report a healthy profit while struggling to cover supplier invoices, VAT or payroll.\n\nThe reasons may include:\n- Customers paying later than expected.\n- Deposits paid to suppliers months before the final sale.\n- VAT liabilities building up while cash is being spent elsewhere.\n- Loan repayments and equipment purchases reducing available funds.\n\nA monthly profit and loss report alone won't reveal the full picture.\n\nThe practical step? Review a rolling 13-week cash flow forecast alongside your management accounts.\n\nAt AU Finance & Advisory, we help businesses understand not just whether they're profitable, but whether they have the cash to keep moving forward.\n\n#CashFlowManagement #HospitalityFinance #ManagementAccounting",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7524757625507373057",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "financial-interpretation",
+      "title": "Who challenges the numbers?",
+      "summary": "Turning accurate accounting records into useful questions about margins, contribution and cash flow.",
+      "publishedAt": "2026-11-06T06:53:48.747Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6aed8b207b7e47e8f418ace5",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-06T08:09:05.193Z",
+          "text": "Your accountant prepares the numbers. But who challenges them?\n\nA set of accurate accounts can tell you what happened last year.\n\nIt may not tell you why profitability has deteriorated, which customers are becoming less valuable, or whether your business can afford its next major commitment.\n\nFor many growing UK businesses, the gap is not a lack of accounting information. It is a lack of financial interpretation.\n\nManagement should be able to answer:\n\n• Which activities generate the strongest contribution?\n• Where are costs increasing faster than revenue?\n• How reliable are our next 13 weeks of cash flow?\n• What happens to profitability if our assumptions prove wrong?\n• Which decisions require immediate attention?\n\nFinancial reporting becomes valuable when it supports decisions — not simply when the numbers reconcile.\n\nGood accounting establishes the facts. Good financial management helps determine what to do next.\n\n#ManagementAccounting #FinancialManagement #UKBusiness",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7524382332590387200",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6aed797cc1e74b84e5d0a6aa",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-06T06:53:48.747Z",
+          "text": "Your accountant prepares the numbers. But who challenges them?\n\nAccurate accounts show what happened. Financial analysis explains why — and what to do next.\n\nGood accounting establishes facts. Good financial management drives better decisions.\n\n#ManagementAccounting #UKBusiness",
+          "url": "https://x.com/1968713751999168512/status/2118597702464258528",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "second-restaurant",
+      "title": "Opening a second restaurant: test the financial case",
+      "summary": "Why an expansion model should include working capital, opening delays and lower-than-forecast sales.",
+      "publishedAt": "2026-11-05T08:00:13.503Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6aebf7c3ff03f6944a1f893a",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-05T08:00:17.095Z",
+          "text": "Opening a second restaurant? Revenue growth alone doesn't prove value creation.\n\nModel fit-out costs, working capital, delays and a 15% sales shortfall.\n\nCan the existing business fund the downside without putting its own cash at risk?\n\n#UKHospitality",
+          "url": "https://x.com/1968713751999168512/status/2118252043013869869",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6aebf7c101b5398f87a808cf",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-05T08:00:13.503Z",
+          "text": "Opening a second restaurant? Growth in revenue does not always mean growth in value.\n\nA successful first location can make expansion look like the obvious next step. But the financial case deserves more scrutiny than a sales forecast.\n\nConsider an illustrative scenario: a new site is expected to generate £750,000 in annual revenue. Before signing a lease, management needs to understand more than its projected operating profit.\n\nWhat happens if sales are 15% below forecast for the first six months?\n\nHow much working capital will be tied up before the site reaches stable trading?\n\nWill the existing business have to fund early losses, recruitment and supplier commitments?\n\nAnd what is the financial impact if opening takes three months longer than planned?\n\nA robust investment model should connect site-level contribution, capital expenditure, cash flow, funding requirements and downside scenarios.\n\nThe objective is not simply to demonstrate that expansion could work. It is to establish whether the business can withstand the risks.\n\nWhat would be your most important financial test before opening another location?\n\n#UKHospitality #FinancialModelling #BusinessExpansion",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7524017713753579520",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "restaurant-break-even",
+      "title": "Restaurant break-even: how many covers do you need?",
+      "summary": "A worked illustration of contribution per cover and the number of covers needed to meet daily fixed costs.",
+      "publishedAt": "2026-11-04T10:01:03.721Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6aea475246499f925e7a656f",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-04T16:02:35.180Z",
+          "text": "How many covers does your restaurant need to break even on a quiet Tuesday?\n\nA full dining room isn't the only measure of financial health. Knowing your break-even point helps you make better decisions about staffing, opening hours and menu pricing.\n\nHere's a simple illustration (figures are hypothetical):\n\n• Average revenue per cover, excluding VAT: £30\n• Variable costs per cover: £15\n• Contribution per cover: £15\n• Daily fixed costs: £900\n\nBreak-even covers = £900 ÷ £15 = 60.\n\nBelow 60 covers, the day doesn't cover those fixed costs. Above 60, each additional cover contributes towards profit, assuming the costs and sales mix stay similar.\n\nYour real number depends on food and drink margins, labour patterns, rent, utilities and other costs — and it can change by day of the week.\n\nAt AU Finance & Advisory, we help hospitality businesses turn financial records into practical management information.\n\nDo you know your break-even covers for a typical weekday?\n\nhttps://lnkd.in/dmCwFDez\n\n#UKHospitality #RestaurantFinance #CostControl #ManagementAccounting",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7523776716142718977",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6aea47541ee1ad0996cb9a79",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-04T10:01:03.721Z",
+          "text": "Restaurant owner: do you know your break-even covers on a quiet Tuesday? If fixed costs are £900/day and each cover contributes £15 after variable costs, you need 60 covers. (Illustrative example.) Know the number before changing prices or rotas. #UKHospitality",
+          "url": "https://x.com/1968713751999168512/status/2117920049327444234",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "hospitality-rates-update",
+      "title": "Hospitality business rates: review your forecast",
+      "summary": "A dated discussion of announced business rates measures and the need to check property eligibility.",
+      "publishedAt": "2026-11-02T12:47:01.971Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6ae889a6c5c4672c3e74a55b",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-02T13:01:27.022Z",
+          "text": "Autumn Budget 2026: What could the Business Rates changes mean for your hospitality business?\n\nFrom April 2027, qualifying hospitality properties in England with a rateable value of up to £18,000 may benefit from 100% Small Business Rates Relief.\n\nFor pub, restaurant and hotel operators, this makes it important to review:\n\n• Your property's current rateable value\n• Eligibility for relief, particularly where multiple premises are involved\n• The impact on your 2027/28 operating budget and cash flow forecast\n\nUnderstanding the financial impact now can help businesses plan ahead and make more informed decisions.\n\nAU Finance & Advisory\nhttps://lnkd.in/d8pRPswn\n\n#UKHospitality #BusinessRates",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7523006358565122048",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae886453911b6a45d4d46aa",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-02T12:47:01.971Z",
+          "text": "From April 2027, qualifying hospitality properties in England with rateable values up to £18,000 may receive 100% Small Business Rates Relief.\n\nPub and restaurant owners: check eligibility and update your 2027/28 budget.\n\n#UKHospitality #BusinessRates",
+          "url": "https://x.com/1968713751999168512/status/2117237041721151520",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "seasonal-trading-controls",
+      "title": "Stress-test your seasonal trading plan",
+      "summary": "Five checks covering bookings, menu margins, staffing, payment timing and downside scenarios.",
+      "publishedAt": "2026-10-31T14:30:33.916Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6ae608451ee172cd6dab64ee",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-31T15:24:53.606Z",
+          "text": "Christmas bookings don’t guarantee healthy cash flow.\n\nUK pubs & restaurants: review 4 numbers weekly — booked covers, expected gross margin, labour hours and supplier payments due. Deposits arrive before the costs do.\n\nhttps://www.accounting-universe.co.uk/christmas-cash-flow.html\n#UKHospitality",
+          "url": "https://x.com/1968713751999168512/status/2116551992835293510",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae6056acf3a3112f3abc519",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-31T15:12:42.582Z",
+          "text": "Christmas bookings don’t guarantee healthy cash flow.\n\nUK pubs & restaurants: review 4 numbers weekly — booked covers, expected gross margin, labour hours and supplier payments due. Deposits arrive before the costs do.\n\nhttps://www.accounting-universe.co.uk/?utm_source=x&utm_campaign=au_logo_20261031\n#UKHospitality",
+          "url": "https://x.com/1968713751999168512/status/2116548926815752473",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae600081ee172cd6da89556",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-31T14:49:44.884Z",
+          "text": "Christmas bookings don’t guarantee healthy cash flow.\n\nUK pubs & restaurants: review 4 numbers weekly — booked covers, expected gross margin, labour hours and supplier payments due. Deposits arrive before the costs do.\n\nhttps://www.accounting-universe.co.uk/?utm_source=x\n#UKHospitality",
+          "url": "https://x.com/1968713751999168512/status/2116543148457386011",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae5fb8c5fdbd4dd6291683f",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-10-31T14:30:37.389Z",
+          "text": "November is the time to stress-test your December trading plan.\n\nFor pubs, restaurants and event venues, a full bookings diary can look reassuring. But it does not tell you whether the month will actually generate healthy profit and cash flow.\n\nFive checks worth making before the festive rush:\n\n1. Bookings vs earned revenue — distinguish confirmed reservations, deposits received and services delivered.\n2. Menu gross profit — review margins after promotions, waste and supplier cost changes.\n3. Labour planning — forecast staffing costs by shift and expected demand, not only last month's percentage.\n4. Payment timing — map supplier due dates and payroll against expected receipts.\n5. Downside scenarios — what happens if sales are 10% below plan or labour costs rise by 5%?\n\nA one-page weekly dashboard can help spot issues while there is still time to act.\n\nAU Finance & Advisory supports UK hospitality businesses with management reporting, cost control, financial analysis and cash-flow forecasting.\n\nWhich is your biggest festive trading challenge: staffing, margins or cash timing?\n\nhttps://lnkd.in/dmCwFDez\n\n#UKHospitality #RestaurantFinance #FinancialControl #CashFlow",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7522304024059080705",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae5fb89cf3a3112f3a8b35d",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-31T14:30:33.916Z",
+          "text": "Christmas bookings don’t guarantee healthy cash flow.\n\nUK pubs & restaurants: review 4 numbers weekly — booked covers, expected gross margin, labour hours and supplier payments due. Deposits arrive before the costs do.\n\nhttps://www.accounting-universe.co.uk/\n#UKHospitality",
+          "url": "https://x.com/1968713751999168512/status/2116538320779940252",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "business-rates-budget",
+      "title": "Business rates and your 2027/28 forecast",
+      "summary": "A dated overview of Budget announcements affecting qualifying hospitality properties in England.",
+      "publishedAt": "2026-10-30T12:45:06.556Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6ae491773dc61ec0c2ffe316",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-30T14:40:30.639Z",
+          "text": "Own a pub or restaurant in England?\n\nFrom April 2027, business rates (tax on commercial premises) are changing:\n• Eligible pubs: 35% relief, up from 15%.\n• Qualifying small hospitality properties: 100% relief up to £18k rateable value.\n\nCheck your 2027/28 cash flow.",
+          "url": "https://x.com/1968713751999168512/status/2116178435915628924",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae4806dab6b84214cd1308b",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-10-30T12:45:06.556Z",
+          "text": "England's hospitality businesses: is your 2027/28 business rates forecast ready?\n\nThe UK Government's Autumn Budget 2026 (28 October) announced changes for qualifying properties in England from 1 April 2027:\n\n• Business rates relief for eligible pubs, social clubs and most live music venues is set to rise from 15% to 35% in 2027/28 and 2028/29. Live music venues with a rateable value of £1 million or more will remain at 15%.\n• For businesses eligible for Small Business Rates Relief, the full-relief rateable value threshold for qualifying retail, hospitality and leisure properties will increase from £12,000 to £18,000, with tapered relief up to £21,000.\n• Annual business rates bill increases for qualifying retail, hospitality and leisure properties will be capped by CPI inflation in 2027/28 and 2028/29. Exceptions include improvements that increase a property's rateable value and the loss of certain other reliefs.\n\nThese measures have been announced, but detailed regulations and guidance are still to follow. Eligibility depends on the business and property circumstances; the 35% relief does not apply to ordinary restaurants or cafés simply because they are in hospitality.\n\nFor independent pubs, cafés and restaurants, now is the time to review rateable values, property costs and cash-flow forecasts — rather than assume headline relief will automatically apply.\n\nAt AU Finance & Advisory, we help UK hospitality businesses assess financial changes and plan with confidence.\n\nHave you reviewed the potential impact on your 2027/28 forecast?\n\nOfficial source: HM Treasury, Budget 2026, section 7.17:\nhttps://lnkd.in/edXPPZSC\n\n#UKHospitality #BusinessRates #FinancialForecasting #CashFlow",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7521915082658754560",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "historical-data-migration",
+      "title": "Moving from QuickBooks or Sage to Xero?",
+      "summary": "Historical accounting records and practical experience of migration to Xero.",
+      "publishedAt": "2026-10-30T13:18:18.778Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6ae4a18ed9c1092d2627f03b",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-30T14:37:16.914Z",
+          "text": "Moving from QuickBooks or Sage to Xero?\n\nOur experience includes practice-wide historical data migration: 10 years of records for around 150 clients — sole traders, limited companies and partnerships.\n\nAU Finance & Advisory\nhttps://www.accounting-universe.co.uk/",
+          "url": "https://x.com/1968713751999168512/status/2116177622057013402",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://raw.githubusercontent.com/LudmilaTrocjuka/accounting-universe-live/main/images/hero-hospitality-team.jpg",
+              "width": 3840,
+              "height": 2160,
+              "alt": "Hospitality finance team reviewing accounts"
+            }
+          ]
+        },
+        {
+          "id": "6ae49ea11c3539c1f4da3a19",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-30T13:49:47.964Z",
+          "text": "Moving from QuickBooks or Sage to Xero?\n\nOur experience includes practice-wide historical data migration: 10 years of records for around 150 clients — sole traders, limited companies and partnerships.\n\nAU Finance & Advisory\nhttps://www.accounting-universe.co.uk/?utm_source=x",
+          "url": "https://x.com/1968713751999168512/status/2116165673713856967",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae494544233ff6805bedbdf",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-30T13:18:18.778Z",
+          "text": "Moving from QuickBooks or Sage to Xero?\n\nOur experience includes practice-wide historical data migration: 10 years of accounting records across around 150 clients — sole traders, limited companies and a few partnerships.\n\nAU Finance & Advisory | accounting-universe.co.uk",
+          "url": "https://x.com/1968713751999168512/status/2116157750149272024",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "hospitality-vat-scenario",
+      "title": "What would a hospitality VAT reduction mean?",
+      "summary": "A hypothetical example comparing lower customer prices with a higher business margin.",
+      "publishedAt": "2026-10-27T13:19:01.946Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6ae0a4d355e456f4b3c5b6ce",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-10-27T13:19:16.219Z",
+          "text": "If hospitality VAT were cut from 20% to 10%, who should benefit — the customer, the business, or both?\n\nUKHospitality is calling for a 10% rate. A simple example shows the choice facing restaurant owners.\n\nToday, a £120 bill consists of £100 revenue and £20 VAT.\n\nIf the proposed reduction were introduced:\n\n• Passing it on in full would bring the bill down to £110. The customer saves £10; the restaurant’s revenue remains £100.\n\n• Keeping the bill at £120 would leave £109.09 in revenue and £10.91 in VAT. The restaurant gains £9.09 before costs.\n\nAn operator could also share the benefit: reduce menu prices partly and retain the rest to support margins, staffing or investment.\n\nAs a restaurant owner or customer, which approach would you favour — and why?\n\n#Hospitality #VAT",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7520836515200126977",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6ae0a4c5c8df6b6a012117dc",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-27T13:19:01.946Z",
+          "text": "If hospitality VAT fell from 20% to 10%, a £120 restaurant bill could:\n\n• Fall to £110, keeping revenue unchanged.\n• Stay at £120, giving the business £9.09 extra revenue before costs.\n\nLower prices, stronger margins — or a mix of both?\n\nWhat would you choose?",
+          "url": "https://x.com/1968713751999168512/status/2115070767687729492",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "thirteen-week-forecast",
+      "title": "A practical 13-week cash flow forecast",
+      "summary": "Use expected payment dates to update your cash position and identify shortfalls early.",
+      "publishedAt": "2026-10-23T19:54:04.652Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6adbbb5cbd33ce99c3ea8880",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-10-23T19:54:04.652Z",
+          "text": "Busy tables don't guarantee cash in the bank.\n\nFor your pub, café or restaurant, forecast the next 13 weeks: opening cash + money in − payments out = closing cash.\n\nUse payment dates, not invoice dates. Update weekly and flag shortfalls early.\n\n#Hospitality",
+          "url": "https://x.com/1968713751999168512/status/2113720632550535581",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "welcome-accounting-universe",
+      "title": "Welcome to Accounting Universe",
+      "summary": "An introduction to our accounting support for UK small businesses, hospitality and travel.",
+      "publishedAt": "2025-09-19T16:24:27.955Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6adba6951397d81f7591acf0",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2025-09-19T16:24:27.955Z",
+          "text": "Welcome to Accounting Universe! 🌍\nLess paperwork. More progress.\nWe are finance professionals dedicated to supporting small businesses — especially in the pubs, restaurants, and travel industries.\nOur mission is to take the complexity out of accounting and compliance, so you can focus on what you do best: serving customers, growing your business, and creating great experiences.\nFollow us for:\n ✅ Industry-specific insights (hospitality & travel)\n ✅ Practical accounting and tax tips\n ✅ Tools that save time and cut stress\n ✅ Guidance tailored to small business owners\nAt Accounting Universe, we believe accounting should drive progress — not hold it back.",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7374797239053099009",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "restaurant-profitability-guide",
+      "title": "Restaurant profitability: five figures to review weekly",
+      "summary": "A practical guide to gross profit, labour costs, reconciliations and cash flow.",
+      "publishedAt": "2026-11-04T00:00:00Z",
+      "guideUrl": "/restaurant-profitability-guide.html",
+      "posts": []
+    }
+  ]
+}
+
