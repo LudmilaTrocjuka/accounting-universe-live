@@ -22,6 +22,7 @@ NEVER publish, schedule or replace an AU social post without the user's explicit
 
 ## 4. Visual asset — critical error prevention
 - Use ONE specifically approved illustration for the topic. Never replace it with a different generated image, generic logo, thumbnail, or mock-up.
+- BRAND LOCK (approved 23 November 2026): use the SAME existing, user-approved circular AU Finance & Advisory logo on every new visual, positioned in the TOP-RIGHT corner. Never redraw, replace, restyle, reposition or improvise the company logo. Do not add a second standalone company name or a decorative vertical divider beside the logo. For the MTD for Income Tax visual, the approved reference is the exact final 1672×941 infographic with the circular AU logo at the top right; previous LinkedIn/X eproof images are REJECTED and must never be reused. Verify the actual approved logo visually before any Buffer upload.
 - Use a legible, landscape social graphic (typically 1200x675 or a format validated for both platforms); check actual pixel size, visual composition, spelling, company name, dates, mobile crop, and contrast.
 - NEVER upload the tiny 256x256 square AU logo as the primary graphic; it rendered huge and blurry on 16 Nov 2026.
 - Upload the EXACT approved image to a stable public HTTPS file URL, compare it visually with approved image, and confirm Buffer asset.source is EXACTLY that URL. A valid-looking filename is insufficient.
