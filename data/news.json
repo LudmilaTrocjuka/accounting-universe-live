@@ -2,66 +2,6 @@
   "version": 2,
   "articles": [
     {
-      "title": "Transparency data: HMRC major projects: appointment letters for Senior Responsible Owners",
-      "url": "https://www.gov.uk/government/publications/hmrc-major-projects-appointment-letters-for-senior-responsible-owners",
-      "date": "2026-11-20",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-20",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "HMRC appointment letters for Government Major Projects Portfolio (GMPP) and Departmental Major Projects (DMP) Senior Responsible Owners (SROs).",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "How to report Automatic Exchange of Information",
-      "url": "https://www.gov.uk/guidance/how-to-report-automatic-exchange-of-information",
-      "date": "2026-11-20",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-20",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Find out how to report information to HMRC using the Automatic Exchange of Information (AEOI) if you are a financial institution.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Automatic Exchange of Information: financial institutions",
-      "url": "https://www.gov.uk/guidance/automatic-exchange-of-information-financial-institutions",
-      "date": "2026-11-20",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-20",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "How Automatic Exchange of Information may apply to financial institutions, what to report and how to submit the information.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Register for Automatic Exchange of Information",
-      "url": "https://www.gov.uk/guidance/register-for-automatic-exchange-of-information",
-      "date": "2026-11-20",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-20",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Find out how to register for the Automatic Exchange of Information (AEOI) service if you're a financial institution.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Compliance Handbook",
-      "url": "https://www.gov.uk/hmrc-internal-manuals/compliance-handbook",
-      "date": "2026-11-20",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-20",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "The aim of the Compliance Handbook is to help users understand and apply HMRC's penalties and compliance powers, as set out by legislation.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
       "title": "Tell HMRC you have completed a National Minimum Wage review",
       "url": "https://www.gov.uk/guidance/tell-hmrc-you-have-completed-a-national-minimum-wage-review",
       "date": "2026-11-20",
@@ -71,43 +11,91 @@
       "category": "uk-business",
       "summary": "Send a declaration to tell HMRC you have completed a National Minimum Wage review.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
-      "title": "Submit your Vaping Products Duty return",
-      "url": "https://www.gov.uk/guidance/submit-your-vaping-products-duty-return",
+      "title": "Special procedure: outward processing",
+      "url": "https://www.gov.uk/guidance/special-procedure-outward-processing",
       "date": "2026-11-20",
       "dateKind": "updated",
       "updatedAt": "2026-11-20",
       "source": "HMRC",
       "category": "uk-business",
-      "summary": "Use the online service to submit returns for all finished vaping products that have been manufactured in the UK and have been released for consumption in the UK.",
+      "summary": "Outward processing is a procedure that allows goods to be temporarily exported from the UK for repair or processing and is used by private individuals and traders.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
-      "title": "Added value duty calculation where different temporary export goods are involved",
-      "url": "https://www.gov.uk/guidance/special-procedure-outward-processing/added-value-duty-calculation-where-different-temporary-export-goods-are-involved",
+      "title": "Decision: CIL Appeals 1897675, 1897676, 1897677 — 07 October 26",
+      "url": "https://www.gov.uk/government/publications/cil-appeals-1897675-1897676-1897677-07-october-26",
       "date": "2026-11-20",
       "dateKind": "updated",
       "updatedAt": "2026-11-20",
       "source": "HMRC",
       "category": "uk-business",
-      "summary": "Information on added value duty calculation where different temporary export goods are involved.",
+      "summary": "Report issued for lawful use and GIA offset: change of use of the various floors (part of the upper ground floor and part of the first floor) from use class E to flats.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
-      "title": "ABTA statement on today's youth mobility announcement",
-      "url": "https://www.abta.com/news/abta-statement-todays-youth-mobility-announcement",
+      "title": "Tax Credits Manual",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/tax-credits-manual",
       "date": "2026-11-20",
-      "dateKind": "published",
+      "dateKind": "updated",
       "updatedAt": "2026-11-20",
-      "source": "ABTA",
-      "category": "travel",
-      "summary": "",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "How HM Revenue and Customs handles Child Tax Credit and Working Tax Credit cases",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
+      "title": "Policy paper: Value Added Tax (Drugs and Medicines) (Health and Welfare) Order 2026",
+      "url": "https://www.gov.uk/government/publications/value-added-tax-drugs-and-medicines-health-and-welfare-order-2026",
+      "date": "2026-11-20",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-20",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "This tax information and impact note is about the VAT zero rate for medicines applying to qualifying medicines dispensed under the supervision of registered pharmacists.",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
+      "title": "Accredited official statistics: HMRC tax receipts and National Insurance contributions for the UK",
+      "url": "https://www.gov.uk/government/statistics/hmrc-tax-and-nics-receipts-for-the-uk",
+      "date": "2026-11-20",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-20",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "Summary of HM Revenue and Customs' tax receipts, National Insurance contributions (NICs), and expenditure for the UK.",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
+      "title": "Penalties for Making Tax Digital for Income Tax",
+      "url": "https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax",
+      "date": "2026-11-19",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-19",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "Changes to late submission penalties and late payment penalties if you need to use Making Tax Digital for Income Tax.",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
+      "title": "Penalties for Making Tax Digital for Income Tax volunteers",
+      "url": "https://www.gov.uk/guidance/penalties-for-income-tax-self-assessment-volunteers",
+      "date": "2026-11-19",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-19",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "Changes to late submission penalties and late payment penalties if you’re volunteering to use Making Tax Digital for Income Tax.",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Guidance: Ceased or suspended Authorised Corporate Service Providers (ACSPs)",
@@ -119,7 +107,7 @@
       "category": "uk-business",
       "summary": "This list includes details of businesses and sole traders that have had their ACSP status either suspended or ceased (removed).",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Verify your identity for Companies House",
@@ -131,7 +119,7 @@
       "category": "uk-business",
       "summary": "Use this service to verify your identity for Companies House.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Policy paper: Companies House approach to non-compliance with mandatory identity verification",
@@ -143,31 +131,7 @@
       "category": "uk-business",
       "summary": "How Companies House will use its enforcement powers in relation to non-compliance with identity verification requirements.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Companies House personal codes for identity verification",
-      "url": "https://www.gov.uk/guidance/companies-house-personal-codes-for-identity-verification",
-      "date": "2026-11-19",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-19",
-      "source": "Companies House",
-      "category": "uk-business",
-      "summary": "How to use and manage the personal code you receive when you verify your identity for Companies House.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Verifying your identity for Companies House",
-      "url": "https://www.gov.uk/guidance/verifying-your-identity-for-companies-house",
-      "date": "2026-11-19",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-19",
-      "source": "Companies House",
-      "category": "uk-business",
-      "summary": "You need to prove who you are to set up, run, own or control a company in the UK.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Provide identity verification details for a person with significant control (PSC)",
@@ -179,7 +143,7 @@
       "category": "uk-business",
       "summary": "Use this service to provide the Companies House personal code and identity verification statement for a PSC, or to request an extension.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Taxpayers asked to check claims for double tax relief",
@@ -191,31 +155,7 @@
       "category": "uk-business",
       "summary": "HMRC is asking taxpayers who claimed double tax relief (DTR) in their self assessment (SA) tax return for 2024/25 to check that they meet the conditions, and have the appropriate evidence, before making a claim in their tax return for 2025/26.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Enhancing our member engagement programme",
-      "url": "https://www.abta.com/news/enhancing-our-member-engagement-programme",
-      "date": "2026-11-19",
-      "dateKind": "published",
-      "updatedAt": "2026-11-19",
-      "source": "ABTA",
-      "category": "travel",
-      "summary": "",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Companies House Welsh services",
-      "url": "https://www.gov.uk/guidance/companies-house-welsh-services",
-      "date": "2026-11-18",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-18",
-      "source": "Companies House",
-      "category": "uk-business",
-      "summary": "The services that Companies House offers in the Welsh language.",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Identity verification is making the UK's company register more trustworthy",
@@ -227,7 +167,7 @@
       "category": "uk-business",
       "summary": "One year into mandatory identity verification at Companies House, around 90% of live companies have completed the process, improving the accuracy of the UK's corporate register.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Tax news in brief 18 November 2026",
@@ -239,7 +179,7 @@
       "category": "uk-business",
       "summary": "Highlights from the broader tax news for the week ending 18 November 2026, including HMRC guidance for employers who expect to pay staff earlier than usual over the Christmas period.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "The hidden cost of poor stock control",
@@ -251,7 +191,7 @@
       "category": "hospitality",
       "summary": "With margins under pressure across the hospitality sector, many businesses are taking a closer look at what’s happening beneath the headline sales figures.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Cyber attacks in hospitality: is your business properly protected?",
@@ -263,7 +203,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "HMRC confirms registration timeframe for firms with an existing agent services account",
@@ -275,7 +215,7 @@
       "category": "uk-business",
       "summary": "Between April 2027 and March 2028, HMRC will contact firms that had an agent service account (ASA) immediately before 18 August 2026 to complete the registration process.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Agent registration window for payroll providers opened on 18 November",
@@ -287,7 +227,7 @@
       "category": "uk-business",
       "summary": "ICAEW's Tax Faculty is reminding businesses that provide payroll services that their window to register as a tax adviser with HMRC opened on 18 November 2026 and closes on 17 February 2027.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Milburn Review – our response",
@@ -299,7 +239,7 @@
       "category": "hospitality",
       "summary": "The Milburn review recommended for employment costs for hospitality to be reduced through increasing the current employer NICs threshold.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "BBPA Response to Milburn Review",
@@ -323,7 +263,7 @@
       "category": "uk-business",
       "summary": "By contributing to ICAEW’s response to the government’s call for evidence on corporation tax administration, you could help shape the way in which companies keep records, file returns, pay tax and interact with HMRC in the future.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "MTD taxpayers encouraged to check tax payments",
@@ -335,7 +275,19 @@
       "category": "uk-business",
       "summary": "Taxpayers who joined Making Tax Digital (MTD) for income tax from 6 April 2026 may need to check their MTD income tax and self assessment (SA) accounts in order to see their complete tax payment information.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
+      "title": "Guidance: List of Authorised Corporate Service Providers (ACSPs)",
+      "url": "https://www.gov.uk/government/publications/list-of-authorised-corporate-service-providers-acsps",
+      "date": "2026-11-12",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-12",
+      "source": "Companies House",
+      "category": "uk-business",
+      "summary": "This list includes details of businesses and sole traders that have registered as an Authorised Corporate Service Provider (ACSP).",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "How will the pension tax allowance work?",
@@ -347,7 +299,7 @@
       "category": "uk-business",
       "summary": "It is expected that 500,000 pensioners will benefit from the pension tax allowance for 2027/28.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Government partially excludes glass from EPR – our response",
@@ -359,7 +311,7 @@
       "category": "hospitality",
       "summary": "Removing some glass from the packaging tax is positive but risks increasing costs on other businesses in the sector.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Inspiring the next generation of travel talent",
@@ -371,7 +323,7 @@
       "category": "travel",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Tax news in brief 11 November 2026",
@@ -383,7 +335,7 @@
       "category": "uk-business",
       "summary": "Highlights from the broader tax news for the week ending 11 November 2026, including the publication of the Finance Bill 2026-27.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Hospitality Christmas season now lasts 12 weeks",
@@ -395,7 +347,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Beer and pub industry welcome government changes to reduce the cost impact from packing charges",
@@ -419,7 +371,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "BBPA Academy opens the door to lifelong careers in Britain’s beer and pub sector",
@@ -434,6 +386,30 @@
       "retrievedAt": "2026-11-20T09:27:24.129Z"
     },
     {
+      "title": "Guidance: Technical interface specifications for Companies House software",
+      "url": "https://www.gov.uk/government/publications/technical-interface-specifications-for-companies-house-software",
+      "date": "2026-11-09",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-09",
+      "source": "Companies House",
+      "category": "uk-business",
+      "summary": "Technical specifications for developing software to send information to Companies House digitally.",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
+      "title": "Christmas and new year opening times at Companies House",
+      "url": "https://www.gov.uk/guidance/christmas-and-new-year-opening-times-at-companies-house",
+      "date": "2026-11-06",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-06",
+      "source": "Companies House",
+      "category": "uk-business",
+      "summary": "Availability of our contact centre and filing services over the 2026 to 2027 festive period.",
+      "live": true,
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
+    },
+    {
       "title": "Five market signals hospitality operators should watch heading into 2027",
       "url": "https://www.ukhospitality.org.uk/five-market-signals-hospitality-operators-should-watch-heading-into-2027/",
       "date": "2026-11-06",
@@ -443,7 +419,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "‘Holiday Tax Bill’ will cost jobs and hike prices for families",
@@ -455,7 +431,7 @@
       "category": "hospitality",
       "summary": "‘Shocking’ decision to give Mayor’s uncapped holiday tax powers will hit family breaks and hospitality jobs.",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Now is the time to back Welsh pubs to kick start the Welsh economy",
@@ -479,7 +455,7 @@
       "category": "travel",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Multi-factor authentication now live on all agent accounts",
@@ -491,7 +467,7 @@
       "category": "uk-business",
       "summary": "HMRC provides update and guidance on MFA to all registered agents",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "UK carbon border adjustment mechanism",
@@ -503,7 +479,7 @@
       "category": "uk-business",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "ABTA statement on the Budget",
@@ -515,7 +491,7 @@
       "category": "travel",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     },
     {
       "title": "Companies House update to accounts filing",
@@ -527,46 +503,10 @@
       "category": "uk-business",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "The ethical and appropriate use of AI in accountancy",
-      "url": "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/The-ethical-and-appropriate-use-of-AI-in-accountancy.html",
-      "date": "2026-09-16",
-      "dateKind": "published",
-      "updatedAt": "2026-09-16",
-      "source": "ACCA",
-      "category": "uk-business",
-      "summary": "",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Could your accountancy firm survive without you?",
-      "url": "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Could-your-accountancy-firm-survive-without-you.html",
-      "date": "2026-09-15",
-      "dateKind": "published",
-      "updatedAt": "2026-09-15",
-      "source": "ACCA",
-      "category": "uk-business",
-      "summary": "",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
-    },
-    {
-      "title": "Visitor Levy in Wales",
-      "url": "https://www.accaglobal.com/gb/en/technical-activities/uk-tech/in-practice-ezine-archive/In-Practice-archive-2026/september/Visitor-Levy-in-Wales.html",
-      "date": "2026-09-15",
-      "dateKind": "published",
-      "updatedAt": "2026-09-15",
-      "source": "ACCA",
-      "category": "uk-business",
-      "summary": "",
-      "live": true,
-      "retrievedAt": "2026-11-22T19:50:20.343Z"
+      "retrievedAt": "2026-11-23T07:00:27.379Z"
     }
   ],
-  "checkedAt": "2026-11-22T19:50:20.343Z",
+  "checkedAt": "2026-11-23T07:00:27.379Z",
   "sources": [
     {
       "name": "HMRC",
@@ -601,51 +541,51 @@
     {
       "name": "HMRC",
       "status": "ok",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
-      "lastSuccessAt": "2026-11-22T19:50:20.343Z",
+      "checkedAt": "2026-11-23T07:00:27.379Z",
+      "lastSuccessAt": "2026-11-23T07:00:27.379Z",
       "count": 8
     },
     {
       "name": "Companies House",
       "status": "ok",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
-      "lastSuccessAt": "2026-11-22T19:50:20.343Z",
+      "checkedAt": "2026-11-23T07:00:27.379Z",
+      "lastSuccessAt": "2026-11-23T07:00:27.379Z",
       "count": 8
     },
     {
       "name": "ACCA",
       "status": "ok",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
-      "lastSuccessAt": "2026-11-22T19:50:20.343Z",
-      "count": 6
+      "checkedAt": "2026-11-23T07:00:27.379Z",
+      "lastSuccessAt": "2026-11-23T07:00:27.379Z",
+      "count": 3
     },
     {
       "name": "ICAEW",
       "status": "ok",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
-      "lastSuccessAt": "2026-11-22T19:50:20.343Z",
+      "checkedAt": "2026-11-23T07:00:27.379Z",
+      "lastSuccessAt": "2026-11-23T07:00:27.379Z",
       "count": 8
     },
     {
       "name": "UKHospitality",
       "status": "ok",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
-      "lastSuccessAt": "2026-11-22T19:50:20.343Z",
+      "checkedAt": "2026-11-23T07:00:27.379Z",
+      "lastSuccessAt": "2026-11-23T07:00:27.379Z",
       "count": 8
     },
     {
       "name": "BBPA",
       "status": "cached",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
+      "checkedAt": "2026-11-23T07:00:27.379Z",
       "lastSuccessAt": "2026-11-20T09:27:24.129Z",
       "count": 4
     },
     {
       "name": "ABTA",
       "status": "ok",
-      "checkedAt": "2026-11-22T19:50:20.343Z",
-      "lastSuccessAt": "2026-11-22T19:50:20.343Z",
-      "count": 5
+      "checkedAt": "2026-11-23T07:00:27.379Z",
+      "lastSuccessAt": "2026-11-23T07:00:27.379Z",
+      "count": 3
     }
   ],
   "liveSources": [
