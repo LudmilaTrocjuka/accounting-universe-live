@@ -1,8 +1,10 @@
 {
   "version": 1,
-  "lastCheckedAt": "2026-11-20T12:00:06.000Z",
+  "lastCheckedAt": "2026-11-23T11:00:10.000Z",
   "source": "Verified sent posts from the AU LinkedIn company page and X account, via Buffer.",
   "processedPostIds": [
+    "6b04185a5c07874ce5ea982b",
+    "6b04186bb37f5256c8d9ac27",
     "6b0032d9794952f4d02d5ca9",
     "6b0027de9dd03fda0b041cf1",
     "6b0027d13d025b9e58a5447c",
@@ -60,6 +62,51 @@
     "6ae604ee30d4e6cba295b4be"
   ],
   "entries": [
+    {
+      "id": "mtd-income-tax-qualifying-income",
+      "title": "MTD for Income Tax: qualifying income, not profit",
+      "summary": "An illustrative sole-trader example showing how gross qualifying income differs from profit and when MTD Income Tax applies.",
+      "publishedAt": "2026-11-23T10:41:48.713Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6b04185a5c07874ce5ea982b",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-23T10:41:52.466Z",
+          "text": "MTD for Income Tax: your turnover may matter more than your profit.\n\nConsider an illustrative café owner: £42,000 in annual sales, £30,000 in expenses and £12,000 profit.\n\nHMRC uses qualifying income — broadly, gross income from self-employment and property before expenses — to decide when Making Tax Digital for Income Tax applies. In this example, the relevant amount is £42,000, not £12,000.\n\nFor a sole trader with no exemption, qualifying income over £30,000 in 2025/26 means MTD starts on 6 April 2027. The next phase, from 6 April 2028, applies where 2026/27 qualifying income exceeds £20,000.\n\nPAYE wages, dividends, pensions and partnership profit shares are excluded from this qualifying-income calculation. LTD company turnover is not included either.\n\nBefore making plans, check your Self Assessment figures, possible exemptions and compatible software. Getting the threshold right is the first step.\n\nMore from AU's Knowledge Centre:\nhttps://www.accounting-universe.co.uk/knowledge-centre.html?utm_source=linkedin&utm_medium=social&utm_campaign=mtd_income_20261123\n\n#MakingTaxDigital #SoleTraders #SelfAssessment",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7530581377700950016",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-mtd-income-tax-qualifying-income-approved-23nov2026.png?v=1795430450",
+              "width": 1672,
+              "height": 941,
+              "alt": "AU Finance & Advisory infographic explaining MTD for Income Tax qualifying income before expenses, with an illustrative £42,000 café example and April 2026, 2027 and 2028 thresholds; AU logo in the upper-right corner."
+            }
+          ]
+        },
+        {
+          "id": "6b04186bb37f5256c8d9ac27",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-23T10:41:48.713Z",
+          "text": "£42k sales − £30k costs = £12k profit. For MTD Income Tax, a sole trader's qualifying income is £42k — not £12k.\n\nhttps://www.accounting-universe.co.uk/knowledge-centre.html?utm_source=x&utm_medium=social&utm_campaign=mtd_income_20261123\n\n#MTD",
+          "url": "https://x.com/1968713751999168512/status/2124815673482170608",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-mtd-income-tax-qualifying-income-approved-23nov2026.png?v=1795430450",
+              "width": 1672,
+              "height": 941,
+              "alt": "AU Finance & Advisory infographic explaining MTD for Income Tax qualifying income before expenses, with an illustrative £42,000 café example and April 2026, 2027 and 2028 thresholds; AU logo in the upper-right corner."
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "smarter-business-travel",
       "title": "Smarter Business Travel: Technology Meets Human Expertise",
