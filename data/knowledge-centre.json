@@ -1,8 +1,10 @@
 {
   "version": 1,
-  "lastCheckedAt": "2026-11-23T11:00:10.000Z",
+  "lastCheckedAt": "2026-11-24T16:45:24.594Z",
   "source": "Verified sent posts from the AU LinkedIn company page and X account, via Buffer.",
   "processedPostIds": [
+    "6b057aa2e2bac802e9a0db5a",
+    "6b057a96e2bac802e9a0d6a0",
     "6b04185a5c07874ce5ea982b",
     "6b04186bb37f5256c8d9ac27",
     "6b0032d9794952f4d02d5ca9",
@@ -62,6 +64,51 @@
     "6ae604ee30d4e6cba295b4be"
   ],
   "entries": [
+    {
+      "id": "when-survival-becomes-the-business-strategy",
+      "title": "When survival becomes the business strategy",
+      "summary": "How rising costs and late payments put pressure on UK businesses, and how financial controls, forecasting and working capital management can help.",
+      "publishedAt": "2026-11-24T11:53:07.884Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6b057aa2e2bac802e9a0db5a",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-24T11:53:07.884Z",
+          "text": "When survival becomes the business strategy.\n\nRising taxes, payroll costs and late payments are forcing UK businesses to prioritise survival over growth.\n\nFinancial clarity, control and planning can help break the cycle.\n\nhttps://www.accounting-universe.co.uk/?utm_source=x&utm_medium=social&utm_campaign=financial_resilience_20261124\n\n#UKBusiness #BusinessResilience",
+          "url": "https://x.com/1968713751999168512/status/2125196009663857086",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-financial-resilience-24nov2026.png?v=1795521158",
+              "width": 1672,
+              "height": 941,
+              "alt": "Dominoes labelled rising costs, tax liabilities, late payments, cash shortage and delayed investment, stopped by a financial resilience block, with the AU logo."
+            }
+          ]
+        },
+        {
+          "id": "6b057a96e2bac802e9a0d6a0",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-24T11:53:17.777Z",
+          "text": "WHEN SURVIVAL BECOMES THE BUSINESS STRATEGY\n\nWhen business owners spend more time deciding which bills to pay than planning how to grow, something fundamental has changed.\n\nFor many UK businesses, the economic environment is becoming increasingly challenging. Entrepreneurs who once focused on expansion, innovation and creating employment are now concentrating on meeting their immediate financial obligations.\n\nThe pressure is coming from multiple directions:\n\n• Rising employment costs, including employer's National Insurance contributions.\n• VAT, PAYE and Corporation Tax obligations.\n• Increasing energy, rent and supplier costs.\n• Business rates and other operating expenses.\n• Delayed customer payments.\n• The cost of borrowing and limited access to affordable finance.\n\nThese pressures rarely occur in isolation.\n\nThe domino effect across the UK economy\n\nWhen one company delays payment, its suppliers may struggle to meet their own commitments. This creates a chain reaction throughout the supply network, affecting businesses that might otherwise be commercially viable.\n\nInvestment is postponed. Recruitment is reconsidered. Expansion plans are put on hold.\n\nBusiness owners increasingly find themselves managing financial pressure rather than developing their businesses.\n\nHow can businesses regain financial stability?\n\nBusinesses cannot control government taxation policy, energy markets or the wider economy. However, they can improve their financial visibility, strengthen internal controls, negotiate commercial terms, manage working capital more effectively and make better-informed strategic decisions.\n\nThis requires more than historical financial reporting.\n\nIt requires forward-looking financial management, realistic forecasting, scenario analysis and a clear understanding of the financial consequences of every major business decision.\n\nAt AU Finance & Advisory, we believe the role of a finance professional extends beyond bookkeeping, statutory accounts and tax compliance.\n\nOur purpose is to help business owners understand their financial position, identify practical opportunities for improvement and build a more resilient foundation for sustainable growth.\n\nSurvival should never become the permanent business strategy.\n\nUK businesses need the financial confidence to move beyond short-term survival and start planning for their future again.\n\nBreak the cycle. Build financial resilience.\n\nhttps://www.accounting-universe.co.uk/?utm_source=linkedin&utm_medium=social&utm_campaign=financial_resilience_20261124\n\n#UKBusiness #BusinessResilience #FinancialManagement #SMEs #HospitalityIndustry",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7530961737903382529",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-financial-resilience-24nov2026.png?v=1795521158",
+              "width": 1672,
+              "height": 941,
+              "alt": "Dominoes labelled rising costs, tax liabilities, late payments, cash shortage and delayed investment, stopped by a financial resilience block, with the AU logo."
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "mtd-income-tax-qualifying-income",
       "title": "MTD for Income Tax: qualifying income, not profit",
