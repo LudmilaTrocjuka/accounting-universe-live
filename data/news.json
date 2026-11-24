@@ -11,31 +11,115 @@
       "category": "uk-business",
       "summary": "Highlights from the broader tax news for the week ending 25 November 2026, including updates on the Welsh budget, the corporate interest restriction and the process for applying for non-statutory VAT clearances.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
-      "title": "The Tax Agent's Handbook",
-      "url": "https://www.gov.uk/guidance/tax-agents-handbook",
+      "title": "Insurance Premium Tax",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/insurance-premium-tax",
       "date": "2026-11-24",
       "dateKind": "updated",
       "updatedAt": "2026-11-24",
       "source": "HMRC",
       "category": "uk-business",
-      "summary": "Information to help tax agents and advisers find guidance, use HMRC's services and contact HMRC.",
+      "summary": "This guidance is aimed at HMRC staff who deal with Insurance Premium Tax issues.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
-      "title": "Getting started",
-      "url": "https://www.gov.uk/guidance/tax-agents-handbook/getting-started",
+      "title": "VAT Insurance",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/vat-insurance",
       "date": "2026-11-24",
       "dateKind": "updated",
       "updatedAt": "2026-11-24",
       "source": "HMRC",
       "category": "uk-business",
-      "summary": "Support, guidance and resources for registering as a tax agent and getting authorised to act on your client's behalf.",
+      "summary": "Guidance on identifying the appropriate parts of the EC Sixth Directive, now the Principal VAT Directive and UK VAT Law.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "Guidance: Appendix 21: Import Declaration Category Data Sets",
+      "url": "https://www.gov.uk/government/publications/appendix-21-import-declaration-category-data-sets",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "Find out about the specific data elements needed for each declaration category when making an import declaration on the Customs Declaration Service.",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "Capital Gains Manual",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "HMRC is reviewing the CG Manual to ensure it provides HMRC’s interpretation of relevant legislation where there is more than one reasonable view of how rules work.Where material in the CG Manual isn’t providing an interpretation, that material is being removed.",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "Software developers providing customs declaration software",
+      "url": "https://www.gov.uk/guidance/list-of-software-developers-providing-customs-declaration-support",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "Check a list of software developers who can provide Customs Declaration Service software.",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "HMRC email updates, videos and webinars for company directors",
+      "url": "https://www.gov.uk/guidance/help-and-support-for-company-directors",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "HMRC email updates, videos and webinars for employing people",
+      "url": "https://www.gov.uk/guidance/help-and-support-for-employing-people",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "Employment Income Manual",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/employment-income-manual",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "HMRC",
+      "category": "uk-business",
+      "summary": "A guide to the Income Tax (Earnings and Pensions) Act 2003.",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
+    },
+    {
+      "title": "Form: Give notice of subscribers: company not having share capital",
+      "url": "https://www.gov.uk/government/publications/give-notice-of-subscribers-company-not-having-share-capital",
+      "date": "2026-11-24",
+      "dateKind": "updated",
+      "updatedAt": "2026-11-24",
+      "source": "Companies House",
+      "category": "uk-business",
+      "summary": "Use this pro-forma for a memorandum of association to form a company without share capital.",
+      "live": true,
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Form: Give notice of subscribers: company with share capital",
@@ -47,7 +131,7 @@
       "category": "uk-business",
       "summary": "Use this pro-forma for a memorandum of association to form a company with share capital.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Form: Give notice of a resolution",
@@ -59,79 +143,19 @@
       "category": "uk-business",
       "summary": "You can use this template to notify Companies House of a resolution.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
-      "title": "Guidance: Self Assessment payment plan: service availability and issues",
-      "url": "https://www.gov.uk/government/publications/self-assessment-payment-plan-service-availability-and-issues",
-      "date": "2026-11-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-23",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Check the availability and any issues affecting the Self Assessment payment plan service.",
+      "title": "ABTA facilitates travel industry roundtable with Shadow Tourism Minister",
+      "url": "https://www.abta.com/news/abta-facilitates-travel-industry-roundtable-shadow-tourism-minister",
+      "date": "2026-11-24",
+      "dateKind": "published",
+      "updatedAt": "2026-11-24",
+      "source": "ABTA",
+      "category": "travel",
+      "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
-    },
-    {
-      "title": "Guidance: Employers PAYE payment plan: service availability and issues",
-      "url": "https://www.gov.uk/government/publications/employers-paye-payment-plan-service-availability-and-issues",
-      "date": "2026-11-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-23",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Check the availability and any issues affecting the Employers PAYE payment plan service.",
-      "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
-    },
-    {
-      "title": "Guidance: Check and challenge your Central Rating List business rates valuation — register to use the service",
-      "url": "https://www.gov.uk/government/publications/check-and-challenge-your-central-rating-list-business-rates-valuation-register-to-use-the-service",
-      "date": "2026-11-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-23",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Use this form to register for the 2026 Central Rating List check and challenge service in England and Wales.",
-      "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
-    },
-    {
-      "title": "Guidance: VAT payment plan: service availability and issues",
-      "url": "https://www.gov.uk/government/publications/vat-payment-plan-service-availability-and-issues",
-      "date": "2026-11-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-23",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Check the availability and any issues affecting the VAT payment plan service.",
-      "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
-    },
-    {
-      "title": "Voluntarily payrolling employees' benefits and expenses",
-      "url": "https://www.gov.uk/guidance/payrolling-tax-employees-benefits-and-expenses-through-your-payroll",
-      "date": "2026-11-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-23",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "How to voluntarily report expenses and benefits you provide to employees or directors.",
-      "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
-    },
-    {
-      "title": "Guidance: Simple Assessment payment plan: service availability and issues",
-      "url": "https://www.gov.uk/government/publications/simple-assessment-payment-plan-service-availability-and-issues",
-      "date": "2026-11-23",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-23",
-      "source": "HMRC",
-      "category": "uk-business",
-      "summary": "Check the availability and any issues affecting the Simple Assessment payment plan service.",
-      "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Verify your identity for Companies House",
@@ -143,7 +167,7 @@
       "category": "uk-business",
       "summary": "Use this service to verify your identity for Companies House.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Provide identity verification details for a person with significant control (PSC)",
@@ -155,7 +179,7 @@
       "category": "uk-business",
       "summary": "Use this service to provide the Companies House personal code and identity verification statement for a PSC, or to request an extension.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Businesses asked to check construction industry scheme returns",
@@ -167,7 +191,7 @@
       "category": "uk-business",
       "summary": "HMRC is contacting businesses to check if they may have made an error in their construction industry scheme (CIS) returns and is providing guidance on how to avoid making two common errors.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Are HMRC's services improving?",
@@ -179,7 +203,7 @@
       "category": "uk-business",
       "summary": "HMRC's latest performance update shows that it is answering the telephone and responding to post more quickly than previously, but doubts remain as to whether taxpayers and agents are experiencing an improvement in the services they receive.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Agnewlight Ltd trading as Dagenham Travel – advice for members",
@@ -191,7 +215,7 @@
       "category": "travel",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Agnewlight Ltd trading as Dagenham Travel – advice for customers",
@@ -203,7 +227,7 @@
       "category": "travel",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Guidance: Ceased or suspended Authorised Corporate Service Providers (ACSPs)",
@@ -215,7 +239,7 @@
       "category": "uk-business",
       "summary": "This list includes details of businesses and sole traders that have had their ACSP status either suspended or ceased (removed).",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Policy paper: Companies House approach to non-compliance with mandatory identity verification",
@@ -227,7 +251,7 @@
       "category": "uk-business",
       "summary": "How Companies House will use its enforcement powers in relation to non-compliance with identity verification requirements.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Taxpayers asked to check claims for double tax relief",
@@ -239,7 +263,7 @@
       "category": "uk-business",
       "summary": "HMRC is asking taxpayers who claimed double tax relief (DTR) in their self assessment (SA) tax return for 2024/25 to check that they meet the conditions, and have the appropriate evidence, before making a claim in their tax return for 2025/26.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Identity verification is making the UK's company register more trustworthy",
@@ -251,7 +275,7 @@
       "category": "uk-business",
       "summary": "One year into mandatory identity verification at Companies House, around 90% of live companies have completed the process, improving the accuracy of the UK's corporate register.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Tax news in brief 18 November 2026",
@@ -263,7 +287,7 @@
       "category": "uk-business",
       "summary": "Highlights from the broader tax news for the week ending 18 November 2026, including HMRC guidance for employers who expect to pay staff earlier than usual over the Christmas period.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "The hidden cost of poor stock control",
@@ -275,7 +299,7 @@
       "category": "hospitality",
       "summary": "With margins under pressure across the hospitality sector, many businesses are taking a closer look at what’s happening beneath the headline sales figures.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Cyber attacks in hospitality: is your business properly protected?",
@@ -287,7 +311,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "HMRC confirms registration timeframe for firms with an existing agent services account",
@@ -299,7 +323,7 @@
       "category": "uk-business",
       "summary": "Between April 2027 and March 2028, HMRC will contact firms that had an agent service account (ASA) immediately before 18 August 2026 to complete the registration process.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Agent registration window for payroll providers opened on 18 November",
@@ -311,7 +335,7 @@
       "category": "uk-business",
       "summary": "ICAEW's Tax Faculty is reminding businesses that provide payroll services that their window to register as a tax adviser with HMRC opened on 18 November 2026 and closes on 17 February 2027.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Milburn Review – our response",
@@ -323,7 +347,7 @@
       "category": "hospitality",
       "summary": "The Milburn review recommended for employment costs for hospitality to be reduced through increasing the current employer NICs threshold.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "BBPA Response to Milburn Review",
@@ -347,19 +371,7 @@
       "category": "uk-business",
       "summary": "By contributing to ICAEW’s response to the government’s call for evidence on corporation tax administration, you could help shape the way in which companies keep records, file returns, pay tax and interact with HMRC in the future.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
-    },
-    {
-      "title": "Guidance: List of Authorised Corporate Service Providers (ACSPs)",
-      "url": "https://www.gov.uk/government/publications/list-of-authorised-corporate-service-providers-acsps",
-      "date": "2026-11-12",
-      "dateKind": "updated",
-      "updatedAt": "2026-11-12",
-      "source": "Companies House",
-      "category": "uk-business",
-      "summary": "This list includes details of businesses and sole traders that have registered as an Authorised Corporate Service Provider (ACSP).",
-      "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Government partially excludes glass from EPR – our response",
@@ -371,7 +383,7 @@
       "category": "hospitality",
       "summary": "Removing some glass from the packaging tax is positive but risks increasing costs on other businesses in the sector.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Inspiring the next generation of travel talent",
@@ -383,7 +395,7 @@
       "category": "travel",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Hospitality Christmas season now lasts 12 weeks",
@@ -395,7 +407,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Beer and pub industry welcome government changes to reduce the cost impact from packing charges",
@@ -419,7 +431,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "BBPA Academy opens the door to lifelong careers in Britain’s beer and pub sector",
@@ -443,7 +455,7 @@
       "category": "hospitality",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "‘Holiday Tax Bill’ will cost jobs and hike prices for families",
@@ -455,7 +467,7 @@
       "category": "hospitality",
       "summary": "‘Shocking’ decision to give Mayor’s uncapped holiday tax powers will hit family breaks and hospitality jobs.",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Now is the time to back Welsh pubs to kick start the Welsh economy",
@@ -479,7 +491,7 @@
       "category": "uk-business",
       "summary": "HMRC provides update and guidance on MFA to all registered agents",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "UK carbon border adjustment mechanism",
@@ -491,7 +503,7 @@
       "category": "uk-business",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     },
     {
       "title": "Companies House update to accounts filing",
@@ -503,10 +515,10 @@
       "category": "uk-business",
       "summary": "",
       "live": true,
-      "retrievedAt": "2026-11-24T10:05:32.199Z"
+      "retrievedAt": "2026-11-24T22:36:03.839Z"
     }
   ],
-  "checkedAt": "2026-11-24T10:05:32.199Z",
+  "checkedAt": "2026-11-24T22:36:03.839Z",
   "sources": [
     {
       "name": "HMRC",
@@ -541,51 +553,51 @@
     {
       "name": "HMRC",
       "status": "ok",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
-      "lastSuccessAt": "2026-11-24T10:05:32.199Z",
+      "checkedAt": "2026-11-24T22:36:03.839Z",
+      "lastSuccessAt": "2026-11-24T22:36:03.839Z",
       "count": 8
     },
     {
       "name": "Companies House",
       "status": "ok",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
-      "lastSuccessAt": "2026-11-24T10:05:32.199Z",
+      "checkedAt": "2026-11-24T22:36:03.839Z",
+      "lastSuccessAt": "2026-11-24T22:36:03.839Z",
       "count": 8
     },
     {
       "name": "ACCA",
       "status": "ok",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
-      "lastSuccessAt": "2026-11-24T10:05:32.199Z",
+      "checkedAt": "2026-11-24T22:36:03.839Z",
+      "lastSuccessAt": "2026-11-24T22:36:03.839Z",
       "count": 3
     },
     {
       "name": "ICAEW",
       "status": "ok",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
-      "lastSuccessAt": "2026-11-24T10:05:32.199Z",
+      "checkedAt": "2026-11-24T22:36:03.839Z",
+      "lastSuccessAt": "2026-11-24T22:36:03.839Z",
       "count": 8
     },
     {
       "name": "UKHospitality",
       "status": "ok",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
-      "lastSuccessAt": "2026-11-24T10:05:32.199Z",
+      "checkedAt": "2026-11-24T22:36:03.839Z",
+      "lastSuccessAt": "2026-11-24T22:36:03.839Z",
       "count": 8
     },
     {
       "name": "BBPA",
       "status": "cached",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
+      "checkedAt": "2026-11-24T22:36:03.839Z",
       "lastSuccessAt": "2026-11-20T09:27:24.129Z",
       "count": 4
     },
     {
       "name": "ABTA",
       "status": "ok",
-      "checkedAt": "2026-11-24T10:05:32.199Z",
-      "lastSuccessAt": "2026-11-24T10:05:32.199Z",
-      "count": 3
+      "checkedAt": "2026-11-24T22:36:03.839Z",
+      "lastSuccessAt": "2026-11-24T22:36:03.839Z",
+      "count": 4
     }
   ],
   "liveSources": [
