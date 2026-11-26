@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastCheckedAt": "2026-11-24T16:45:24.594Z",
+  "lastCheckedAt": "2026-11-26T20:06:00.000Z",
   "source": "Verified sent posts from the AU LinkedIn company page and X account, via Buffer.",
   "processedPostIds": [
     "6b057aa2e2bac802e9a0db5a",
@@ -58,7 +58,15 @@
     "6af2a6d326f9e6aeeae65cf4",
     "6b0024b0c0a7142f84b14547",
     "6ae4a18ed9c1092d2627f03b",
-    "6ae4806dab6b84214cd1308b"
+    "6ae4806dab6b84214cd1308b",
+    "6b082419e9f3e4d93be89556",
+    "6b08240c9d0dfdddd9c0d421",
+    "6b081a5e34411d121c43629d",
+    "6b081a523d35a6c490d3cd94",
+    "6b080e132c18150e1046f8f7",
+    "6b080e10d91bf3076836bce1",
+    "6b066ea840e1d58d12fda66e",
+    "6b066ea6b6204bca46ca8868"
   ],
   "excludedPostIds": [
     "6ae604ee30d4e6cba295b4be"
@@ -1002,6 +1010,152 @@
       "publishedAt": "2026-11-04T00:00:00Z",
       "guideUrl": "/restaurant-profitability-guide.html",
       "posts": []
+    },
+    {
+      "id": "new-tipping-rules-tronc-january-2027",
+      "title": "New tipping rules: is your tronc ready for January 2027?",
+      "summary": "Preparing for new tipping policy consultation requirements and reviewing tronc arrangements.",
+      "publishedAt": "2026-11-26T10:46:41.537Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6b082419e9f3e4d93be89556",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-26T12:20:42.441Z",
+          "text": "UK tipping rules change in January 2027.\n\nAU Finance & Advisory offers:\n• Tronc Scheme Setup from scratch\n• Tronc Administration\n• Tronc Compliance Reviews\n\nPractical support backed by hands-on experience.\n\nwww.accounting-universe.co.uk\n\n#UKHospitality #Tronc",
+          "url": "https://x.com/1968713751999168512/status/2125927725038801208",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-tronc-scheme-setup-tipping-rules-jan-2027.png?v=1795695608",
+              "width": 1122,
+              "height": 1402,
+              "alt": "AU Finance & Advisory: January 2027 new tipping rules; tronc scheme setup, administration, and compliance review."
+            }
+          ]
+        },
+        {
+          "id": "6b08240c9d0dfdddd9c0d421",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-26T12:20:50.496Z",
+          "text": "UK TIPPING RULES: IS YOUR TRONC READY FOR JANUARY 2027?\n\nFrom 1 January 2027, UK employers will face new consultation requirements for written tipping policies.\n\nAt AU Finance & Advisory, we support hospitality businesses with:\n\n• Tronc Scheme Setup — setting up schemes from scratch, written tipping policies and payroll coordination.\n\n• Tronc Administration — records, reconciliations and ongoing support.\n\n• Tronc Compliance Review — reviewing existing arrangements and identifying compliance gaps.\n\nOur Finance Director brings practical, hands-on experience in setting up tronc schemes.\n\nWhether you're starting from scratch or reviewing an existing scheme, we can help.\n\nBook a 30-minute consultation:\nhttps://lnkd.in/d8pRPswn\n\nSource: ACAS — January 2027 tipping law changes.\n\n#UKHospitality #Tronc #TippingRules #HospitalityPayroll",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7531693447091548160",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-tronc-scheme-setup-tipping-rules-jan-2027.png?v=1795695608",
+              "width": 1122,
+              "height": 1402,
+              "alt": "AU Finance & Advisory: January 2027 new tipping rules; tronc scheme setup, administration, and compliance review."
+            }
+          ]
+        },
+        {
+          "id": "6b081a5e34411d121c43629d",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-26T11:39:12.164Z",
+          "text": "NEW TIPPING RULES — JANUARY 2027\n\nUK hospitality employers must consult staff on written tipping policies.\n\nAU Finance & Advisory offers:\n\n• Tronc Administration\n• Tronc Compliance Reviews\n• Payroll & compliance support\n\nwww.accounting-universe.co.uk\n\n#UKHospitality #Tronc",
+          "url": "https://x.com/1968713751999168512/status/2125917279988707781",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-tronc-tipping-rules-jan-2027.png?v=1795693115",
+              "width": 1122,
+              "height": 1402,
+              "alt": "New UK tipping rules January 2027. AU Finance & Advisory services: Tronc Administration and Tronc Compliance Review."
+            }
+          ]
+        },
+        {
+          "id": "6b081a523d35a6c490d3cd94",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-26T11:39:20.788Z",
+          "text": "NEW TIPPING RULES: ARE UK HOSPITALITY EMPLOYERS READY FOR JANUARY 2027?\n\nNew requirements are coming for UK restaurants, pubs, hotels and other hospitality businesses.\n\nFrom 1 January 2027, employers will be required to consult workers or their representatives when creating, updating or reviewing written tipping policies.\n\nWhat is changing?\n\nUnder the Employment Rights Act 2025, employers will need to:\n\n• Consult affected workers or their representatives on tipping policies.\n• Consider employees' feedback and suggestions.\n• Keep records of the consultation.\n• Share an anonymised summary of the views expressed.\n• Review their tipping policy at least every three years.\n\nWhat about businesses already operating a tronc scheme?\n\nHaving an independent troncmaster does not remove the employer's responsibility to comply with tipping legislation.\n\nWhile the fair and transparent distribution of qualifying tips has been required since October 2024, the new rules strengthen employee involvement in how tipping policies are developed and reviewed.\n\nHOW AU FINANCE & ADVISORY CAN HELP\n\nWe can support UK hospitality businesses through two specialist services:\n\nTronc Administration\n• Tip allocation records and reconciliations\n• Reporting and financial controls\n• Payroll and tronc PAYE coordination\n\nTronc Compliance Review\n• Review of existing tipping policies\n• Assessment of allocation procedures and recordkeeping\n• Identification of potential compliance gaps\n• Practical support in preparing for employee consultations\n\nWhether you operate a restaurant, pub or hotel, now is a good time to assess your arrangements.\n\nIs your business ready for January 2027?\n\nContact AU Finance & Advisory to discuss your current tronc arrangements and book a 30-minute consultation.\n\nwww.accounting-universe.co.uk\n\nSource: ACAS — January 2027 tipping law changes.\n\n#UKHospitality #Tronc #TippingRules #HospitalityPayroll #EmploymentRights #AUFinanceAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7531683003392225281",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-tronc-tipping-rules-jan-2027.png?v=1795693115",
+              "width": 1122,
+              "height": 1402,
+              "alt": "New UK tipping rules January 2027. AU Finance & Advisory services: Tronc Administration and Tronc Compliance Review."
+            }
+          ]
+        },
+        {
+          "id": "6b080e132c18150e1046f8f7",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-26T10:46:43.889Z",
+          "text": "UK hospitality: new tipping rules from 1 January 2027 require staff consultation on written tipping policies.\n\nAU Finance & Advisory can help with Tronc Administration and Tronc Compliance Reviews.\n\nAre your arrangements ready?\n\n#UKHospitality #Tronc #TippingRules",
+          "url": "https://x.com/1968713751999168512/status/2125904075875029431",
+          "thread": [],
+          "assets": []
+        },
+        {
+          "id": "6b080e10d91bf3076836bce1",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-26T10:46:41.537Z",
+          "text": "NEW TIPPING RULES: ARE UK HOSPITALITY EMPLOYERS READY FOR JANUARY 2027?\n\nRestaurants, pubs, hotels and other hospitality businesses should review how they involve staff in decisions about tips and service charges.\n\nFrom 1 January 2027, employers will be required to consult workers or their representatives before creating, updating or reviewing a written tipping policy.\n\nWhat will this mean in practice?\n\n• Explain how tips and service charges are allocated\n• Consult the workforce or appropriate representatives\n• Consider their views when developing or reviewing the policy\n• Make an anonymised summary of consultation feedback available to workers\n• Check that tipping arrangements, payroll processes and records remain compliant\n\nThe obligation to distribute qualifying tips fairly and transparently has been in place since October 2024. The new rules strengthen staff involvement in the tipping policy.\n\nDOES YOUR BUSINESS USE A TRONC?\n\nAU Finance & Advisory can support UK hospitality businesses with:\n\n• Tronc Administration — allocation records, reconciliations and payroll coordination\n• Tronc Compliance Review — tipping policy, consultation readiness and control checks\n\nWe offer practical accounting and financial-control support; independent troncmaster appointments are a separate matter and are not included in this offer.\n\nHow is your business preparing for the January 2027 changes?\n\nSource: ACAS, January 2027 law changes:\nhttps://www.acas.org.uk/tips-and-service-charges/january-2027-law-changes\n\n#UKHospitality #Tronc #TippingRules #HospitalityPayroll #FinancialControl #AUFinanceAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7531669753929547776",
+          "thread": [],
+          "assets": []
+        }
+      ]
+    },
+    {
+      "id": "ai-accounting-financial-expertise",
+      "title": "AI Can Close Your Books. But Can It Protect Your Business?",
+      "summary": "How financial expertise turns AI-identified margin variances into practical action.",
+      "publishedAt": "2026-11-25T09:30:23.695Z",
+      "guideUrl": null,
+      "posts": [
+        {
+          "id": "6b066ea840e1d58d12fda66e",
+          "status": "sent",
+          "service": "twitter",
+          "sentAt": "2026-11-25T09:30:23.695Z",
+          "text": "AI can close your books. But can it protect your business?\n\n£100k monthly sales. A 5-point drop in gross margin. £60k less annual gross profit if sustained.\n\nAI flags the variance. Financial expertise identifies causes, evaluates solutions and measures results.\n\n#AIinAccounting",
+          "url": "https://x.com/1968713751999168512/status/2125522476209700873",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-ai-financial-expertise-25nov2026.png?v=1795583645",
+              "width": 1672,
+              "height": 941,
+              "alt": ""
+            }
+          ]
+        },
+        {
+          "id": "6b066ea6b6204bca46ca8868",
+          "status": "sent",
+          "service": "linkedin",
+          "sentAt": "2026-11-25T09:30:44.496Z",
+          "text": "AI Can Close Your Books. But Can It Protect Your Business?\n\nAI is transforming accounting. But producing financial reports and protecting profitability are two different things.\n\nImagine a restaurant with monthly revenue of £100,000. Sales remain stable, but its gross profit margin falls from 70% to 65%.\n\nThat is £60,000 in lost annual gross profit if the trend continues.\n\nAI can identify the variance. Financial expertise helps determine whether rising supplier costs, food waste or pricing decisions are eroding margins, evaluate corrective options and measure their impact on profitability.\n\nThe future of finance is not about replacing professionals with technology. It is about combining their strengths.\n\nIs your finance function simply reporting results — or actively improving them?\n\n#AIinAccounting #FinancialControl #BusinessAdvisory",
+          "url": "https://www.linkedin.com/feed/update/urn:li:share:7531288250636967937",
+          "thread": [],
+          "assets": [
+            {
+              "type": "image",
+              "source": "https://cdn.shopify.com/s/files/1/0558/0315/0511/files/au-ai-financial-expertise-25nov2026.png?v=1795583645",
+              "width": 1672,
+              "height": 941,
+              "alt": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
