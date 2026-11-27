@@ -1304,3 +1304,28 @@ main#main .fees-options article {
   border-color: var(--home-card-border);
 }
 
+
+/* Centre existing certification badges without changing their artwork. */
+#software .au-software-credentials { max-width: 815px; }
+#software .au-software-credentials .au-xero-credentials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: none;
+}
+#software .au-software-credentials .au-xero-credentials-grid > .au-xero-credential {
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 4rem) / 5);
+  max-width: 138px;
+  width: auto;
+}
+@media (max-width: 760px) {
+  #software .au-software-credentials .au-xero-credentials-grid > .au-xero-credential {
+    flex-basis: calc((100% - 1rem) / 3);
+  }
+}
+@media (max-width: 360px) {
+  #software .au-software-credentials .au-xero-credentials-grid > .au-xero-credential {
+    flex-basis: calc((100% - .5rem) / 2);
+  }
+}
